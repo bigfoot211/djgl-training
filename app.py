@@ -1047,7 +1047,10 @@ elif module.startswith("🔢"):
             for i in range(8):
                 name = SURVEY_STEPS[i][0] if st.session_state.lang=="zh" else SURVEY_STEPS_EN[i][0]
                 desc = SURVEY_STEPS[i][1] if st.session_state.lang=="zh" else SURVEY_STEPS_EN[i][1]
-                st.write(f"{i+1}. **{name}** —— {desc}")
+                if user_order[i] == i:
+                    st.markdown(f"{i+1}. <span style='color:red;font-weight:bold;'>✅ {name}</span> —— {desc}", unsafe_allow_html=True)
+                else:
+                    st.write(f"{i+1}. **{name}** —— {desc}")
 
 # ============================================================
 # 模块6：宗地数据查询
@@ -1090,9 +1093,25 @@ elif module.startswith("🔍"):
             st.write(f"**{t('登记类型', 'Registration')}：** {selected['登记类型']}")
         with c2:
             st.subheader(t("宗地图示例", "Parcel Map"))
-            st.image(os.path.join(IMG_DIR, "img_parcel.png"),
-                     caption=f"{t('宗地号', 'Parcel No.')}: {selected['宗地号']} | {t('权利人', 'Holder')}: {selected['权利人']}",
-                     use_column_width=True)
+            # 动态画宗地图，显示当前选中的宗地信息
+            import matplotlib.pyplot as plt
+            fig, ax = plt.subplots(figsize=(5, 4))
+            # 画一个示意多边形
+            xs = [0, 100, 120, 30, 0]
+            ys = [0, 0, 80, 100, 0]
+            ax.fill(xs, ys, alpha=0.3, color='#8BC34A')
+            ax.plot(xs, ys, 'k-', linewidth=2)
+            ax.text(50, 95, "宗 地 图", ha='center', fontsize=16, fontweight='bold')
+            ax.text(50, 85, f"宗地号: {selected['宗地号']}", ha='center', fontsize=10)
+            ax.text(50, 75, f"权利人: {selected['权利人']}", ha='center', fontsize=10)
+            ax.text(50, 65, f"地类: {selected['二级类']}", ha='center', fontsize=10)
+            ax.text(50, 55, f"面积: {selected['面积平方米']:.0f} ㎡", ha='center', fontsize=10)
+            ax.annotate('北', xy=(110, 90), fontsize=14, color='red')
+            ax.arrow(110, 70, 0, 15, head_width=5, head_length=5, fc='red', ec='red')
+            ax.set_xlim(-10, 130)
+            ax.set_ylim(-10, 110)
+            ax.axis('off')
+            st.pyplot(fig, use_container_width=True)
 
 # ============================================================
 # 模块7：宗地图识别
