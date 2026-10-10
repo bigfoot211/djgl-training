@@ -27,6 +27,21 @@ MASCOT_QUOTES = [
     ("🤓 Do you want to pursue graduate studies?", "🤓 你有考研的打算吗？"),
     ("💼 Any internship plans?", "💼 有没有实习计划呀？"),
     ("🎉 Every question makes you stronger!", "🎉 每做一道题你就更强一点！"),
+    ("🏞️ You'll be protecting China's land resources!", "🏞️ 将来你们要守护国家的土地资源！"),
+    ("📈 This major has great job prospects!", "📈 咱们专业就业前景非常好！"),
+    ("🏙️ Urban-rural integration needs your talent!", "🏙️ 城乡一体化建设需要你们这样的人才！"),
+    ("🗺️ Every parcel tells a story of our country!", "🗺️ 每一宗地都记录着国家发展的故事！"),
+    ("🌱 You'll be the guardians of cultivated land!", "🌱 你们是未来耕地保护的守护者！"),
+    ("💻 Digital land management is the future!", "💻 数字国土、智慧城市都是你们的舞台！"),
+    ("🏛️ You'll work for people's wellbeing!", "🏛️ 你们的工作关系到千家万户的安居乐业！"),
+    ("🚀 Real estate registration is booming!", "🚀 不动产统一登记现在正是热门方向！"),
+    ("🌳 Balancing development and protection is your mission!", "🌳 发展与保护平衡，就是你们这代人的使命！"),
+    ("📊 Big data + land management = hot career!", "📊 大数据+土地管理，这就业方向多时髦！"),
+    ("🏡 You'll help people get their home certificates!", "🏡 将来你们帮老百姓拿不动产权证，积德的事！"),
+    ("🏔️ From mountains to cities, you'll map it all!", "🏔️ 从山林到城市，将来都是你们去丈量！"),
+    ("💡 This is a golden age for land professionals!", "💡 现在是土地专业人才的黄金时代！"),
+    ("👏 You chose a stable and meaningful major!", "👏 你们选了个稳定又有意义的好专业！"),
+    ("🌏 Every inch of land matters to the country!", "🌏 每一寸土地都关系着国家发展大局！"),
 ]
 
 st.set_page_config(
@@ -62,7 +77,7 @@ if st.session_state.mascot_visits >= 3:
         top: 80px;
         right: 20px;
         z-index: 9999;
-        animation: float 3s ease-in-out infinite;
+        animation: float 3s ease-in-out infinite, fadeIn 0.5s ease-out, fadeOut 0.5s ease-in 5s forwards;
         display: flex;
         align-items: flex-start;
         gap: 10px;
@@ -70,6 +85,14 @@ if st.session_state.mascot_visits >= 3:
     @keyframes float {
         0%, 100% { transform: translateY(0px); }
         50% { transform: translateY(-10px); }
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; visibility: hidden; }
     }
     .mascot-avatar {
         font-size: 48px;
@@ -704,6 +727,7 @@ if 'student_name' not in st.session_state:
     st.session_state.map_score = 0
     st.session_state.map_total = 0
     st.session_state.flow_score = 0
+    st.session_state.start_time = datetime.datetime.now()
 
 # ============================================================
 # 侧边栏
@@ -1002,8 +1026,28 @@ elif module.startswith("🔍"):
     st.write(f"{t('共', 'Total')} {len(filtered)} {t('宗', 'parcels')}")
     st.dataframe(filtered, use_container_width=True, hide_index=True)
     st.markdown("---")
-    st.subheader(t("宗地图示例", "Sample Parcel Map"))
-    st.image(os.path.join(IMG_DIR, "img_parcel.png"), caption="GB0001", use_column_width=True)
+
+    # 选择要查看详情的宗地
+    if len(filtered) > 0:
+        parcel_ids = filtered["宗地号"].tolist()
+        selected_id = st.selectbox(t("选择要查看详情的宗地", "Select a parcel to view details"), parcel_ids)
+        selected = filtered[filtered["宗地号"] == selected_id].iloc[0]
+
+        c1, c2 = st.columns([1, 1])
+        with c1:
+            st.subheader(t("宗地详情", "Parcel Details"))
+            st.write(f"**{t('宗地号', 'Parcel No.')}：** {selected['宗地号']}")
+            st.write(f"**{t('坐落', 'Location')}：** {selected['坐落']}")
+            st.write(f"**{t('权利人', 'Right Holder')}：** {selected['权利人']}")
+            st.write(f"**{t('权属性质', 'Ownership')}：** {selected['权属性质']}")
+            st.write(f"**{t('地类', 'Land Class')}：** {selected['一级类']} - {selected['二级类']}")
+            st.write(f"**{t('面积', 'Area')}：** {selected['面积平方米']:.2f} ㎡ ≈ {selected['面积平方米']/666.67:.2f} 亩")
+            st.write(f"**{t('登记类型', 'Registration')}：** {selected['登记类型']}")
+        with c2:
+            st.subheader(t("宗地图示例", "Parcel Map"))
+            st.image(os.path.join(IMG_DIR, "img_parcel.png"),
+                     caption=f"{t('宗地号', 'Parcel No.')}: {selected['宗地号']} | {t('权利人', 'Holder')}: {selected['权利人']}",
+                     use_column_width=True)
 
 # ============================================================
 # 模块7：宗地图识别
@@ -1108,6 +1152,18 @@ elif module.startswith("📊"):
     sid = st.session_state.student_id or "-"
     st.write(f"**{t('姓名', 'Name')}：** {name}  |  **{t('班级', 'Class')}：** {cls}  |  **{t('学号', 'ID')}：** {sid}")
 
+    # 在线时长
+    elapsed = datetime.datetime.now() - st.session_state.start_time
+    minutes = int(elapsed.total_seconds() // 60)
+    seconds = int(elapsed.total_seconds() % 60)
+    total_answered = st.session_state.class_total + st.session_state.own_total + st.session_state.area_total + st.session_state.map_total
+
+    c1, c2 = st.columns(2)
+    with c1:
+        st.metric(t("⏱️ 本次学习时长", "⏱️ Study Time"), f"{minutes}分{seconds}秒")
+    with c2:
+        st.metric(t("📝 累计答题数", "📝 Questions Answered"), f"{total_answered} 题")
+
     st.markdown("---")
     st.subheader(t("各模块得分", "Module Scores"))
 
@@ -1140,7 +1196,9 @@ elif module.startswith("📊"):
 姓名 / Name: {name}
 班级 / Class: {cls}
 学号 / Student ID: {sid}
-时间 / Time: {now}
+学习时间 / Time: {now}
+在线时长 / Duration: {minutes}分{seconds}秒
+累计答题 / Total Questions: {total_answered} 题
 ----------------------------
 综合测验 Final Quiz: {quiz_score:.1f} 分
 土地分类练习 Classification: {class_pct:.1f}% ({st.session_state.class_score}/{st.session_state.class_total})
@@ -1153,9 +1211,17 @@ elif module.startswith("📊"):
 """
 
     st.markdown("---")
-    st.subheader(t("提交方式", "How to Submit"))
-    st.info(t("请将下方学习报告下载或截图，发送给老师邮箱 39116272@qq.com，或在课程群提交。",
-              "Please download or screenshot the report below and send to your teacher."))
+    st.subheader(t("提交给老师", "Submit to Teacher"))
+
+    # 一键发邮件按钮（调用学生本地邮件客户端）
+    import urllib.parse
+    subject = f"地籍管理实训报告 - {name} - {sid}"
+    body = report
+    mailto_link = f"mailto:39116272@qq.com?subject={urllib.parse.quote(subject)}&body={urllib.parse.quote(body)}"
+
+    st.markdown(f'<a href="{mailto_link}" target="_blank"><button style="background-color:#ff4b4b;color:white;padding:10px 20px;border:none;border-radius:8px;font-size:16px;cursor-pointer;">📧 一键发送学习报告给老师</button></a>', unsafe_allow_html=True)
+    st.caption(t("点击后会自动打开你的邮件客户端，收件人、正文都已填好，点发送即可。",
+                 "Click to open your email client with everything filled in, just hit send."))
 
     st.download_button(
         label=t("📥 下载学习报告（.txt）", "📥 Download Report (.txt)"),
