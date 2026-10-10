@@ -626,9 +626,11 @@ with st.sidebar.expander(t("👤 学生信息登记", "Student Registration"), e
 
 # 模块导航
 modules_zh = ["📖 知识学习", "🌾 土地分类练习", "⚖️ 权属判断", "📐 面积计算实训",
-              "🔢 调查流程排序", "🔍 宗地数据查询", "🗺️ 宗地图识别", "📝 综合测验", "ℹ️ 使用说明"]
+              "🔢 调查流程排序", "🔍 宗地数据查询", "🗺️ 宗地图识别", "📝 综合测验",
+              "📊 学习统计与提交", "ℹ️ 使用说明"]
 modules_en = ["📖 Knowledge", "🌾 Land Classification", "⚖️ Ownership", "📐 Area Calculation",
-              "🔢 Survey Procedure", "🔍 Parcel Search", "🗺️ Parcel Map Quiz", "📝 Final Quiz", "ℹ️ Help"]
+              "🔢 Survey Procedure", "🔍 Parcel Search", "🗺️ Parcel Map Quiz", "📝 Final Quiz",
+              "📊 My Scores & Report", "ℹ️ Help"]
 modules = modules_zh if st.session_state.lang == "zh" else modules_en
 module = st.sidebar.radio(t("功能模块", "Modules"), modules)
 
@@ -922,7 +924,77 @@ elif module.startswith("📝"):
                 st.rerun()
 
 # ============================================================
-# 模块9：使用说明
+# 模块9：学习统计与提交
+# ============================================================
+elif module.startswith("📊"):
+    st.header(t("📊 学习统计与成绩提交", "📊 My Scores & Report"))
+    st.subheader(t("学生信息", "Student Information"))
+    name = st.session_state.student_name or t("未登记", "Not registered")
+    cls = st.session_state.student_class or "-"
+    sid = st.session_state.student_id or "-"
+    st.write(f"**{t('姓名', 'Name')}：** {name}  |  **{t('班级', 'Class')}：** {cls}  |  **{t('学号', 'ID')}：** {sid}")
+
+    st.markdown("---")
+    st.subheader(t("各模块得分", "Module Scores"))
+
+    quiz_score = st.session_state.get("quiz_score", 0)
+    class_pct = (st.session_state.class_score / st.session_state.class_total * 100) if st.session_state.class_total > 0 else 0
+    own_pct = (st.session_state.own_score / st.session_state.own_total * 100) if st.session_state.own_total > 0 else 0
+    area_pct = (st.session_state.area_score / st.session_state.area_total * 100) if st.session_state.area_total > 0 else 0
+    map_pct = (st.session_state.map_score / st.session_state.map_total * 100) if st.session_state.map_total > 0 else 0
+    flow_pct = st.session_state.flow_score / 8 * 100
+
+    score_data = {
+        t("模块", "Module"): [t("综合测验", "Final Quiz"), t("土地分类练习", "Classification"),
+                            t("权属判断", "Ownership"), t("面积计算", "Area Calc"),
+                            t("宗地图识别", "Map Quiz"), t("流程排序", "Procedure")],
+        t("得分率", "Score %"): [f"{quiz_score:.0f}%", f"{class_pct:.1f}%",
+                               f"{own_pct:.1f}%", f"{area_pct:.1f}%",
+                               f"{map_pct:.1f}%", f"{flow_pct:.1f}%"],
+    }
+    st.dataframe(score_data, use_container_width=True, hide_index=True)
+
+    # 综合成绩 = 测验40% + 分类15% + 权属15% + 面积10% + 识图10% + 流程10%
+    total = quiz_score*0.4 + class_pct*0.15 + own_pct*0.15 + area_pct*0.1 + map_pct*0.1 + flow_pct*0.1
+    st.markdown("---")
+    st.subheader(f"🎯 {t('综合成绩', 'Overall Score')}：**{total:.1f}** {t('分', 'points')}")
+
+    # 生成报告文本
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    report = f"""地籍管理实训系统 学习报告
+============================
+姓名 / Name: {name}
+班级 / Class: {cls}
+学号 / Student ID: {sid}
+时间 / Time: {now}
+----------------------------
+综合测验 Final Quiz: {quiz_score:.1f} 分
+土地分类练习 Classification: {class_pct:.1f}% ({st.session_state.class_score}/{st.session_state.class_total})
+权属判断 Ownership: {own_pct:.1f}% ({st.session_state.own_score}/{st.session_state.own_total})
+面积计算 Area Calc: {area_pct:.1f}% ({st.session_state.area_score}/{st.session_state.area_total})
+宗地图识别 Map Quiz: {map_pct:.1f}% ({st.session_state.map_score}/{st.session_state.map_total})
+流程排序 Procedure: {flow_pct:.1f}% ({st.session_state.flow_score}/8)
+----------------------------
+综合成绩 Overall: {total:.1f} 分
+"""
+
+    st.markdown("---")
+    st.subheader(t("提交方式", "How to Submit"))
+    st.info(t("请将下方学习报告下载或截图，发送给老师邮箱 39116272@qq.com，或在课程群提交。",
+              "Please download or screenshot the report below and send to your teacher."))
+
+    st.download_button(
+        label=t("📥 下载学习报告（.txt）", "📥 Download Report (.txt)"),
+        data=report,
+        file_name=f"学习报告_{name}_{now[:10]}.txt",
+        mime="text/plain",
+    )
+
+    with st.expander(t("预览报告内容", "Preview Report")):
+        st.code(report)
+
+# ============================================================
+# 模块10：使用说明
 # ============================================================
 elif module.startswith("ℹ️"):
     st.header(t("ℹ️ 使用说明", "ℹ️ Help"))
