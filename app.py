@@ -77,7 +77,7 @@ if st.session_state.mascot_visits >= 3:
         top: 80px;
         right: 20px;
         z-index: 9999;
-        animation: float 3s ease-in-out infinite, fadeIn 0.5s ease-out, fadeOut 0.5s ease-in 5s forwards;
+        animation: float 3s ease-in-out infinite;
         display: flex;
         align-items: flex-start;
         gap: 10px;
@@ -86,11 +86,11 @@ if st.session_state.mascot_visits >= 3:
         0%, 100% { transform: translateY(0px); }
         50% { transform: translateY(-10px); }
     }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
+    @keyframes bubbleFadeIn {
+        from { opacity: 0; transform: translateX(20px); }
+        to { opacity: 1; transform: translateX(0); }
     }
-    @keyframes fadeOut {
+    @keyframes bubbleFadeOut {
         from { opacity: 1; }
         to { opacity: 0; visibility: hidden; }
     }
@@ -108,6 +108,7 @@ if st.session_state.mascot_visits >= 3:
         box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         position: relative;
         margin-top: 8px;
+        animation: bubbleFadeIn 0.5s ease-out, bubbleFadeOut 0.5s ease-in 5s forwards;
     }
     .mascot-bubble::before {
         content: '';
@@ -728,6 +729,11 @@ if 'student_name' not in st.session_state:
     st.session_state.map_total = 0
     st.session_state.flow_score = 0
     st.session_state.start_time = datetime.datetime.now()
+    # 生成唯一防伪码
+    import hashlib, secrets
+    raw = f"{name}{sid}{datetime.datetime.now()}{secrets.token_hex(8)}"
+    code = hashlib.sha256(raw.encode()).hexdigest().upper()[:16]
+    st.session_state.verify_code = f"DJGL-{code[:4]}-{code[4:8]}-{code[8:12]}-{code[12:16]}"
 
 # ============================================================
 # 侧边栏
@@ -872,9 +878,16 @@ elif module.startswith("🌾"):
             if os.path.exists(p): st.image(p, caption=f"{sub} / {sub_en}", width=300)
     else:
         # 模式B：给出一个一级类，从4个二级类里选出正确的那个
-        if 'class_b_idx' not in st.session_state or st.button(t("换一题", "Next Question")):
+        if 'class_b_idx' not in st.session_state or 'class_b_opts' not in st.session_state or st.button(t("换一题", "Next Question")):
             st.session_state.class_b_idx = random.randrange(len(CLASS_PRACTICE))
+            # 生成固定选项，存在session里，不会每次点单选就变
+            idx = st.session_state.class_b_idx
+            wrong = random.sample([i for i in range(len(CLASS_PRACTICE)) if i != idx], 3)
+            all_opts = [idx] + wrong
+            random.shuffle(all_opts)
+            st.session_state.class_b_opts = all_opts
         idx = st.session_state.class_b_idx
+        all_opts = st.session_state.class_b_opts
         correct_sub, correct_first, code = CLASS_PRACTICE[idx]
         correct_sub_en = ["Paddy field","Irrigated land","Dry land","Orchard","Tea plantation",
                   "Arbor forest","Bamboo forest","Natural pasture","Other grassland",
@@ -882,10 +895,6 @@ elif module.startswith("🌾"):
                   "Urban residential","Rural homestead","Education","Medical","Parks & green",
                   "Military","Religious","Funeral","Railway","Highway","Rural road",
                   "River","Reservoir","Canal","Pond","Idle","Agri-facility","Sandy","Bare","Field ridge"][idx]
-        # 随机选3个干扰项
-        wrong = random.sample([i for i in range(len(CLASS_PRACTICE)) if i != idx], 3)
-        all_opts = [idx] + wrong
-        random.shuffle(all_opts)
         opt_labels = []
         for i in all_opts:
             sub, first, _ = CLASS_PRACTICE[i]
@@ -925,10 +934,15 @@ elif module.startswith("⚖️"):
     st.markdown(f"**{t('判断下列土地属于国家所有还是集体所有：', 'Is the following land State-owned or collectively-owned?')}**")
     st.markdown(f"### “{statement}”")
     if st.session_state.lang == "en": st.markdown(f"*{statement_en}*")
-    choice = st.radio("", [t("国家所有（国有）", "State-owned"), t("集体所有", "Collectively-owned")])
+    choice = st.radio("", [t("国家所有（国有）", "State-owned"), t("集体所有", "Collectively-owned")], key="own_choice")
     if st.button(t("提交判断", "Submit")):
         st.session_state.own_total += 1
-        correct = "国有" if choice.startswith(t("国家", "State")) else "集体"
+        correct = "国有" if choice.startswith(t("国家", "State-owned")) else "集体"
+        # 上面的startswith在双语模式下可能匹配不上，直接判断是否包含国有/State
+        if "国有" in choice or "State-owned" in choice:
+            correct = "国有"
+        else:
+            correct = "集体"
         if correct == answer:
             st.success(f"✅ {t('判断正确！', 'Correct!')}")
             st.session_state.own_score += 1
@@ -954,7 +968,25 @@ elif module.startswith("📐"):
     st.markdown(f"💡 {phint}")
     pts = parcel["pts"]
     df_pts = pd.DataFrame(pts, columns=["X(m)", "Y(m)"])
-    st.dataframe(df_pts, use_container_width=True)
+    c1, c2 = st.columns([1, 1])
+    with c1:
+        st.dataframe(df_pts, use_container_width=True)
+    with c2:
+        # 自动画宗地图
+        import matplotlib.pyplot as plt
+        fig, ax = plt.subplots(figsize=(4, 3))
+        xs = [p[0] for p in pts] + [pts[0][0]]
+        ys = [p[1] for p in pts] + [pts[0][1]]
+        ax.fill(xs, ys, alpha=0.3, color='#4CAF50')
+        ax.plot(xs, ys, 'o-', color='#2E7D32', linewidth=2, markersize=6)
+        for i, (x, y) in enumerate(pts):
+            ax.annotate(f'P{i}', (x, y), textcoords="offset points", xytext=(5,5), fontsize=9)
+        ax.set_xlabel('X (m)')
+        ax.set_ylabel('Y (m)')
+        ax.set_title(pname)
+        ax.grid(alpha=0.3)
+        ax.set_aspect('equal')
+        st.pyplot(fig, use_container_width=True)
     st.caption(t("提示：使用鞋带公式 S = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|", "Hint: Use shoelace formula S = ½|Σ(xi·yi+1 − xi+1·yi)|"))
     user_area = st.number_input(t("请输入你计算的宗地面积（平方米）", "Enter your calculated area (m²)"),
                                 min_value=0.0, step=1.0, format="%.2f")
@@ -1177,6 +1209,8 @@ elif module.startswith("📊"):
     with c2:
         st.metric(t("📝 累计答题数", "📝 Questions Answered"), f"{total_answered} 题")
 
+    st.info(f"🔐 {t('本报告防伪码', 'Report Verification Code')}：**{st.session_state.verify_code}**")
+
     st.markdown("---")
     st.subheader(t("各模块得分", "Module Scores"))
 
@@ -1221,46 +1255,37 @@ elif module.startswith("📊"):
 流程排序 Procedure: {flow_pct:.1f}% ({st.session_state.flow_score}/8)
 ----------------------------
 综合成绩 Overall: {total:.1f} 分
+防伪码 Verify Code: {st.session_state.verify_code}
 """
 
     st.markdown("---")
     st.subheader(t("提交给老师", "Submit to Teacher"))
 
-    # 直接提交表单，数据自动发到老师邮箱（无需学生配置邮件）
-    with st.form("submit_report_form"):
-        st.write(t("点击下面的按钮，直接把你的学习报告提交给老师，无需发邮件。",
-                   "Click the button below to submit your report directly to your teacher."))
-        submitted = st.form_submit_button(t("🚀 一键提交学习报告给老师", "🚀 Submit Report to Teacher"),
-                                          type="primary")
-        if submitted:
-            # 用formsubmit.co免费服务，POST数据直接发到老师邮箱
-            import urllib.request
-            form_data = urllib.parse.urlencode({
-                "_subject": f"地籍管理实训报告 - {name} - {sid}",
-                "_template": "table",
-                "姓名 Name": name,
-                "班级 Class": cls,
-                "学号 Student ID": sid,
-                "学习时间 Time": now,
-                "在线时长 Duration": f"{minutes}分{seconds}秒",
-                "累计答题 Questions": f"{total_answered} 题",
-                "综合测验 Quiz": f"{quiz_score:.1f} 分",
-                "土地分类练习 Classification": f"{class_pct:.1f}% ({st.session_state.class_score}/{st.session_state.class_total})",
-                "权属判断 Ownership": f"{own_pct:.1f}% ({st.session_state.own_score}/{st.session_state.own_total})",
-                "面积计算 Area": f"{area_pct:.1f}% ({st.session_state.area_score}/{st.session_state.area_total})",
-                "宗地图识别 Map Quiz": f"{map_pct:.1f}% ({st.session_state.map_score}/{st.session_state.map_total})",
-                "流程排序 Procedure": f"{flow_pct:.1f}% ({st.session_state.flow_score}/8)",
-                "综合成绩 Overall": f"{total:.1f} 分",
-            }).encode('utf-8')
-            try:
-                req = urllib.request.Request("https://formsubmit.co/39116272@qq.com", data=form_data, method="POST")
-                urllib.request.urlopen(req, timeout=10)
-                st.success(t("✅ 提交成功！老师已经收到你的学习报告。",
-                             "✅ Submitted! Your teacher has received your report."))
-                st.balloons()
-            except Exception as e:
-                st.error(t("提交失败，请截图成绩页发给老师。", "Submit failed, please screenshot your scores."))
-
+    # 用HTML表单直接从学生浏览器提交到formsubmit，成功率高
+    form_html = f"""
+    <form action="https://formsubmit.co/39116272@qq.com" method="POST">
+        <input type="hidden" name="_subject" value="地籍管理实训报告 - {name} - {sid}">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="姓名" value="{name}">
+        <input type="hidden" name="班级" value="{cls}">
+        <input type="hidden" name="学号" value="{sid}">
+        <input type="hidden" name="学习时间" value="{now}">
+        <input type="hidden" name="在线时长" value="{minutes}分{seconds}秒">
+        <input type="hidden" name="累计答题数" value="{total_answered}题">
+        <input type="hidden" name="综合测验" value="{quiz_score:.1f}分">
+        <input type="hidden" name="土地分类练习" value="{class_pct:.1f}% ({st.session_state.class_score}/{st.session_state.class_total})">
+        <input type="hidden" name="权属判断" value="{own_pct:.1f}% ({st.session_state.own_score}/{st.session_state.own_total})">
+        <input type="hidden" name="面积计算" value="{area_pct:.1f}% ({st.session_state.area_score}/{st.session_state.area_total})">
+        <input type="hidden" name="宗地图识别" value="{map_pct:.1f}% ({st.session_state.map_score}/{st.session_state.map_total})">
+        <input type="hidden" name="流程排序" value="{flow_pct:.1f}% ({st.session_state.flow_score}/8)">
+        <input type="hidden" name="综合成绩" value="{total:.1f}分">
+        <input type="hidden" name="防伪码" value="{st.session_state.verify_code}">
+        <button type="submit" style="background-color:#ff4b4b;color:white;padding:12px 24px;border:none;border-radius:8px;font-size:16px;cursor-pointer;width:100%;">
+            🚀 {t('一键提交学习报告给老师', 'Submit Report to Teacher')}
+        </button>
+    </form>
+    """
+    st.markdown(form_html, unsafe_allow_html=True)
     st.caption(t("*首次提交老师邮箱会收到验证邮件，点确认后即可正常接收。",
                  "*First submission requires email confirmation from teacher."))
 
