@@ -958,15 +958,28 @@ elif module.startswith("📐"):
     st.caption(t("提示：使用鞋带公式 S = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|", "Hint: Use shoelace formula S = ½|Σ(xi·yi+1 − xi+1·yi)|"))
     user_area = st.number_input(t("请输入你计算的宗地面积（平方米）", "Enter your calculated area (m²)"),
                                 min_value=0.0, step=1.0, format="%.2f")
-    if st.button(t("提交答案", "Submit")):
-        correct = shoelace(pts)
-        st.session_state.area_total += 1
-        if abs(user_area - correct) < 0.5:
-            st.success(f"✅ {t('计算正确！面积', 'Correct! Area')} = {correct:.2f} ㎡ ≈ {mu_area(correct):.2f} {t('亩', 'mu')}")
-            st.session_state.area_score += 1
-            if random.random() < 0.5: mascot_say()
-        else:
-            st.error(f"❌ {t('计算有误。正确答案', 'Wrong. Correct answer')}：{correct:.2f} ㎡ ≈ {mu_area(correct):.2f} {t('亩', 'mu')}")
+    c1, c2 = st.columns(2)
+    with c1:
+        if st.button(t("提交答案", "Submit")):
+            correct = shoelace(pts)
+            st.session_state.area_total += 1
+            if abs(user_area - correct) < 0.5:
+                st.success(f"✅ {t('计算正确！面积', 'Correct! Area')} = {correct:.2f} ㎡ ≈ {mu_area(correct):.2f} {t('亩', 'mu')}")
+                st.session_state.area_score += 1
+                if random.random() < 0.5: mascot_say()
+            else:
+                st.error(f"❌ {t('计算有误。正确答案', 'Wrong. Correct answer')}：{correct:.2f} ㎡ ≈ {mu_area(correct):.2f} {t('亩', 'mu')}")
+    with c2:
+        if st.button(t("👀 查看参考答案", "👀 View Answer")):
+            correct = shoelace(pts)
+            # 计算鞋带公式的详细步骤
+            s1 = sum(pts[i][0] * pts[(i+1) % len(pts)][1] for i in range(len(pts)))
+            s2 = sum(pts[i][1] * pts[(i+1) % len(pts)][0] for i in range(len(pts)))
+            st.info(f"📝 {t('参考答案', 'Reference Answer')}：\n"
+                    f"Σ(xᵢyᵢ₊₁) = {s1:.2f}\n"
+                    f"Σ(yᵢxᵢ₊₁) = {s2:.2f}\n"
+                    f"S = ½|{s1:.2f} - {s2:.2f}| = {correct:.2f} ㎡\n"
+                    f"≈ {mu_area(correct):.2f} 亩")
     st.caption(f"{t('当前得分', 'Score')}：{st.session_state.area_score} / {st.session_state.area_total}")
 
 # ============================================================
