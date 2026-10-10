@@ -1213,15 +1213,43 @@ elif module.startswith("📊"):
     st.markdown("---")
     st.subheader(t("提交给老师", "Submit to Teacher"))
 
-    # 一键发邮件按钮（调用学生本地邮件客户端）
-    import urllib.parse
-    subject = f"地籍管理实训报告 - {name} - {sid}"
-    body = report
-    mailto_link = f"mailto:39116272@qq.com?subject={urllib.parse.quote(subject)}&body={urllib.parse.quote(body)}"
+    # 直接提交表单，数据自动发到老师邮箱（无需学生配置邮件）
+    with st.form("submit_report_form"):
+        st.write(t("点击下面的按钮，直接把你的学习报告提交给老师，无需发邮件。",
+                   "Click the button below to submit your report directly to your teacher."))
+        submitted = st.form_submit_button(t("🚀 一键提交学习报告给老师", "🚀 Submit Report to Teacher"),
+                                          type="primary")
+        if submitted:
+            # 用formsubmit.co免费服务，POST数据直接发到老师邮箱
+            import urllib.request
+            form_data = urllib.parse.urlencode({
+                "_subject": f"地籍管理实训报告 - {name} - {sid}",
+                "_template": "table",
+                "姓名 Name": name,
+                "班级 Class": cls,
+                "学号 Student ID": sid,
+                "学习时间 Time": now,
+                "在线时长 Duration": f"{minutes}分{seconds}秒",
+                "累计答题 Questions": f"{total_answered} 题",
+                "综合测验 Quiz": f"{quiz_score:.1f} 分",
+                "土地分类练习 Classification": f"{class_pct:.1f}% ({st.session_state.class_score}/{st.session_state.class_total})",
+                "权属判断 Ownership": f"{own_pct:.1f}% ({st.session_state.own_score}/{st.session_state.own_total})",
+                "面积计算 Area": f"{area_pct:.1f}% ({st.session_state.area_score}/{st.session_state.area_total})",
+                "宗地图识别 Map Quiz": f"{map_pct:.1f}% ({st.session_state.map_score}/{st.session_state.map_total})",
+                "流程排序 Procedure": f"{flow_pct:.1f}% ({st.session_state.flow_score}/8)",
+                "综合成绩 Overall": f"{total:.1f} 分",
+            }).encode('utf-8')
+            try:
+                req = urllib.request.Request("https://formsubmit.co/39116272@qq.com", data=form_data, method="POST")
+                urllib.request.urlopen(req, timeout=10)
+                st.success(t("✅ 提交成功！老师已经收到你的学习报告。",
+                             "✅ Submitted! Your teacher has received your report."))
+                st.balloons()
+            except Exception as e:
+                st.error(t("提交失败，请截图成绩页发给老师。", "Submit failed, please screenshot your scores."))
 
-    st.markdown(f'<a href="{mailto_link}" target="_blank"><button style="background-color:#ff4b4b;color:white;padding:10px 20px;border:none;border-radius:8px;font-size:16px;cursor-pointer;">📧 一键发送学习报告给老师</button></a>', unsafe_allow_html=True)
-    st.caption(t("点击后会自动打开你的邮件客户端，收件人、正文都已填好，点发送即可。",
-                 "Click to open your email client with everything filled in, just hit send."))
+    st.caption(t("*首次提交老师邮箱会收到验证邮件，点确认后即可正常接收。",
+                 "*First submission requires email confirmation from teacher."))
 
     st.download_button(
         label=t("📥 下载学习报告（.txt）", "📥 Download Report (.txt)"),
