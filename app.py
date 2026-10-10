@@ -40,65 +40,71 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMG_DIR = os.path.join(BASE_DIR, "images")
 
 # ============================================================
-# 右上角固定漂浮吉祥物
+# 右上角固定漂浮吉祥物（答题几次后才出现，自动换话）
 # ============================================================
-if 'mascot_msg' not in st.session_state:
+if 'mascot_visits' not in st.session_state:
+    st.session_state.mascot_visits = 0
+st.session_state.mascot_visits += 1
+
+# 答了3题后吉祥物才出现
+if st.session_state.mascot_visits >= 3:
+    if 'mascot_msg' not in st.session_state:
+        st.session_state.mascot_msg = random.choice(MASCOT_QUOTES)
+        st.session_state.mascot_count = 0
+
+    # 每次交互都换一句话
     st.session_state.mascot_msg = random.choice(MASCOT_QUOTES)
 
-# 随机切换台词
-if random.random() < 0.05:
-    st.session_state.mascot_msg = random.choice(MASCOT_QUOTES)
-
-_mascot_css = """
-<style>
-.mascot-float {
-    position: fixed;
-    top: 80px;
-    right: 20px;
-    z-index: 9999;
-    animation: float 3s ease-in-out infinite;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-}
-.mascot-avatar {
-    font-size: 48px;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
-}
-.mascot-bubble {
-    background: #fff;
-    border: 2px solid #ffd700;
-    border-radius: 12px;
-    padding: 8px 12px;
-    max-width: 250px;
-    font-size: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    position: relative;
-    margin-top: 8px;
-}
-.mascot-bubble::before {
-    content: '';
-    position: absolute;
-    left: -8px;
-    top: 15px;
-    border-width: 8px 8px 8px 0;
-    border-style: solid;
-    border-color: transparent #ffd700 transparent transparent;
-}
-</style>
-"""
-_en, _zh = st.session_state.mascot_msg
-_bubble_text = f"👨‍🏫 {_zh}<br><small><i>{_en}</i></small>"
-st.markdown(_mascot_css + f"""
-<div class="mascot-float">
-    <div class="mascot-bubble">{_bubble_text}</div>
-    <div class="mascot-avatar">👨‍🏫</div>
-</div>
-""", unsafe_allow_html=True)
+    _mascot_css = """
+    <style>
+    .mascot-float {
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        z-index: 9999;
+        animation: float 3s ease-in-out infinite;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    .mascot-avatar {
+        font-size: 48px;
+        filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+    }
+    .mascot-bubble {
+        background: #fff;
+        border: 2px solid #ffd700;
+        border-radius: 12px;
+        padding: 8px 12px;
+        max-width: 250px;
+        font-size: 14px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        position: relative;
+        margin-top: 8px;
+    }
+    .mascot-bubble::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 15px;
+        border-width: 8px 8px 8px 0;
+        border-style: solid;
+        border-color: transparent #ffd700 transparent transparent;
+    }
+    </style>
+    """
+    _en, _zh = st.session_state.mascot_msg
+    _bubble_text = f"👨‍🏫 {_zh}<br><small><i>{_en}</i></small>"
+    st.markdown(_mascot_css + f"""
+    <div class="mascot-float">
+        <div class="mascot-bubble">{_bubble_text}</div>
+        <div class="mascot-avatar">👨‍🏫</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ============================================================
 # 语言切换
@@ -841,18 +847,45 @@ elif module.startswith("🌾"):
             p = os.path.join(IMG_DIR, CLASS_IMAGES[idx])
             if os.path.exists(p): st.image(p, caption=f"{sub} / {sub_en}", width=300)
     else:
-        target = st.selectbox(t("选择一级地类", "Select first-level class"),
-                              [t(c, FIRST_CLASSES_EN[i]) for i, c in enumerate(FIRST_CLASSES)])
-        target_zh = FIRST_CLASSES[ [t(c, FIRST_CLASSES_EN[i]) for i,c in enumerate(FIRST_CLASSES)].index(target) ]
-        candidates = [(i, c[0]) for i, c in enumerate(CLASS_PRACTICE) if c[1] == target_zh]
-        if candidates:
-            opts = [c[1] for c in candidates]
-            st.markdown(f"**{t('请选出属于', 'Pick the second-level class of')} “{target}” {t('的二级地类', '')}**")
-            chosen = st.radio("", opts, key="class_b")
-            if st.button(t("确认选择", "Confirm")):
-                st.session_state.class_total += 1
+        # 模式B：给出一个一级类，从4个二级类里选出正确的那个
+        if 'class_b_idx' not in st.session_state or st.button(t("换一题", "Next Question")):
+            st.session_state.class_b_idx = random.randrange(len(CLASS_PRACTICE))
+        idx = st.session_state.class_b_idx
+        correct_sub, correct_first, code = CLASS_PRACTICE[idx]
+        correct_sub_en = ["Paddy field","Irrigated land","Dry land","Orchard","Tea plantation",
+                  "Arbor forest","Bamboo forest","Natural pasture","Other grassland",
+                  "Retail commercial","Catering","Hotel","Industrial","Warehousing","Mining",
+                  "Urban residential","Rural homestead","Education","Medical","Parks & green",
+                  "Military","Religious","Funeral","Railway","Highway","Rural road",
+                  "River","Reservoir","Canal","Pond","Idle","Agri-facility","Sandy","Bare","Field ridge"][idx]
+        # 随机选3个干扰项
+        wrong = random.sample([i for i in range(len(CLASS_PRACTICE)) if i != idx], 3)
+        all_opts = [idx] + wrong
+        random.shuffle(all_opts)
+        opt_labels = []
+        for i in all_opts:
+            sub, first, _ = CLASS_PRACTICE[i]
+            sub_en = ["Paddy field","Irrigated land","Dry land","Orchard","Tea plantation",
+                  "Arbor forest","Bamboo forest","Natural pasture","Other grassland",
+                  "Retail commercial","Catering","Hotel","Industrial","Warehousing","Mining",
+                  "Urban residential","Rural homestead","Education","Medical","Parks & green",
+                  "Military","Religious","Funeral","Railway","Highway","Rural road",
+                  "River","Reservoir","Canal","Pond","Idle","Agri-facility","Sandy","Bare","Field ridge"][i]
+            opt_labels.append(f"{sub} / {sub_en}")
+        st.markdown(f"**{t('下列哪个二级地类属于', 'Which second-level class belongs to')} “{correct_first} / {FIRST_CLASSES_EN[FIRST_CLASSES.index(correct_first)]}”？**")
+        chosen = st.radio("", opt_labels, key="class_b_opt")
+        if st.button(t("提交答案", "Submit")):
+            st.session_state.class_total += 1
+            chosen_idx = all_opts[opt_labels.index(chosen)]
+            if chosen_idx == idx:
+                st.success(f"✅ {t('正确！', 'Correct!')} {correct_sub} / {correct_sub_en} {t('属于', 'belongs to')} {correct_first}")
                 st.session_state.class_score += 1
-                st.success(f"✅ {t('正确！', 'Correct!')} {chosen} {t('属于', 'belongs to')} {target}")
+                st.balloons()
+                if random.random() < 0.5: mascot_say()
+            else:
+                st.error(f"❌ {t('错误。正确答案', 'Wrong. Correct answer')}：{correct_sub} / {correct_sub_en}")
+            p = os.path.join(IMG_DIR, CLASS_IMAGES[idx])
+            if os.path.exists(p): st.image(p, caption=f"{correct_sub} / {correct_sub_en}", width=300)
     st.caption(f"{t('当前得分', 'Score')}：{st.session_state.class_score} / {st.session_state.class_total}")
 
 # ============================================================
