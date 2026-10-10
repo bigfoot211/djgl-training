@@ -592,6 +592,33 @@ def mu_area(sqm):
     return sqm / 666.67
 
 # ============================================================
+# 张老师吉祥物随机互动
+# ============================================================
+MASCOT_QUOTES = [
+    ("👍 Great job!", "👍 做得不错！"),
+    ("💪 Keep going, you can do it!", "💪 继续加油，你可以的！"),
+    ("🤔 What do you think of Professor Zhang?", "🤔 你觉得张老师人怎么样？"),
+    ("📚 Are you interested in this course?", "📚 你对这门课程感兴趣吗？"),
+    ("🎓 What are your plans after graduation?", "🎓 你毕业后准备干嘛？"),
+    ("😊 Did you pay attention in class today?", "😊 今天上课认真听了吗？"),
+    ("💡 Any questions? Feel free to ask!", "💡 有什么不懂的随时问！"),
+    ("🌟 Well done! Keep it up!", "🌟 做得好，保持住！"),
+    ("😎 You're getting better and better!", "😎 你越来越棒了！"),
+    ("🏆 Aim for the best!", "🏆 争取拿满分！"),
+    ("📝 Remember: practice makes perfect!", "📝 记住：熟能生巧！"),
+    ("🌍 Land management is a promising field!", "🌍 土地管理是个很有前景的领域！"),
+    ("🤓 Do you want to pursue graduate studies?", "🤓 你有考研的打算吗？"),
+    ("💼 Any internship plans?", "💼 有没有实习计划呀？"),
+    ("🎉 Every question makes you stronger!", "🎉 每做一道题你就更强一点！"),
+]
+
+def mascot_say():
+    """随机弹出张老师的话"""
+    en, zh = random.choice(MASCOT_QUOTES)
+    text = f"👨‍🏫 {zh} / {en}"
+    st.toast(text, icon="👨‍🏫")
+
+# ============================================================
 # 会话状态
 # ============================================================
 if 'student_name' not in st.session_state:
@@ -699,6 +726,7 @@ elif module.startswith("🌾"):
                 st.success(f"✅ {t('正确', 'Correct')}！{sub} → {first}（{code}）")
                 st.session_state.class_score += 1
                 st.balloons()
+                if random.random() < 0.5: mascot_say()
             else:
                 st.error(f"❌ {t('错误。正确答案', 'Wrong. Correct answer')}：{first} / {first_en}（{code}）")
             p = os.path.join(IMG_DIR, CLASS_IMAGES[idx])
@@ -738,6 +766,7 @@ elif module.startswith("⚖️"):
         if correct == answer:
             st.success(f"✅ {t('判断正确！', 'Correct!')}")
             st.session_state.own_score += 1
+            if random.random() < 0.5: mascot_say()
         else:
             st.error(f"❌ {t('判断错误。正确答案', 'Wrong. Correct answer')}：{t(answer, 'State-owned' if answer=='国有' else 'Collectively-owned')}")
         st.info(f"📖 {t('解析', 'Explanation')}：{explain if st.session_state.lang=='zh' else explain_en}")
@@ -769,6 +798,7 @@ elif module.startswith("📐"):
         if abs(user_area - correct) < 0.5:
             st.success(f"✅ {t('计算正确！面积', 'Correct! Area')} = {correct:.2f} ㎡ ≈ {mu_area(correct):.2f} {t('亩', 'mu')}")
             st.session_state.area_score += 1
+            if random.random() < 0.5: mascot_say()
         else:
             st.error(f"❌ {t('计算有误。正确答案', 'Wrong. Correct answer')}：{correct:.2f} ㎡ ≈ {mu_area(correct):.2f} {t('亩', 'mu')}")
     st.caption(f"{t('当前得分', 'Score')}：{st.session_state.area_score} / {st.session_state.area_total}")
@@ -855,6 +885,7 @@ elif module.startswith("🗺️"):
         if opts.index(choice) == correct:
             st.success("✅ " + t("回答正确！", "Correct!"))
             st.session_state.map_score += 1
+            if random.random() < 0.5: mascot_say()
         else:
             st.error(f"❌ {t('回答错误。正确答案', 'Wrong. Correct answer')}：{opts[correct]}")
         st.info(f"📖 {explain}")
@@ -911,6 +942,7 @@ elif module.startswith("📝"):
                 score = sum(1 for i, qi in enumerate(qidx_list)
                            if st.session_state.quiz_answers[i] == QUIZ_BANK[qi][2])
                 st.session_state.quiz_score = round(score / len(qidx_list) * 100, 1)
+                mascot_say()
                 st.rerun()
         else:
             score = st.session_state.quiz_score
