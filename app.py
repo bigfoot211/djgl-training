@@ -8,6 +8,27 @@ import streamlit as st
 import json, os, random, math, datetime
 import pandas as pd
 
+# ============================================================
+# 张老师吉祥物台词库（提前定义）
+# ============================================================
+MASCOT_QUOTES = [
+    ("👍 Great job!", "👍 做得不错！"),
+    ("💪 Keep going, you can do it!", "💪 继续加油，你可以的！"),
+    ("🤔 What do you think of Professor Zhang?", "🤔 你觉得张老师人怎么样？"),
+    ("📚 Are you interested in this course?", "📚 你对这门课程感兴趣吗？"),
+    ("🎓 What are your plans after graduation?", "🎓 你毕业后准备干嘛？"),
+    ("😊 Did you pay attention in class today?", "😊 今天上课认真听了吗？"),
+    ("💡 Any questions? Feel free to ask!", "💡 有什么不懂的随时问！"),
+    ("🌟 Well done! Keep it up!", "🌟 做得好，保持住！"),
+    ("😎 You're getting better and better!", "😎 你越来越棒了！"),
+    ("🏆 Aim for the best!", "🏆 争取拿满分！"),
+    ("📝 Remember: practice makes perfect!", "📝 记住：熟能生巧！"),
+    ("🌍 Land management is a promising field!", "🌍 土地管理是个很有前景的领域！"),
+    ("🤓 Do you want to pursue graduate studies?", "🤓 你有考研的打算吗？"),
+    ("💼 Any internship plans?", "💼 有没有实习计划呀？"),
+    ("🎉 Every question makes you stronger!", "🎉 每做一道题你就更强一点！"),
+]
+
 st.set_page_config(
     page_title="地籍管理实训系统 / Cadastral Training System",
     page_icon="📐",
@@ -655,24 +676,6 @@ def mu_area(sqm):
 # ============================================================
 # 张老师吉祥物随机互动
 # ============================================================
-MASCOT_QUOTES = [
-    ("👍 Great job!", "👍 做得不错！"),
-    ("💪 Keep going, you can do it!", "💪 继续加油，你可以的！"),
-    ("🤔 What do you think of Professor Zhang?", "🤔 你觉得张老师人怎么样？"),
-    ("📚 Are you interested in this course?", "📚 你对这门课程感兴趣吗？"),
-    ("🎓 What are your plans after graduation?", "🎓 你毕业后准备干嘛？"),
-    ("😊 Did you pay attention in class today?", "😊 今天上课认真听了吗？"),
-    ("💡 Any questions? Feel free to ask!", "💡 有什么不懂的随时问！"),
-    ("🌟 Well done! Keep it up!", "🌟 做得好，保持住！"),
-    ("😎 You're getting better and better!", "😎 你越来越棒了！"),
-    ("🏆 Aim for the best!", "🏆 争取拿满分！"),
-    ("📝 Remember: practice makes perfect!", "📝 记住：熟能生巧！"),
-    ("🌍 Land management is a promising field!", "🌍 土地管理是个很有前景的领域！"),
-    ("🤓 Do you want to pursue graduate studies?", "🤓 你有考研的打算吗？"),
-    ("💼 Any internship plans?", "💼 有没有实习计划呀？"),
-    ("🎉 Every question makes you stronger!", "🎉 每做一道题你就更强一点！"),
-]
-
 def mascot_say():
     """随机弹出张老师的话"""
     en, zh = random.choice(MASCOT_QUOTES)
