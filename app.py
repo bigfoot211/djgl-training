@@ -19,6 +19,67 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMG_DIR = os.path.join(BASE_DIR, "images")
 
 # ============================================================
+# 右上角固定漂浮吉祥物
+# ============================================================
+if 'mascot_msg' not in st.session_state:
+    st.session_state.mascot_msg = random.choice(MASCOT_QUOTES)
+
+# 随机切换台词
+if random.random() < 0.05:
+    st.session_state.mascot_msg = random.choice(MASCOT_QUOTES)
+
+_mascot_css = """
+<style>
+.mascot-float {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 9999;
+    animation: float 3s ease-in-out infinite;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+.mascot-avatar {
+    font-size: 48px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+}
+.mascot-bubble {
+    background: #fff;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    padding: 8px 12px;
+    max-width: 250px;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: relative;
+    margin-top: 8px;
+}
+.mascot-bubble::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 15px;
+    border-width: 8px 8px 8px 0;
+    border-style: solid;
+    border-color: transparent #ffd700 transparent transparent;
+}
+</style>
+"""
+_en, _zh = st.session_state.mascot_msg
+_bubble_text = f"👨‍🏫 {_zh}<br><small><i>{_en}</i></small>"
+st.markdown(_mascot_css + f"""
+<div class="mascot-float">
+    <div class="mascot-bubble">{_bubble_text}</div>
+    <div class="mascot-avatar">👨‍🏫</div>
+</div>
+""", unsafe_allow_html=True)
+
+# ============================================================
 # 语言切换
 # ============================================================
 if 'lang' not in st.session_state:
@@ -650,6 +711,51 @@ with st.sidebar.expander(t("👤 学生信息登记", "Student Registration"), e
     st.session_state.student_name = st.text_input(t("姓名", "Name"), st.session_state.student_name)
     st.session_state.student_class = st.text_input(t("班级", "Class"), st.session_state.student_class)
     st.session_state.student_id = st.text_input(t("学号", "Student ID"), st.session_state.student_id)
+
+# ============================================================
+# 张老师聊天机器人
+# ============================================================
+def teacher_reply(user_msg):
+    """根据学生输入返回张老师的回复"""
+    msg = user_msg.lower()
+    replies = [
+        (["你好", "老师好", "hello", "hi", "在吗"], "你好同学！有什么问题随时问我 😊\nHello! How can I help you?"),
+        (["难", "不会", "不懂", "学不会"], "别着急，慢慢来！先从知识学习模块开始看，多做几道题就熟练了。\nDon't worry, take your time. Start with the Knowledge section."),
+        (["考试", "怎么考", "考点", "重点"], "考试重点都在这9个模块里，把每个练习都做一遍，综合测验能上80分就没问题。\nThe exam covers all 9 modules; score 80+ on the quiz and you're good."),
+        (["作业", "任务", "要交"], "做完各模块练习后，到「学习统计与提交」下载报告发给我就行。\nFinish the modules, then download your report from the Scores page."),
+        (["毕业", "就业", "工作", "考研", "前途"], "土地资源管理专业就业面很广：自然资源局、规划院、房地产公司、测绘单位都可以，考研也很有优势。\nThis major has great career prospects: natural resources bureau, planning institutes, real estate, surveying."),
+        (["张老师", "你怎么样", "老师好帅", "老师人好"], "哈哈，谢谢同学！好好学这门课，将来你会比我更厉害 💪\nHaha thanks! Study hard, you'll be better than me!"),
+        (["感兴趣", "喜欢", "有意思"], "很好！地籍管理是不动产统一登记的基础，现在自然资源系统很缺这方面的人才。\nGreat! Cadastral management is the foundation of real estate registration."),
+        (["谢谢", "感谢", "thanks", "thank"], "不客气！有问题随时找我 🙏\nYou're welcome! Feel free to ask anytime."),
+        (["无聊", "不想学", "累"], "坚持一下！做完这道题休息10分钟，然后继续 💪\nHang in there! Take a 10-min break after this question."),
+    ]
+    for keywords, reply in replies:
+        for kw in keywords:
+            if kw in msg:
+                return reply
+    # 默认回复
+    defaults = [
+        "嗯，这个问题不错，你先看看知识学习模块里有没有相关内容 📖",
+        "Good question! Check the Knowledge section first 📖",
+        "你先做两道练习题试试，有具体问题再来问我 😊",
+        "Try doing a few practice questions first, then ask me if you get stuck.",
+        "这个问题我们下节课讲到，你先预习一下第四章地籍调查 📚",
+    ]
+    return random.choice(defaults)
+
+if 'chat_history' not in st.session_state:
+    st.session_state.chat_history = [("assistant", "👨‍🏫 同学你好！有什么问题可以问我哦～\nHi! What can I do for you?")]
+
+with st.sidebar.expander(t("💬 和张老师聊天", "💬 Chat with Prof. Zhang"), expanded=False):
+    for role, text in st.session_state.chat_history:
+        with st.chat_message(role):
+            st.write(text)
+    user_input = st.chat_input(t("说点什么...", "Say something..."))
+    if user_input:
+        st.session_state.chat_history.append(("user", user_input))
+        reply = teacher_reply(user_input)
+        st.session_state.chat_history.append(("assistant", "👨‍🏫 " + reply))
+        st.rerun()
 
 # 模块导航
 modules_zh = ["📖 知识学习", "🌾 土地分类练习", "⚖️ 权属判断", "📐 面积计算实训",
