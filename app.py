@@ -731,7 +731,7 @@ if 'student_name' not in st.session_state:
     st.session_state.start_time = datetime.datetime.now()
     # 生成唯一防伪码
     import hashlib, secrets
-    raw = f"{name}{sid}{datetime.datetime.now()}{secrets.token_hex(8)}"
+    raw = f"{st.session_state.student_name}{st.session_state.student_id}{datetime.datetime.now()}{secrets.token_hex(8)}"
     code = hashlib.sha256(raw.encode()).hexdigest().upper()[:16]
     st.session_state.verify_code = f"DJGL-{code[:4]}-{code[4:8]}-{code[8:12]}-{code[12:16]}"
 
