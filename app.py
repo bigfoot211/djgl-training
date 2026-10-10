@@ -1,18 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-《地籍管理》课程学习与实训系统 · Web版
+《地籍管理》课程学习与实训系统 · Web版 V2.5
 湖南农业大学 · 土地资源管理专业
-基于 Streamlit 构建，学生浏览器打开网址即可使用。
+中英双语 · 全部功能与桌面版一致
 """
 import streamlit as st
 import json, os, random, math, datetime
 import pandas as pd
 
-# ============================================================
-# 页面配置
-# ============================================================
 st.set_page_config(
-    page_title="地籍管理实训系统",
+    page_title="地籍管理实训系统 / Cadastral Training System",
     page_icon="📐",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -22,10 +19,18 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMG_DIR = os.path.join(BASE_DIR, "images")
 
 # ============================================================
-# 核心数据（从原 main.py 提取，业务逻辑完全复用）
+# 语言切换
 # ============================================================
+if 'lang' not in st.session_state:
+    st.session_state.lang = "zh"
 
-# 土地分类练习：(二级地类, 一级类, 一级类代码)
+def t(zh, en):
+    """双语显示"""
+    return f"{zh} / {en}" if st.session_state.lang == "zh" else en
+
+# ============================================================
+# 中文数据
+# ============================================================
 CLASS_PRACTICE = [
     ("水田", "耕地", "01"), ("水浇地", "耕地", "01"), ("旱地", "耕地", "01"),
     ("果园", "园地", "02"), ("茶园", "园地", "02"),
@@ -44,13 +49,14 @@ CLASS_PRACTICE = [
     ("沙地", "其他土地", "12"), ("裸土地", "其他土地", "12"), ("田坎", "其他土地", "12"),
 ]
 CLASS_IMAGES = [f"landuse/{i:02d}.png" for i in range(1, 36)]
-
-# 12个一级类列表
 FIRST_CLASSES = ["耕地", "园地", "林地", "草地", "商服用地", "工矿仓储用地",
                  "住宅用地", "公共管理与公共服务用地", "特殊用地", "交通运输用地",
                  "水域及水利设施用地", "其他土地"]
+FIRST_CLASSES_EN = ["Cultivated Land", "Garden Land", "Forest Land", "Grassland",
+                    "Commercial & Service", "Industrial, Mining & Warehousing",
+                    "Residential Land", "Public Admin. & Service", "Special Land",
+                    "Transportation Land", "Water & Conservancy", "Other Land"]
 
-# 权属判断题库：(陈述, 正确答案, 解析)
 OWNERSHIP_BANK = [
     ("城市市区的土地", "国有", "《土地管理法》规定：城市市区的土地属于国家所有。"),
     ("农村宅基地", "集体", "宅基地所有权归农民集体，农户只享有宅基地使用权。"),
@@ -65,8 +71,21 @@ OWNERSHIP_BANK = [
     ("村内空闲宅基地", "集体", "空闲宅基地的所有权仍属农民集体。"),
     ("城镇国有土地上开发建设的住宅小区", "国有", "住宅小区占地一般为出让的国有土地，所有权归国家。"),
 ]
+OWNERSHIP_BANK_EN = [
+    ("Land in urban built-up areas", "Under the Land Administration Law, land in urban built-up areas is owned by the State."),
+    ("Rural homestead", "Homestead ownership belongs to the farmer collective; farmers only hold the homestead use right."),
+    ("Private plots and private hills", "Land in rural and suburban areas, except as provided by law as State-owned, belongs to the farmer collectives."),
+    ("Former rural land lawfully expropriated by the State", "Expropriation is the statutory route for converting collective land into State ownership."),
+    ("Land of State-owned farms", "State-owned farm land is owned by the whole people (the State)."),
+    ("Former collective land occupied by village-run enterprises (not expropriated)", "Without lawful expropriation, ownership remains with the farmer collective."),
+    ("Urban park green space", "Land within urban built-up areas is State-owned, including parks and green space."),
+    ("Mountain forest owned by a villagers' group", "Collective land within a village/group belongs to that farmer collective."),
+    ("Land allocated by the State for military units", "Allocation only confers the use right; ownership remains with the State."),
+    ("Granted commodity-housing land purchased by urban residents", "Buyers acquire the State-owned land use right; ownership remains with the State."),
+    ("Idle homestead within a village", "Ownership of an idle homestead still belongs to the farmer collective."),
+    ("Residential communities built on State-owned urban land", "Such communities generally sit on granted State-owned land; ownership belongs to the State."),
+]
 
-# 初始地籍调查八步流程（正确顺序）
 SURVEY_STEPS = [
     ("准备工作", "成立调查机构、收集资料、编写技术设计书"),
     ("权属调查", "划分宗地、调查权属状况、组织指界、设置界标、勘丈界址"),
@@ -77,8 +96,17 @@ SURVEY_STEPS = [
     ("成果检查验收", "自检、互检、专检与验收"),
     ("成果整理归档", "编制地籍调查表、宗地图、地籍图、面积统计表并归档"),
 ]
+SURVEY_STEPS_EN = [
+    ("Preparatory Work", "Establish survey organs, collect materials and prepare technical design"),
+    ("Ownership Survey", "Delimit parcels, investigate ownership, organize boundary designation"),
+    ("Cadastral Control Survey", "Lay horizontal control networks (GPS, traverses, etc.)"),
+    ("Boundary Point Survey", "Determine boundary point coordinates analytically (total station, RTK)"),
+    ("Cadastral Mapping", "Map sheet cadastral maps and compile parcel maps"),
+    ("Area Calculation", "Compute parcel areas by analytic or graphical methods"),
+    ("Checking & Acceptance", "Self-check, mutual check, special check and acceptance"),
+    ("Archiving of Outputs", "Prepare survey forms, parcel maps, cadastral maps and area tables"),
+]
 
-# 宗地图识图题
 MAP_QUESTIONS = [
     ("图中标注的 J1、J2、J3、J4、J5 是什么要素？",
      ["房屋角点", "界址点", "水准点", "道路交叉点"], 1,
@@ -88,26 +116,26 @@ MAP_QUESTIONS = [
      "界址线即宗地权属界线，是确定土地权属范围的边界。"),
     ("宗地内的“水田（0101）”注记属于什么注记？",
      ["权利人注记", "地类注记", "面积注记", "高程注记"], 1,
-     "地类注记标明宗地的土地利用现状类型及《土地利用现状分类》代码。"),
+     "地类注记标明宗地的土地利用现状类型及分类代码。"),
     ("“权利人：张某某”说明什么？",
-     ["该宗地的权属主体（使用权人或所有权人）", "测绘人员", "村干部", "相邻宗地权利人"], 0,
-     "权利人是宗地权属的主体，登记发证时须与登记簿记载一致。"),
+     ["该宗地的权属主体", "测绘人员", "村干部", "相邻宗地权利人"], 0,
+     "权利人是宗地权属的主体，登记发证时须与登记簿一致。"),
     ("“宗地面积：1250.00 ㎡”属于什么注记？",
      ["宗地面积注记", "房屋建筑面积", "相邻宗地面积", "图幅面积"], 0,
-     "宗地面积是经面积量算后注记于宗地图上的宗地权属面积。"),
+     "宗地面积是经面积量算后注记于宗地图上的权属面积。"),
     ("图中右上角红色箭头表示什么？",
      ["风向", "指北针（图幅方位）", "比例尺方向", "道路方向"], 1,
      "指北针用于确定图幅方位，是地图的方向依据。"),
     ("“东至：李某某承包田”等四至注记说明什么？",
      ["宗地四邻的权属状况", "道路名称", "河流走向", "地形地貌"], 0,
-     "四至注记说明宗地四邻的权属主体，是界址确认和权属纠纷处理的重要依据。"),
+     "四至注记说明宗地四邻的权属主体，是界址确认的重要依据。"),
     ("宗地图的主要作用是什么？",
      ["旅游地图", "地价评估图", "土地登记与权属管理的附图", "城市规划图"], 2,
      "宗地图是土地登记、权属管理的附图，反映宗地界址、权属与利用状况。"),
     ("“比例尺 1:1000”表示图上 1cm 代表实地多少米？",
      ["1m", "10m", "100m", "1000m"], 1,
      "1:1000 即图上 1 个单位代表实地 1000 个单位，1cm 代表 10m。"),
-    ("从界址点坐标看，该宗地南北方向（Y 方向）最长约多少米？",
+    ("从界址点坐标看，该宗地南北方向最长约多少米？",
      ["约 10m", "约 20m", "约 30m", "约 50m"], 2,
      "界址点 Y 坐标从 0 到 30m，故南北向最大长度约 30m。"),
     ("宗地图的基本内容一般包括哪些？",
@@ -117,8 +145,45 @@ MAP_QUESTIONS = [
      ["图廓外或图面空白处", "宗地内部正中央", "必须压盖宗地", "无要求"], 0,
      "坐标表一般置于图廓外或图面空白处，不得压盖宗地图形。"),
 ]
+MAP_QUESTIONS_EN = [
+    ("What are the J1, J2, J3, J4, J5 marked in the map?",
+     ["Building corners", "Boundary points", "Benchmarks", "Road intersections"],
+     "Boundary points are the turning points of the parcel ownership boundary."),
+    ("What does the line between adjacent boundary points represent?",
+     ["Land-class boundary", "Administrative boundary", "Boundary line (ownership line)", "Road centerline"],
+     "The boundary line is the parcel ownership boundary."),
+    ("What kind of annotation is 'Paddy (0101)' inside the parcel?",
+     ["Right-holder annotation", "Land-class annotation", "Area annotation", "Elevation annotation"],
+     "Land-class annotations mark the current land use type and its classification code."),
+    ("What does 'Right holder: Zhang XX' indicate?",
+     ["The ownership subject of this parcel", "The surveyor", "The village cadre", "The neighboring right holder"],
+     "The right holder is the subject of the parcel right."),
+    ("What kind of annotation is 'Parcel area: 1250.00 m²'?",
+     ["Parcel area annotation", "Building floor area", "Neighboring parcel area", "Sheet area"],
+     "The parcel area is annotated after area calculation."),
+    ("What does the red arrow at the upper right indicate?",
+     ["Wind direction", "North arrow (map orientation)", "Scale direction", "Road direction"],
+     "The north arrow fixes the orientation of the map sheet."),
+    ("What do boundary annotations such as 'East to: Zhang's field' indicate?",
+     ["The ownership status of the four adjacent sides", "Road names", "River course", "Terrain"],
+     "Boundary annotations state the ownership subjects of the four sides."),
+    ("What is the main function of a parcel map?",
+     ["Tourist map", "Land valuation map", "Annex for land registration", "Urban planning map"],
+     "The parcel map is the annex for land registration and ownership administration."),
+    ("At scale 1:1000, how many meters does 1 cm on the map represent?",
+     ["1 m", "10 m", "100 m", "1000 m"],
+     "1:1000 means 1 unit on map = 1000 units on ground, so 1 cm = 10 m."),
+    ("The longest north-south extent of this parcel is about?",
+     ["About 10 m", "About 20 m", "About 30 m", "About 50 m"],
+     "Y coordinates range from 0 to 30 m, so north-south extent is about 30 m."),
+    ("The basic contents of a parcel map include?",
+     ["Area only", "Boundary coordinates only", "Boundary points/lines, right holder, class, area, four boundaries", "Map title only"],
+     "A parcel map reflects boundary, ownership and use information."),
+    ("Where is the boundary point coordinate table usually placed?",
+     ["Outside the map frame or in blank space", "At the exact center", "It must overlay the parcel", "No requirement"],
+     "The coordinate table is placed outside the map frame or in blank space."),
+]
 
-# 面积计算实训宗地
 AREA_PARCELS = [
     {"name": "宗地 A（矩形）", "pts": [(0, 0), (50, 0), (50, 30), (0, 30)],
      "hint": "矩形宗地：长 50m、宽 30m，可直接用 长×宽 计算。"},
@@ -133,16 +198,23 @@ AREA_PARCELS = [
     {"name": "宗地 F（六边形）", "pts": [(10, 0), (60, 0), (70, 30), (40, 55), (5, 40), (0, 15)],
      "hint": "不规则六边形宗地：建议用坐标法计算。"},
 ]
+AREA_PARCELS_EN = [
+    ("Parcel A (Rectangle)", "Rectangular: 50m long, 30m wide; area = length × width."),
+    ("Parcel B (L-shape)", "L-shaped: split into two rectangles, or use coordinate method."),
+    ("Parcel C (Pentagon)", "Pentagonal: use the coordinate (shoelace) method."),
+    ("Parcel D (Triangle)", "Triangle: base 80m, height 50m; area = base × height / 2."),
+    ("Parcel E (Trapezoid)", "Trapezoid: top 50m, bottom 70m, height 40m."),
+    ("Parcel F (Hexagon)", "Irregular hexagon: use the coordinate method."),
+]
 
-# 综合测验题库：(题干, [4选项], 正确索引, 解析)
 QUIZ_BANK = [
     ("地籍是记载土地的哪类基本状况的图簿册？",
      ["仅面积大小", "位置、界址、数量、质量、权属和用途", "仅所有权", "仅用途"], 1,
      "地籍是土地的“户口簿”，全面记载位置、界址、数量、质量、权属与用途。"),
     ("地籍管理的基本工作单元是什么？",
      ["地块", "宗地", "图斑", "行政村"], 1,
-     "宗地是地籍管理的基本单元，是权属调查、登记和统计的基础。"),
-    ("《土地利用现状分类》（GB/T 21010—2017）中一级类共有多少类？",
+     "宗地是地籍管理的基本单元。"),
+    ("《土地利用现状分类》一级类共有多少类？",
      ["8 类", "10 类", "12 类", "15 类"], 2,
      "2017 版标准一级类 12 个、二级类 73 个。"),
     ("下列地类中属于建设用地的是？",
@@ -153,31 +225,25 @@ QUIZ_BANK = [
      "水浇地属耕地（01），为农用地。"),
     ("农村宅基地的所有权属于谁？",
      ["农户个人", "农民集体", "国家", "村委会"], 1,
-     "宅基地所有权归农民集体，农户依法享有宅基地使用权。"),
+     "宅基地所有权归农民集体。"),
     ("城市市区的土地属于谁所有？",
      ["集体所有", "国家所有", "国家与集体共有", "个人所有"], 1,
-     "《土地管理法》规定城市市区的土地属于国家所有。"),
-    ("农民集体所有的土地依法属于村农民集体所有的，由谁经营、管理？",
-     ["村民委员会或村集体经济组织", "乡镇政府", "农户个人", "县自然资源部门"], 0,
-     "由村集体经济组织或村民委员会经营、管理。"),
+     "城市市区的土地属于国家所有。"),
     ("下列属于国有土地使用权有偿取得方式的是？",
      ["划拨", "出让", "行政命令", "无偿占用"], 1,
-     "出让是有偿使用的主要方式；划拨属无偿的行政配置方式。"),
+     "出让是有偿使用的主要方式。"),
     ("土地承包经营权属于哪类权利？",
      ["土地所有权", "担保物权", "用益物权", "债权"], 2,
      "土地承包经营权是用益物权。"),
     ("地役权属于土地权利中的哪一类？",
      ["土地所有权", "土地使用权", "土地他项权利", "行政管理权"], 2,
      "地役权、抵押权、租赁权等属于土地他项权利。"),
-    ("下列属于土地他项权利的是？",
-     ["抵押权", "所有权", "使用权", "征收权"], 0,
-     "土地他项权利包括抵押权、地役权、租赁权等。"),
-    ("地籍调查按调查时间和任务性质分为？",
-     ["初始地籍调查与日常（变更）地籍调查", "城市调查与农村调查", "大比例尺与小比例尺", "航空与地面调查"], 0,
-     "初始地籍调查是首次全面调查，日常地籍调查是其后对变化的补充调查。"),
+    ("地籍调查按时间和任务性质分为？",
+     ["初始地籍调查与日常（变更）地籍调查", "城市与农村调查", "大比例尺与小比例尺", "航空与地面调查"], 0,
+     "初始地籍调查是首次全面调查，日常地籍调查是变更调查。"),
     ("权属调查的核心内容是什么？",
-     ["面积计算", "界址调查（界址认定与界址点确定）", "地类调查", "地貌测绘"], 1,
-     "权属调查围绕宗地的权属状况进行，界址调查是核心。"),
+     ["面积计算", "界址调查", "地类调查", "地貌测绘"], 1,
+     "权属调查围绕宗地权属状况进行，界址调查是核心。"),
     ("为确立新的土地权利而进行的登记是？",
      ["注销登记", "初始（总）登记", "更正登记", "查封登记"], 1,
      "初始（总）登记是首次确立土地权利的登记。"),
@@ -192,7 +258,7 @@ QUIZ_BANK = [
      "2016 年起全面实施不动产统一登记。"),
     ("城镇地籍图通常采用的比例尺为？",
      ["1:10000", "1:50000", "1:500 或 1:1000", "1:200000"], 2,
-     "城镇地籍图比例尺一般为 1:500，也可用 1:1000。"),
+     "城镇地籍图比例尺一般为 1:500 或 1:1000。"),
     ("农村地籍调查中常用的比例尺为？",
      ["1:500", "1:5000 或 1:10000", "1:50", "1:1"], 1,
      "农村地籍图一般采用 1:5000 或 1:10000。"),
@@ -207,19 +273,13 @@ QUIZ_BANK = [
      "1 亩 ≈ 666.67 ㎡。"),
     ("宗地图的主要内容不包括？",
      ["宗地界址点与界址线", "宗地权利人、地类与面积", "相邻宗地关系", "全国人口统计"], 3,
-     "宗地图反映宗地界址、权属与利用状况，不含人口统计。"),
+     "宗地图反映宗地界址、权属与利用状况。"),
     ("界址点测量的常用方法是？",
      ["全站仪极坐标法、GPS-RTK 等", "目测法", "步量法", "地图缩放"], 0,
-     "界址点测量用解析法测定坐标，常用全站仪、RTK。"),
+     "界址点测量用解析法，常用全站仪、RTK。"),
     ("第三次全国国土调查主要查清的是？",
      ["土地利用现状分类与面积", "房屋价格", "人口分布", "气象资料"], 0,
      "三调的核心是查清土地利用现状、地类与面积。"),
-    ("土地统计包括？",
-     ["初始统计与经常统计", "税收统计", "人口统计", "气象统计"], 0,
-     "土地统计分为初始统计与经常统计。"),
-    ("地籍档案的特点是什么？",
-     ["凭证性、连续性、动态性", "随意性", "一次性", "不可更新"], 0,
-     "地籍档案具有凭证性、连续性、动态性。"),
     ("下列哪种情形需要办理注销登记？",
      ["房屋加层", "土地被依法征收、权利消灭", "权利人改名", "面积更正"], 1,
      "土地权利消灭时办理注销登记。"),
@@ -229,12 +289,9 @@ QUIZ_BANK = [
     ("我国不动产登记的效力原则是？",
      ["登记生效主义", "合同签订即生效", "交付占有即生效", "口头约定即生效"], 0,
      "不动产物权变动以登记为生效要件。"),
-    ("分幅地籍图与宗地图的关系是？",
-     ["宗地图以宗地为单元，可由分幅地籍图编绘", "二者完全相同", "二者无关", "宗地图包含所有行政内容"], 0,
-     "宗地图是分幅地籍图中单一宗地的放大编绘成果。"),
     ("出让国有土地使用权时，工业用地最高年限为？",
      ["40 年", "50 年", "70 年", "30 年"], 1,
-     "居住用地70年、工业用地50年、商业旅游娱乐用地40年。"),
+     "居住70年、工业50年、商业旅游娱乐40年。"),
     ("城镇住宅用地出让的最高年限为？",
      ["40 年", "50 年", "70 年", "无限制"], 2,
      "居住用地出让最高年限 70 年。"),
@@ -251,13 +308,113 @@ QUIZ_BANK = [
      ["地籍调查表、地籍图、宗地图、面积汇总表", "不动产权证书", "征地补偿协议", "地价评估报告"], 0,
      "初始地籍调查成果包括调查表、地籍图、宗地图与面积汇总表。"),
 ]
+QUIZ_BANK_EN = [
+    ("What basic conditions of land does the cadastre record?",
+     ["Area only", "Location, boundary, quantity, quality, ownership and use", "Ownership only", "Use only"],
+     "The cadastre is the 'household register' of land."),
+    ("What is the basic working unit of cadastral management?",
+     ["Land block", "Parcel", "Map patch", "Administrative village"],
+     "The parcel is the basic unit of cadastral management."),
+    ("How many first-level categories does Land Use Classification contain?",
+     ["8", "10", "12", "15"],
+     "The 2017 standard has 12 first-level and 73 second-level categories."),
+    ("Which land type is construction land?",
+     ["Paddy field", "Orchard", "Mining land", "Marsh grassland"],
+     "Mining land belongs to Industrial, Mining & Warehousing Land (06)."),
+    ("Which land type is agricultural land?",
+     ["Railway land", "Funeral land", "Irrigated land", "Idle land"],
+     "Irrigated land belongs to Cultivated Land (01)."),
+    ("Who owns rural homesteads?",
+     ["The individual farmer", "The farmer collective", "The State", "The village committee"],
+     "Homestead ownership belongs to the farmer collective."),
+    ("Who owns land in urban built-up areas?",
+     ["The collective", "The State", "Jointly", "Individuals"],
+     "Land in urban built-up areas is owned by the State."),
+    ("Which is a paid acquisition method for State-owned land use right?",
+     ["Allocation", "Grant", "Administrative order", "Free occupation"],
+     "Grant is the main paid method."),
+    ("What kind of right is the land contract and management right?",
+     ["Land ownership", "Security right", "Usufruct", "Creditor's right"],
+     "The land contract and management right is a usufruct."),
+    ("Which category does an easement belong to?",
+     ["Land ownership", "Land use right", "Other rights in land", "Administrative power"],
+     "Easements, mortgages and leaseholds belong to other rights in land."),
+    ("Cadastral surveys are classified into?",
+     ["Initial and routine (mutative) survey", "Urban and rural", "Large and small scale", "Aerial and ground"],
+     "Initial survey is the first comprehensive survey; routine survey is for changes."),
+    ("What is the core of ownership survey?",
+     ["Area calculation", "Boundary survey", "Land-class survey", "Mapping"],
+     "Boundary survey (designation, marking, measurement) is the core."),
+    ("Which registration establishes a new land right?",
+     ["Cancellation", "Initial (general) registration", "Correction", "Seizure"],
+     "Initial registration first establishes a land right."),
+    ("Which registration applies when a right is transferred or renamed?",
+     ["Alteration registration", "Initial registration", "Cancellation", "Advance notice"],
+     "Alteration registration applies to changes in subject or content."),
+    ("Which registration applies when a right is extinguished?",
+     ["Alteration", "Cancellation registration", "Initial", "Mortgage"],
+     "Cancellation registration is handled when a right is extinguished."),
+    ("What certificate is uniformly issued after unified real estate registration?",
+     ["Land use certificate", "Certificate of Real Property Rights", "House certificate", "Other-rights certificate"],
+     "Since 2016, the Certificate of Real Property Rights is issued uniformly."),
+    ("What is the usual scale of urban cadastral maps?",
+     ["1:10000", "1:50000", "1:500 or 1:1000", "1:200000"],
+     "Urban cadastral maps are generally at 1:500 or 1:1000."),
+    ("What is the usual scale in rural cadastral surveys?",
+     ["1:500", "1:5000 or 1:10000", "1:50", "1:1"],
+     "Rural cadastral maps generally use 1:5000 or 1:10000."),
+    ("What does the analytic (coordinate) method rely on?",
+     ["Boundary point coordinates", "Distances measured on map", "Visual estimation", "Administrative boundaries"],
+     "The analytic method uses boundary point coordinates directly."),
+    ("How many square meters is one hectare?",
+     ["1000", "666.67", "10000", "100"],
+     "1 hectare = 10000 m² = 15 mu."),
+    ("One mu is approximately how many square meters?",
+     ["100", "666.67", "1000", "1500"],
+     "1 mu ≈ 666.67 m²."),
+    ("Which is NOT included in parcel map contents?",
+     ["Boundary points and lines", "Right holder, class and area", "Neighboring parcels", "National population statistics"],
+     "A parcel map does not contain population statistics."),
+    ("Common methods for boundary point survey?",
+     ["Total station, GPS-RTK, etc.", "Visual estimation", "Pacing", "Map zooming"],
+     "Boundary points are surveyed analytically with total stations and RTK."),
+    ("What does the Third National Land Survey mainly ascertain?",
+     ["Land use classification and area", "House prices", "Population distribution", "Meteorological data"],
+     "The Third Survey focuses on current land use, classes and areas."),
+    ("Which situation requires cancellation registration?",
+     ["Adding a storey", "Land expropriated and right extinguished", "Renaming", "Area correction"],
+     "Cancellation registration is handled when a right is extinguished."),
+    ("Correction registration applies to?",
+     ["Register does not match facts", "Normal transfer", "New mortgage", "Initial registration"],
+     "Correction registration corrects errors in the register."),
+    ("What is the effect principle of real estate registration in China?",
+     ["Registration-effectiveness", "Effective upon signing", "Effective upon delivery", "Effective upon oral agreement"],
+     "Changes in real rights take effect upon registration."),
+    ("Maximum term for granted industrial land?",
+     ["40 years", "50 years", "70 years", "30 years"],
+     "Residential 70, industrial 50, commercial/tourism 40 years."),
+    ("Maximum term for granted residential land?",
+     ["40 years", "50 years", "70 years", "Unlimited"],
+     "Maximum term for residential land is 70 years."),
+    ("Which document records ownership survey results?",
+     ["Cadastral survey form", "Land statistics ledger", "Boundary notice", "Field book"],
+     "The cadastral survey form records ownership and boundary survey results."),
+    ("What is 'boundary designation' (指界)?",
+     ["Neighboring right holders jointly designating the boundary on site", "Pointing out roads", "Assigning use", "Registering stakes"],
+     "Boundary designation is jointly identifying the boundary on site and signing."),
+    ("The boundary between State-owned and collective land is called?",
+     ["Administrative boundary", "Ownership boundary", "Land-class boundary", "Road red line"],
+     "The boundary between different ownership subjects is the ownership boundary."),
+    ("Which is an output of initial cadastral survey?",
+     ["Survey forms, cadastral maps, parcel maps, area tables", "Real property certificate", "Expropriation agreement", "Valuation report"],
+     "Outputs include survey forms, cadastral maps, parcel maps and area tables."),
+]
 
-# 知识学习章节
 KNOWLEDGE = [
     {"title": "一、地籍与地籍管理", "img": "img_cadastre.png",
      "text": "1. 地籍：全面、连续记载土地的位置、界址、数量、质量、权属和用途等基本状况的图簿册，是土地的“户口簿”。\n"
              "2. 地籍的特点：空间性、法律性、精确性、现势性（动态性）、连续性。\n"
-             "3. 地籍管理：国家为取得地籍资料、全面研究土地权属与自然经济状况而进行的调查、登记、统计、档案管理等工作的总称。\n"
+             "3. 地籍管理：国家为取得地籍资料而进行的调查、登记、统计、档案管理等工作的总称。\n"
              "4. 主要任务：维护土地公有制，保护土地权利人的合法权益。\n"
              "5. 管理主线：地籍调查 → 土地登记 → 土地统计 → 地籍档案。",
      "think": "为什么说地籍是土地的“户口簿”？",
@@ -279,21 +436,21 @@ KNOWLEDGE = [
              "3. 土地他项权利：抵押权、地役权、租赁权等。\n"
              "4. 权属确认原则：主体合法、界址清楚、面积准确。",
      "think": "宅基地使用权为什么不能自由买卖给城镇居民？",
-     "answer": "宅基地使用权主体限定为本集体经济组织成员，具有身份性、福利性和保障性，法律明确规定不得向城镇居民转让，以保障农民基本居住权益。"},
+     "answer": "宅基地使用权主体限定为本集体经济组织成员，具有身份性、福利性和保障性，法律明确规定不得向城镇居民转让。"},
     {"title": "四、地籍调查", "img": "img_flow.png",
      "text": "1. 分类：初始地籍调查与日常地籍调查（变更调查）。\n"
              "2. 内容：权属调查 + 地籍测量（控制测量、界址点测量、地籍图测绘、面积量算）。\n"
              "3. 界址调查：相邻宗地权利人须到现场共同指界并签字盖章确认。\n"
              "4. 成果：地籍调查表、地籍图、宗地图、面积汇总统计表。",
      "think": "“指界”为什么必须由相邻权利人共同确认？",
-     "answer": "界址线是相邻宗地权利人权益的分界线，必须由相邻权利人共同到现场指认、签字确认，才能保证界址认定合法有效、减少权属纠纷。"},
+     "answer": "界址线是相邻宗地权利人权益的分界线，必须由相邻权利人共同到现场指认、签字确认，才能保证界址认定合法有效。"},
     {"title": "五、地籍图与宗地图", "img": "img_parcel.png",
      "text": "1. 分幅地籍图：城镇 1:500 或 1:1000，农村 1:5000 或 1:10000。\n"
              "2. 宗地图：以宗地为单元绘制，是土地登记发证的附图。\n"
              "3. 地籍要素：行政界线、权属界线、地类界线、界址点、各类注记。\n"
              "4. 宗地图内容：界址点与界址线、权利人、地类、面积、四至、指北针、比例尺、坐标表。",
      "think": "分幅地籍图与宗地图有什么区别与联系？",
-     "answer": "分幅地籍图按标准图幅编制，反映一定范围内所有宗地；宗地图以宗地为单元单独编绘，比例尺更大、内容更详细，是登记发证的法定附图。"},
+     "answer": "分幅地籍图按标准图幅编制；宗地图以宗地为单元单独编绘，比例尺更大、内容更详细，是登记发证的法定附图。"},
     {"title": "六、面积量算", "img": "img_area.png",
      "text": "1. 解析法：坐标法（鞋带公式）\n"
              "   S = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|，直接利用界址点坐标计算，精度最高。\n"
@@ -301,17 +458,72 @@ KNOWLEDGE = [
              "3. 单位换算：1 公顷 = 10000 ㎡ = 15 亩；1 亩 ≈ 666.67 ㎡。\n"
              "4. 质量要求：分级控制、按图幅理论面积校核。",
      "think": "为什么解析法精度高于图解法？",
-     "answer": "解析法直接利用界址点坐标按公式计算面积，避免了图纸伸缩、量测误差等人为因素；图解法受图面比例尺和量测工具限制。"},
+     "answer": "解析法直接利用界址点坐标按公式计算，避免了图纸伸缩、量测误差等人为因素；图解法受图面比例尺和量测工具限制。"},
     {"title": "七、土地登记", "img": None,
      "text": "1. 我国实行不动产统一登记，统一颁发《不动产权证书》。\n"
              "2. 登记类型：初始登记、变更登记、注销登记、更正登记、抵押登记、查封登记等。\n"
              "3. 登记效力：登记生效主义——不动产物权变动自记载于登记簿时发生效力。\n"
              "4. 登记程序：申请 → 受理 → 审核 → 登簿 → 发证。",
      "think": "更正登记与变更登记有何区别？",
-     "answer": "更正登记针对登记簿记载事项确有错误时的纠正；变更登记针对权利主体或权利内容依法发生的变化（如转让、更名等）。"},
+     "answer": "更正登记针对登记簿记载错误的纠正；变更登记针对权利主体或内容依法发生的变化（如转让、更名等）。"},
+]
+KNOWLEDGE_EN = [
+    ("Cadastre & Cadastral Management",
+     "1. Cadastre: maps, registers and records documenting land location, boundary, quantity, quality, ownership and use; the 'household register' of land.\n"
+     "2. Characteristics: spatial, legal, precise, current (dynamic), continuous.\n"
+     "3. Cadastral management: survey, registration, statistics and archive management.\n"
+     "4. Main tasks: safeguard public ownership, protect lawful rights of holders.\n"
+     "5. Mainline: survey → registration → statistics → archives.",
+     "Why is the cadastre called the 'household register' of land?",
+     "The cadastre records all basic conditions of land, just as a household register records population information."),
+    ("Land Use Classification",
+     "1. National standard GB/T 21010-2017: 12 first-level and 73 second-level categories.\n"
+     "2. Three broad categories: agricultural land, construction land, unutilized land.\n"
+     "3. Memory clue:\n"
+     "   01 Cultivated | 02 Garden | 03 Forest | 04 Grassland - agricultural\n"
+     "   05 Commercial | 06 Industrial | 07 Residential | 08 Public | 09 Special | 10 Transport - construction\n"
+     "   11 Water & Conservancy | 12 Other Land",
+     "Why is 'agricultural facility land' under 'Other Land'?",
+     "It serves agriculture but differs from productive agricultural land, so it is listed separately."),
+    ("Land Ownership",
+     "1. Ownership: State ownership and collective ownership.\n"
+     "2. Use rights:\n"
+     "   State-owned: grant, allocation, lease, etc.;\n"
+     "   Collective: contract management, homestead, collective construction land use right.\n"
+     "3. Other rights: mortgage, easement, leasehold.\n"
+     "4. Principles: lawful subject, clear boundaries, accurate area.",
+     "Why can homestead use right not be freely sold to urban residents?",
+     "It is restricted to collective members, identity-based and welfare-oriented; the law prohibits transfer to urban residents."),
+    ("Cadastral Survey",
+     "1. Classification: initial survey and routine (mutative) survey.\n"
+     "2. Contents: ownership survey + cadastral measurement (control, boundary point, mapping, area).\n"
+     "3. Boundary survey: neighboring right holders must jointly designate the boundary on site.\n"
+     "4. Outputs: survey forms, cadastral maps, parcel maps, area tables.",
+     "Why must boundary designation be jointly confirmed by neighboring holders?",
+     "Boundary is the dividing line of rights; joint on-site confirmation ensures legality and reduces disputes."),
+    ("Cadastral Maps & Parcel Maps",
+     "1. Sheet cadastral map: urban 1:500 or 1:1000; rural 1:5000 or 1:10000.\n"
+     "2. Parcel map: parcel as unit, annex for registration and certification.\n"
+     "3. Cadastral elements: administrative, ownership, land-class boundaries, boundary points, annotations.\n"
+     "4. Parcel map contents: boundary points/lines, right holder, class, area, four boundaries, north arrow, scale, coordinates.",
+     "What are the differences between sheet and parcel maps?",
+     "Sheet map covers an area by standard sheets; parcel map is drawn per parcel at larger scale for registration."),
+    ("Area Calculation",
+     "1. Analytic (coordinate/shoelace) method: S = ½|Σ(xi·yi+1 - xi+1·yi)|; highest accuracy.\n"
+     "2. Graphical method: geometric decomposition, planimeter; lower accuracy.\n"
+     "3. Conversions: 1 hectare = 10000 m² = 15 mu; 1 mu ≈ 666.67 m².\n"
+     "4. Quality: hierarchical control, closure checks.",
+     "Why is analytic method more accurate than graphical method?",
+     "It uses coordinates directly, avoiding paper distortion and manual measurement errors."),
+    ("Land Registration",
+     "1. China implements unified real estate registration; Certificate of Real Property Rights.\n"
+     "2. Types: initial, alteration, cancellation, correction, mortgage, seizure, etc.\n"
+     "3. Effect: registration-effectiveness - real right changes take effect upon entry in register.\n"
+     "4. Procedure: application → acceptance → examination → entry → issuance.",
+     "What is the difference between correction and alteration registration?",
+     "Correction fixes errors in the register; alteration reflects lawful changes in holder or content."),
 ]
 
-# 示例宗地数据（24宗）
 SAMPLE_PARCELS = [
     {"宗地号": "GB0001", "坐落": "长沙市岳麓区望岳街道金星村二组", "权利人": "张某某", "权属性质": "集体土地使用权",
      "一级类": "耕地", "二级类": "水田", "面积平方米": 1250.00, "登记类型": "初始登记（土地承包经营权）"},
@@ -363,15 +575,12 @@ SAMPLE_PARCELS = [
      "一级类": "其他土地", "二级类": "沙地", "面积平方米": 3100.00, "登记类型": "初始登记（集体土地所有权）"},
 ]
 
-
 # ============================================================
 # 工具函数
 # ============================================================
 def shoelace(points):
-    """鞋带公式计算多边形面积"""
     n = len(points)
-    if n < 3:
-        return 0.0
+    if n < 3: return 0.0
     s = 0.0
     for i in range(n):
         x1, y1 = points[i]
@@ -379,16 +588,13 @@ def shoelace(points):
         s += x1 * y2 - x2 * y1
     return abs(s) / 2.0
 
-
 def mu_area(sqm):
     return sqm / 666.67
 
-
 # ============================================================
-# 会话状态初始化
+# 会话状态
 # ============================================================
-if 'started' not in st.session_state:
-    st.session_state.started = True
+if 'student_name' not in st.session_state:
     st.session_state.student_name = ""
     st.session_state.student_class = ""
     st.session_state.student_id = ""
@@ -408,309 +614,354 @@ if 'started' not in st.session_state:
 st.sidebar.title("📐 地籍管理实训系统")
 st.sidebar.caption("湖南农业大学 · 土地资源管理专业")
 
-# 学生信息登记
-with st.sidebar.expander("👤 学生信息登记", expanded=True):
-    st.session_state.student_name = st.text_input("姓名", st.session_state.student_name)
-    st.session_state.student_class = st.text_input("班级", st.session_state.student_class)
-    st.session_state.student_id = st.text_input("学号", st.session_state.student_id)
+# 语言切换
+lang_choice = st.sidebar.radio("语言 / Language", ["中文", "English"])
+st.session_state.lang = "zh" if lang_choice == "中文" else "en"
+
+# 学生信息
+with st.sidebar.expander(t("👤 学生信息登记", "Student Registration"), expanded=True):
+    st.session_state.student_name = st.text_input(t("姓名", "Name"), st.session_state.student_name)
+    st.session_state.student_class = st.text_input(t("班级", "Class"), st.session_state.student_class)
+    st.session_state.student_id = st.text_input(t("学号", "Student ID"), st.session_state.student_id)
 
 # 模块导航
-module = st.sidebar.radio("功能模块", [
-    "📖 知识学习",
-    "🌾 土地分类练习",
-    "⚖️ 权属判断",
-    "📐 面积计算实训",
-    "🔢 调查流程排序",
-    "🔍 宗地数据查询",
-    "🗺️ 宗地图识别",
-    "📝 综合测验",
-    "ℹ️ 使用说明",
-])
+modules_zh = ["📖 知识学习", "🌾 土地分类练习", "⚖️ 权属判断", "📐 面积计算实训",
+              "🔢 调查流程排序", "🔍 宗地数据查询", "🗺️ 宗地图识别", "📝 综合测验", "ℹ️ 使用说明"]
+modules_en = ["📖 Knowledge", "🌾 Land Classification", "⚖️ Ownership", "📐 Area Calculation",
+              "🔢 Survey Procedure", "🔍 Parcel Search", "🗺️ Parcel Map Quiz", "📝 Final Quiz", "ℹ️ Help"]
+modules = modules_zh if st.session_state.lang == "zh" else modules_en
+module = st.sidebar.radio(t("功能模块", "Modules"), modules)
 
 st.sidebar.markdown("---")
-st.sidebar.caption("V2.5 Web版 · 浏览器直接运行")
+st.sidebar.caption("V2.5 Web版")
 
 # ============================================================
 # 模块1：知识学习
 # ============================================================
-if module == "📖 知识学习":
-    st.header("📖 知识学习")
-    chapter_idx = st.selectbox("选择章节", range(len(KNOWLEDGE)),
-                               format_func=lambda i: KNOWLEDGE[i]["title"])
-    ch = KNOWLEDGE[chapter_idx]
-    st.subheader(ch["title"])
-    if ch["img"]:
-        img_path = os.path.join(IMG_DIR, ch["img"])
-        if os.path.exists(img_path):
-            st.image(img_path, use_column_width=True)
-    st.markdown(ch["text"])
-    st.markdown("---")
-    st.markdown(f"**💭 思考题：** {ch['think']}")
-    with st.expander("查看参考答案"):
-        st.info(ch["answer"])
+if module.startswith("📖"):
+    st.header(t("📖 知识学习", "📖 Knowledge Study"))
+    klist = KNOWLEDGE if st.session_state.lang == "zh" else KNOWLEDGE_EN
+    chapter_idx = st.selectbox(t("选择章节", "Select Chapter"), range(len(klist)),
+                               format_func=lambda i: klist[i][0] if st.session_state.lang == "en" else KNOWLEDGE[i]["title"])
+    if st.session_state.lang == "zh":
+        ch = KNOWLEDGE[chapter_idx]
+        st.subheader(ch["title"])
+        if ch["img"]:
+            p = os.path.join(IMG_DIR, ch["img"])
+            if os.path.exists(p): st.image(p, use_column_width=True)
+        st.markdown(ch["text"])
+        st.markdown("---")
+        st.markdown(f"**💭 {t('思考题', 'Thinking Question')}：** {ch['think']}")
+        with st.expander(t("查看参考答案", "View Answer")):
+            st.info(ch["answer"])
+    else:
+        title, text, think, answer = KNOWLEDGE_EN[chapter_idx]
+        st.subheader(title)
+        img = KNOWLEDGE[chapter_idx]["img"]
+        if img:
+            p = os.path.join(IMG_DIR, img)
+            if os.path.exists(p): st.image(p, use_column_width=True)
+        st.markdown(text)
+        st.markdown("---")
+        st.markdown(f"**💭 Thinking Question:** {think}")
+        with st.expander("View Answer"):
+            st.info(answer)
 
 # ============================================================
 # 模块2：土地分类练习
 # ============================================================
-elif module == "🌾 土地分类练习":
-    st.header("🌾 土地分类练习")
-    mode = st.radio("练习模式", ["模式A：判断二级地类属于哪个一级类", "模式B：选出属于某一级类的二级地类"])
-
-    if mode.startswith("模式A"):
-        if 'class_idx' not in st.session_state or st.button("换一题"):
+elif module.startswith("🌾"):
+    st.header(t("🌾 土地分类练习", "🌾 Land Classification Practice"))
+    mode = st.radio(t("练习模式", "Mode"),
+        [t("模式A：判断二级地类属于哪个一级类", "Mode A: which first-level class?"),
+         t("模式B：选出属于某一级类的二级地类", "Mode B: pick second-level class")])
+    if mode.startswith(t("模式A", "Mode A")):
+        if 'class_idx' not in st.session_state or st.button(t("换一题", "Next Question")):
             st.session_state.class_idx = random.randrange(len(CLASS_PRACTICE))
         idx = st.session_state.class_idx
         sub, first, code = CLASS_PRACTICE[idx]
-        st.markdown(f"**下列二级地类“{sub}”属于哪个一级类？**")
-        answer = st.radio("", FIRST_CLASSES, key=f"class_a_{idx}")
-        if st.button("提交答案"):
+        sub_en = ["Paddy field","Irrigated land","Dry land","Orchard","Tea plantation",
+                  "Arbor forest","Bamboo forest","Natural pasture","Other grassland",
+                  "Retail commercial","Catering","Hotel","Industrial","Warehousing","Mining",
+                  "Urban residential","Rural homestead","Education","Medical","Parks & green",
+                  "Military","Religious","Funeral","Railway","Highway","Rural road",
+                  "River","Reservoir","Canal","Pond","Idle","Agri-facility","Sandy","Bare","Field ridge"][idx]
+        first_en = FIRST_CLASSES_EN[FIRST_CLASSES.index(first)]
+        st.markdown(f"**{t('下列二级地类', 'Which first-level class does the second-level land type')} “{sub} / {sub_en}” {t('属于哪个一级类？', 'belong to?')}**")
+        choices = [t(c, FIRST_CLASSES_EN[i]) for i, c in enumerate(FIRST_CLASSES)]
+        answer = st.radio("", choices, key=f"class_a_{idx}")
+        if st.button(t("提交答案", "Submit")):
             st.session_state.class_total += 1
-            if answer == first:
-                st.success(f"✅ 正确！{sub} → {first}（{code}）")
+            chosen_first = FIRST_CLASSES[choices.index(answer)]
+            if chosen_first == first:
+                st.success(f"✅ {t('正确', 'Correct')}！{sub} → {first}（{code}）")
                 st.session_state.class_score += 1
+                st.balloons()
             else:
-                st.error(f"❌ 错误。正确答案：{first}（{code}）")
-            img_path = os.path.join(IMG_DIR, CLASS_IMAGES[idx])
-            if os.path.exists(img_path):
-                st.image(img_path, caption=f"{sub}实景图", width=300)
+                st.error(f"❌ {t('错误。正确答案', 'Wrong. Correct answer')}：{first} / {first_en}（{code}）")
+            p = os.path.join(IMG_DIR, CLASS_IMAGES[idx])
+            if os.path.exists(p): st.image(p, caption=f"{sub} / {sub_en}", width=300)
     else:
-        target_first = st.selectbox("选择一级地类", FIRST_CLASSES)
-        candidates = [(i, c[0]) for i, c in enumerate(CLASS_PRACTICE) if c[1] == target_first]
+        target = st.selectbox(t("选择一级地类", "Select first-level class"),
+                              [t(c, FIRST_CLASSES_EN[i]) for i, c in enumerate(FIRST_CLASSES)])
+        target_zh = FIRST_CLASSES[ [t(c, FIRST_CLASSES_EN[i]) for i,c in enumerate(FIRST_CLASSES)].index(target) ]
+        candidates = [(i, c[0]) for i, c in enumerate(CLASS_PRACTICE) if c[1] == target_zh]
         if candidates:
-            if 'class_b_selected' not in st.session_state:
-                st.session_state.class_b_selected = None
             opts = [c[1] for c in candidates]
-            st.markdown(f"**请选出属于“{target_first}”的二级地类：**")
-            chosen = st.radio("", opts, key="class_b_opt")
-            if st.button("确认选择"):
+            st.markdown(f"**{t('请选出属于', 'Pick the second-level class of')} “{target}” {t('的二级地类', '')}**")
+            chosen = st.radio("", opts, key="class_b")
+            if st.button(t("确认选择", "Confirm")):
                 st.session_state.class_total += 1
                 st.session_state.class_score += 1
-                st.success(f"✅ 正确！{chosen} 属于 {target_first}")
-                found_idx = [c[0] for c in candidates if c[1] == chosen][0]
-                img_path = os.path.join(IMG_DIR, CLASS_IMAGES[found_idx])
-                if os.path.exists(img_path):
-                    st.image(img_path, caption=f"{chosen}实景图", width=300)
-        else:
-            st.warning("该一级类暂无二级地类示例。")
-
-    st.caption(f"当前得分：{st.session_state.class_score} / {st.session_state.class_total}")
+                st.success(f"✅ {t('正确！', 'Correct!')} {chosen} {t('属于', 'belongs to')} {target}")
+    st.caption(f"{t('当前得分', 'Score')}：{st.session_state.class_score} / {st.session_state.class_total}")
 
 # ============================================================
 # 模块3：权属判断
 # ============================================================
-elif module == "⚖️ 权属判断":
-    st.header("⚖️ 权属判断")
-    if 'own_idx' not in st.session_state or st.button("下一题"):
+elif module.startswith("⚖️"):
+    st.header(t("⚖️ 权属判断", "⚖️ Ownership Judgment"))
+    if 'own_idx' not in st.session_state or st.button(t("下一题", "Next Question")):
         st.session_state.own_idx = random.randrange(len(OWNERSHIP_BANK))
     idx = st.session_state.own_idx
     statement, answer, explain = OWNERSHIP_BANK[idx]
-    st.markdown(f"**判断下列土地属于国家所有还是集体所有：**")
+    statement_en, explain_en = OWNERSHIP_BANK_EN[idx]
+    st.markdown(f"**{t('判断下列土地属于国家所有还是集体所有：', 'Is the following land State-owned or collectively-owned?')}**")
     st.markdown(f"### “{statement}”")
-    choice = st.radio("", ["国家所有（国有）", "集体所有"])
-    if st.button("提交判断"):
+    if st.session_state.lang == "en": st.markdown(f"*{statement_en}*")
+    choice = st.radio("", [t("国家所有（国有）", "State-owned"), t("集体所有", "Collectively-owned")])
+    if st.button(t("提交判断", "Submit")):
         st.session_state.own_total += 1
-        correct = "国有" if choice.startswith("国家") else "集体"
+        correct = "国有" if choice.startswith(t("国家", "State")) else "集体"
         if correct == answer:
-            st.success(f"✅ 判断正确！")
+            st.success(f"✅ {t('判断正确！', 'Correct!')}")
             st.session_state.own_score += 1
         else:
-            st.error(f"❌ 判断错误。正确答案：{answer}")
-        st.info(f"📖 解析：{explain}")
-    img_path = os.path.join(IMG_DIR, "img_ownership.png")
-    if os.path.exists(img_path):
-        st.image(img_path, use_column_width=True)
-    st.caption(f"当前得分：{st.session_state.own_score} / {st.session_state.own_total}")
+            st.error(f"❌ {t('判断错误。正确答案', 'Wrong. Correct answer')}：{t(answer, 'State-owned' if answer=='国有' else 'Collectively-owned')}")
+        st.info(f"📖 {t('解析', 'Explanation')}：{explain if st.session_state.lang=='zh' else explain_en}")
+    p = os.path.join(IMG_DIR, "img_ownership.png")
+    if os.path.exists(p): st.image(p, use_column_width=True)
+    st.caption(f"{t('当前得分', 'Score')}：{st.session_state.own_score} / {st.session_state.own_total}")
 
 # ============================================================
 # 模块4：面积计算实训
 # ============================================================
-elif module == "📐 面积计算实训":
-    st.header("📐 面积计算实训")
-    pidx = st.selectbox("选择宗地", range(len(AREA_PARCELS)),
-                        format_func=lambda i: AREA_PARCELS[i]["name"])
+elif module.startswith("📐"):
+    st.header(t("📐 面积计算实训", "📐 Area Calculation Practice"))
+    pidx = st.selectbox(t("选择宗地", "Select Parcel"), range(len(AREA_PARCELS)),
+        format_func=lambda i: AREA_PARCELS[i]["name"] if st.session_state.lang=="zh" else AREA_PARCELS_EN[i][0])
     parcel = AREA_PARCELS[pidx]
-    st.markdown(f"**{parcel['name']}**")
-    st.markdown(f"💡 {parcel['hint']}")
+    pname = parcel["name"] if st.session_state.lang=="zh" else AREA_PARCELS_EN[pidx][0]
+    phint = parcel["hint"] if st.session_state.lang=="zh" else AREA_PARCELS_EN[pidx][1]
+    st.markdown(f"**{pname}**")
+    st.markdown(f"💡 {phint}")
     pts = parcel["pts"]
-    df_pts = pd.DataFrame(pts, columns=["X坐标(m)", "Y坐标(m)"])
+    df_pts = pd.DataFrame(pts, columns=["X(m)", "Y(m)"])
     st.dataframe(df_pts, use_container_width=True)
-    st.caption("提示：使用鞋带公式 S = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|")
-    user_area = st.number_input("请输入你计算的宗地面积（平方米）", min_value=0.0, step=1.0, format="%.2f")
-    if st.button("提交答案"):
+    st.caption(t("提示：使用鞋带公式 S = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|", "Hint: Use shoelace formula S = ½|Σ(xi·yi+1 − xi+1·yi)|"))
+    user_area = st.number_input(t("请输入你计算的宗地面积（平方米）", "Enter your calculated area (m²)"),
+                                min_value=0.0, step=1.0, format="%.2f")
+    if st.button(t("提交答案", "Submit")):
         correct = shoelace(pts)
         st.session_state.area_total += 1
         if abs(user_area - correct) < 0.5:
-            st.success(f"✅ 计算正确！面积 = {correct:.2f} ㎡ ≈ {mu_area(correct):.2f} 亩")
+            st.success(f"✅ {t('计算正确！面积', 'Correct! Area')} = {correct:.2f} ㎡ ≈ {mu_area(correct):.2f} {t('亩', 'mu')}")
             st.session_state.area_score += 1
         else:
-            st.error(f"❌ 计算有误。正确答案：{correct:.2f} ㎡ ≈ {mu_area(correct):.2f} 亩")
-    st.caption(f"当前得分：{st.session_state.area_score} / {st.session_state.area_total}")
+            st.error(f"❌ {t('计算有误。正确答案', 'Wrong. Correct answer')}：{correct:.2f} ㎡ ≈ {mu_area(correct):.2f} {t('亩', 'mu')}")
+    st.caption(f"{t('当前得分', 'Score')}：{st.session_state.area_score} / {st.session_state.area_total}")
 
 # ============================================================
 # 模块5：调查流程排序
 # ============================================================
-elif module == "🔢 调查流程排序":
-    st.header("🔢 初始地籍调查流程排序")
-    st.write("请将下列 8 个步骤按正确顺序排列（选择第 1 步、第 2 步……）")
+elif module.startswith("🔢"):
+    st.header(t("🔢 初始地籍调查流程排序", "🔢 Cadastral Survey Procedure Order"))
+    st.write(t("请将下列 8 个步骤按正确顺序排列", "Arrange the following 8 steps in correct order"))
     if 'flow_order' not in st.session_state:
         st.session_state.flow_order = list(range(len(SURVEY_STEPS)))
         random.shuffle(st.session_state.flow_order)
-    if st.button("🔀 重新乱序"):
+    if st.button(t("🔀 重新乱序", "🔀 Shuffle")):
         random.shuffle(st.session_state.flow_order)
-        st.session_state.user_order = []
+        st.rerun()
     order = st.session_state.flow_order
-    st.session_state.user_order = []
+    user_order = []
     for pos in range(8):
-        opts = [f"{j+1}. {SURVEY_STEPS[order[j]][0]}" for j in range(8)]
-        choice = st.selectbox(f"第 {pos+1} 步是？", opts, key=f"flow_{pos}")
+        opts = []
+        for j in range(8):
+            idx = order[j]
+            name = SURVEY_STEPS[idx][0] if st.session_state.lang=="zh" else SURVEY_STEPS_EN[idx][0]
+            opts.append(f"{j+1}. {name}")
+        choice = st.selectbox(f"{t('第', 'Step ')}{pos+1}{t('步是？', ' is:')}", opts, key=f"flow_{pos}")
         chosen_idx = int(choice.split(".")[0]) - 1
-        st.session_state.user_order.append(order[chosen_idx])
-    if st.button("提交排序"):
-        correct_count = sum(1 for i, v in enumerate(st.session_state.user_order) if v == i)
+        user_order.append(order[chosen_idx])
+    if st.button(t("提交排序", "Submit Order")):
+        correct_count = sum(1 for i, v in enumerate(user_order) if v == i)
         st.session_state.flow_score = correct_count
         if correct_count == 8:
-            st.success(f"🎉 全部正确！8/8 步排序完全正确！")
+            st.success(f"🎉 {t('全部正确！8/8 步排序完全正确！', 'Perfect! All 8 steps correct!')}")
         else:
-            st.warning(f"正确 {correct_count}/8 步。正确顺序如下：")
-            for i, (name, desc) in enumerate(SURVEY_STEPS):
+            st.warning(f"{t('正确', 'Correct')} {correct_count}/8。{t('正确顺序如下：', 'Correct order:')}")
+            for i in range(8):
+                name = SURVEY_STEPS[i][0] if st.session_state.lang=="zh" else SURVEY_STEPS_EN[i][0]
+                desc = SURVEY_STEPS[i][1] if st.session_state.lang=="zh" else SURVEY_STEPS_EN[i][1]
                 st.write(f"{i+1}. **{name}** —— {desc}")
 
 # ============================================================
 # 模块6：宗地数据查询
 # ============================================================
-elif module == "🔍 宗地数据查询":
-    st.header("🔍 宗地数据查询")
+elif module.startswith("🔍"):
+    st.header(t("🔍 宗地数据查询", "🔍 Parcel Data Search"))
     df = pd.DataFrame(SAMPLE_PARCELS)
     col1, col2, col3 = st.columns(3)
     with col1:
-        kw = st.text_input("关键字搜索（宗地号/坐落/权利人）", "")
+        kw = st.text_input(t("关键字搜索", "Keyword"), "")
     with col2:
-        fclass = st.selectbox("一级类", ["全部"] + list(df["一级类"].unique()))
+        fclass = st.selectbox(t("一级类", "First-level Class"), [t("全部", "All")] + list(df["一级类"].unique()))
     with col3:
-        own = st.selectbox("权属性质", ["全部"] + list(df["权属性质"].unique()))
+        own = st.selectbox(t("权属性质", "Ownership"), [t("全部", "All")] + list(df["权属性质"].unique()))
     filtered = df.copy()
     if kw:
         mask = df["宗地号"].str.contains(kw) | df["坐落"].str.contains(kw) | df["权利人"].str.contains(kw)
         filtered = filtered[mask]
-    if fclass != "全部":
-        filtered = filtered[filtered["一级类"] == fclass]
-    if own != "全部":
-        filtered = filtered[filtered["权属性质"] == own]
-    st.write(f"共 {len(filtered)} 宗")
+    if fclass != t("全部", "All"): filtered = filtered[filtered["一级类"] == fclass]
+    if own != t("全部", "All"): filtered = filtered[filtered["权属性质"] == own]
+    st.write(f"{t('共', 'Total')} {len(filtered)} {t('宗', 'parcels')}")
     st.dataframe(filtered, use_container_width=True, hide_index=True)
     st.markdown("---")
-    st.subheader("查看宗地图示例")
-    st.image(os.path.join(IMG_DIR, "img_parcel.png"), caption="宗地图示例（GB0001）", use_column_width=True)
+    st.subheader(t("宗地图示例", "Sample Parcel Map"))
+    st.image(os.path.join(IMG_DIR, "img_parcel.png"), caption="GB0001", use_column_width=True)
 
 # ============================================================
 # 模块7：宗地图识别
 # ============================================================
-elif module == "🗺️ 宗地图识别":
-    st.header("🗺️ 宗地图识别")
-    st.image(os.path.join(IMG_DIR, "img_parcel.png"), caption="宗地图示例", use_column_width=True)
+elif module.startswith("🗺️"):
+    st.header(t("🗺️ 宗地图识别", "🗺️ Parcel Map Identification"))
+    st.image(os.path.join(IMG_DIR, "img_parcel.png"), caption=t("宗地图示例", "Sample Parcel Map"), use_column_width=True)
     st.markdown("---")
-    if 'map_q_idx' not in st.session_state:
-        st.session_state.map_q_idx = 0
-    if 'map_answered' not in st.session_state:
-        st.session_state.map_answered = False
+    if 'map_q_idx' not in st.session_state: st.session_state.map_q_idx = 0
     q_idx = st.session_state.map_q_idx % len(MAP_QUESTIONS)
-    q, opts, correct, explain = MAP_QUESTIONS[q_idx]
-    st.markdown(f"**第 {q_idx+1} / {len(MAP_QUESTIONS)} 题**")
+    if st.session_state.lang == "zh":
+        q, opts, correct, explain = MAP_QUESTIONS[q_idx]
+    else:
+        q, opts, explain = MAP_QUESTIONS_EN[q_idx]
+        correct = MAP_QUESTIONS[q_idx][2]
+    st.markdown(f"**{t('第', 'Question')} {q_idx+1} / {len(MAP_QUESTIONS)}**")
     st.markdown(f"**{q}**")
     choice = st.radio("", opts, key=f"map_q_{q_idx}")
-    if st.button("提交答案"):
+    if st.button(t("提交答案", "Submit")):
         st.session_state.map_total += 1
         if opts.index(choice) == correct:
-            st.success("✅ 回答正确！")
+            st.success("✅ " + t("回答正确！", "Correct!"))
             st.session_state.map_score += 1
         else:
-            st.error(f"❌ 回答错误。正确答案：{opts[correct]}")
+            st.error(f"❌ {t('回答错误。正确答案', 'Wrong. Correct answer')}：{opts[correct]}")
         st.info(f"📖 {explain}")
     c1, c2 = st.columns(2)
     with c1:
-        if st.button("⬅️ 上一题"):
+        if st.button("⬅️ " + t("上一题", "Previous")):
             st.session_state.map_q_idx = (q_idx - 1) % len(MAP_QUESTIONS)
             st.rerun()
     with c2:
-        if st.button("下一题 ➡️"):
+        if st.button(t("下一题", "Next") + " ➡️"):
             st.session_state.map_q_idx = (q_idx + 1) % len(MAP_QUESTIONS)
             st.rerun()
-    st.caption(f"当前得分：{st.session_state.map_score} / {st.session_state.map_total}")
+    st.caption(f"{t('当前得分', 'Score')}：{st.session_state.map_score} / {st.session_state.map_total}")
 
 # ============================================================
 # 模块8：综合测验
 # ============================================================
-elif module == "📝 综合测验":
-    st.header("📝 综合测验")
+elif module.startswith("📝"):
+    st.header(t("📝 综合测验", "📝 Final Quiz"))
     if 'quiz_started' not in st.session_state:
         st.session_state.quiz_started = False
     if not st.session_state.quiz_started:
-        st.write("随机抽取 15 题，每题 1 分，满分 100 分（按比例换算）。")
-        if st.button("开始测验", type="primary"):
-            st.session_state.quiz_questions = random.sample(QUIZ_BANK, 15)
-            st.session_state.quiz_answers = [None] * 15
+        st.write(t("随机抽取 15 题，每题 1 分，满分 100 分。", "15 random questions, 1 point each, 100 points total."))
+        if st.button(t("开始测验", "Start Quiz"), type="primary"):
+            n = min(15, len(QUIZ_BANK))
+            st.session_state.quiz_questions = random.sample(range(len(QUIZ_BANK)), n)
+            st.session_state.quiz_answers = [None] * n
             st.session_state.quiz_submitted = False
             st.session_state.quiz_started = True
             st.rerun()
     else:
-        questions = st.session_state.quiz_questions
-        for i, (q, opts, correct, explain) in enumerate(questions):
-            st.markdown(f"**第 {i+1} 题**：{q}")
+        qidx_list = st.session_state.quiz_questions
+        for i, qi in enumerate(qidx_list):
+            if st.session_state.lang == "zh":
+                q, opts, correct, explain = QUIZ_BANK[qi]
+            else:
+                q, opts, explain = QUIZ_BANK_EN[qi]
+                correct = QUIZ_BANK[qi][2]
+            st.markdown(f"**{t('第', 'Q')} {i+1}**：{q}")
             if st.session_state.quiz_submitted:
                 user_ans = st.session_state.quiz_answers[i]
-                correct_text = opts[correct]
                 if user_ans == correct:
-                    st.success(f"✅ 你的答案：{opts[user_ans]}")
+                    st.success(f"✅ {opts[user_ans]}")
                 else:
-                    st.error(f"❌ 你的答案：{opts[user_ans] if user_ans is not None else '未作答'} | 正确答案：{correct_text}")
-                st.caption(f"解析：{explain}")
+                    st.error(f"❌ {t('你的答案', 'Your answer')}：{opts[user_ans] if user_ans is not None else t('未作答','N/A')} | {t('正确答案', 'Correct')}：{opts[correct]}")
+                st.caption(f"📖 {explain}")
             else:
                 choice = st.radio("", opts, key=f"quiz_{i}", index=None)
                 st.session_state.quiz_answers[i] = opts.index(choice) if choice else None
             st.markdown("---")
         if not st.session_state.quiz_submitted:
-            if st.button("交卷", type="primary"):
+            if st.button(t("交卷", "Submit Paper"), type="primary"):
                 st.session_state.quiz_submitted = True
-                score = sum(1 for i, (_, _, c, _) in enumerate(questions) if st.session_state.quiz_answers[i] == c)
-                st.session_state.quiz_score = round(score / len(questions) * 100, 1)
+                score = sum(1 for i, qi in enumerate(qidx_list)
+                           if st.session_state.quiz_answers[i] == QUIZ_BANK[qi][2])
+                st.session_state.quiz_score = round(score / len(qidx_list) * 100, 1)
                 st.rerun()
         else:
             score = st.session_state.quiz_score
-            st.subheader(f"🎯 测验成绩：{score} 分")
+            st.subheader(f"🎯 {t('测验成绩', 'Score')}：{score} {t('分', 'points')}")
             if score >= 80:
-                st.balloons()
-                st.success("优秀！🎉")
-            elif score >= 60:
-                st.info("良好，继续加油！")
-            else:
-                st.warning("需要复习哦，建议回到知识学习模块巩固。")
-            if st.button("重新抽题再测一次"):
+                st.balloons(); st.success(t("优秀！🎉", "Excellent! 🎉"))
+            elif score >= 60: st.info(t("良好，继续加油！", "Good, keep it up!"))
+            else: st.warning(t("需要复习哦！", "Need to review!"))
+            if st.button(t("重新抽题再测一次", "Try Again")):
                 st.session_state.quiz_started = False
                 st.rerun()
 
 # ============================================================
 # 模块9：使用说明
 # ============================================================
-elif module == "ℹ️ 使用说明":
-    st.header("ℹ️ 使用说明")
+elif module.startswith("ℹ️"):
+    st.header(t("ℹ️ 使用说明", "ℹ️ Help"))
     st.markdown("""
-    ### 欢迎使用《地籍管理》课程学习与实训系统（Web版）
-    
+    ### 《地籍管理》课程学习与实训系统
+    **湖南农业大学 · 土地资源管理专业**
+
+    """)
+    st.markdown(t("""
     **使用方法：**
-    1. 在左侧边栏先填写你的姓名、班级、学号
+    1. 在左侧边栏填写姓名、班级、学号
     2. 通过左侧导航选择要练习的模块
     3. 各答题模块会自动记录你的得分
-    4. 完成后请截图你的测验成绩提交给老师
-    
+    4. 完成后请截图测验成绩提交给老师
+
     **模块说明：**
-    - 📖 **知识学习**：7章核心知识点图文学习，附思考题与参考答案
-    - 🌾 **土地分类练习**：GB/T 21010—2017 土地利用现状分类练习
-    - ⚖️ **权属判断**：国有/集体土地所有权判断训练
-    - 📐 **面积计算实训**：坐标解析法（鞋带公式）计算宗地面积
-    - 🔢 **调查流程排序**：初始地籍调查八步流程排序训练
-    - 🔍 **宗地数据查询**：24宗示例宗地数据检索与浏览
-    - 🗺️ **宗地图识别**：结合宗地图识别各类要素
-    - 📝 **综合测验**：随机抽15题，自动判分
-    
-    **技术支持：** 湖南农业大学 土地资源管理系
-    """)
+    - 📖 知识学习：7章核心知识点图文学习
+    - 🌾 土地分类练习：GB/T 21010—2017 土地分类练习
+    - ⚖️ 权属判断：国有/集体土地所有权判断
+    - 📐 面积计算实训：坐标解析法计算宗地面积
+    - 🔢 调查流程排序：初始地籍调查八步流程
+    - 🔍 宗地数据查询：24宗示例宗地检索
+    - 🗺️ 宗地图识别：结合宗地图识别各类要素
+    - 📝 综合测验：随机抽15题自动判分
+    """,
+    """
+    **How to use:**
+    1. Fill in your name, class and student ID in the sidebar
+    2. Select a module from the navigation
+    3. Your scores are tracked automatically
+    4. Screenshot your quiz score and submit to your teacher
+
+    **Modules:**
+    - 📖 Knowledge: 7 chapters with illustrations
+    - 🌾 Land Classification: GB/T 21010-2017 practice
+    - ⚖️ Ownership: State vs collective land rights
+    - 📐 Area Calculation: Shoelace method practice
+    - 🔢 Survey Procedure: 8-step cadastral survey order
+    - 🔍 Parcel Search: 24 sample parcels database
+    - 🗺️ Parcel Map Quiz: Identify map elements
+    - 📝 Final Quiz: 15 random questions, auto-graded
+    """))
