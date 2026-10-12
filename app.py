@@ -1584,6 +1584,7 @@ elif module.startswith("📊"):
     <form action="https://formsubmit.co/39116272@qq.com" method="POST">
         <input type="hidden" name="_subject" value="地籍管理实训报告 - {name} - {sid}">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="姓名" value="{name}">
         <input type="hidden" name="班级" value="{cls}">
         <input type="hidden" name="学号" value="{sid}">
