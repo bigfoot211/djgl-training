@@ -713,6 +713,226 @@ def mascot_say():
     st.toast(text, icon="👨‍🏫")
 
 # ============================================================
+# 学生能力画像（文字画像 + SVG 能力雷达图 + SVG 卡通画像）
+# 与桌面版六维口径一致：分类辨析/权属判断/面积计算/识图能力/流程逻辑/综合运用
+# ============================================================
+PORTRAIT_DIMS = [
+    ("分类辨析", "class", "Classification"),
+    ("权属判断", "own", "Ownership"),
+    ("面积计算", "area", "Area"),
+    ("识图能力", "map", "Parcel Map"),
+    ("流程逻辑", "flow", "Flow"),
+    ("综合运用", "quiz", "Quiz"),
+]
+PORTRAIT_LEVELS = [
+    (85, "首席调查员", "Chief Surveyor"),
+    (70, "高级调查员", "Senior Surveyor"),
+    (50, "调查员", "Surveyor"),
+    (30, "助理调查员", "Assistant Surveyor"),
+    (0, "见习调查员", "Trainee Surveyor"),
+]
+PORTRAIT_ADVICE = {
+    "class": "回到【土地分类练习】模块，用模式A/模式B结合实景图反复练习，牢记12个一级类与常见二级类的归属。",
+    "own": "回到【权属判断】模块复习国有/集体土地所有权的判定原则，注意宅基地使用权、承包经营权与出让取得的区别。",
+    "area": "回到【面积计算实训】模块，先点“查看参考答案”看坐标法步骤，再把每个宗地亲手算一遍。",
+    "map": "回到【宗地图识别】模块，结合示例宗地图逐项确认界址点、界址线、地类注记、四至与指北针。",
+    "flow": "完成【调查流程排序】模块，把初始地籍调查八步流程按正确顺序排出来，流程逻辑自然记牢。",
+    "quiz": "回到【知识学习】模块把七个章节复习一遍，再参加【综合测验】检验综合运用能力。",
+}
+
+
+def portrait_scores_from(ss):
+    """从会话状态计算六维得分 0-100（未作答维度计 0 分）"""
+    def pct(s, t):
+        return round(s / t * 100) if t else 0
+    return {
+        "class": pct(ss.get("class_score", 0), ss.get("class_total", 0)),
+        "own": pct(ss.get("own_score", 0), ss.get("own_total", 0)),
+        "area": pct(ss.get("area_score", 0), ss.get("area_total", 0)),
+        "map": pct(ss.get("map_score", 0), ss.get("map_total", 0)),
+        "flow": round(ss.get("flow_score", 0) / 8 * 100),
+        "quiz": round(ss.get("quiz_score", 0)),
+    }
+
+
+def portrait_total(scores):
+    """综合得分：测验40% + 分类15% + 权属15% + 面积10% + 识图10% + 流程10%"""
+    return (scores["quiz"] * 0.4 + scores["class"] * 0.15 + scores["own"] * 0.15
+            + scores["area"] * 0.1 + scores["map"] * 0.1 + scores["flow"] * 0.1)
+
+
+def portrait_level_from(total):
+    """按综合得分返回 (中文等级, 英文等级)"""
+    for th, zh, en in PORTRAIT_LEVELS:
+        if total >= th:
+            return zh, en
+    return PORTRAIT_LEVELS[-1][1], PORTRAIT_LEVELS[-1][2]
+
+
+def portrait_summary_lines(scores, total):
+    """文字画像：亮点/待提升等描述行"""
+    lvl_zh, lvl_en = portrait_level_from(total)
+    attempted = [(zh, scores[k]) for zh, k, _ in PORTRAIT_DIMS if scores[k] > 0]
+    lines = [f"你的综合得分 {total:.0f} 分，能力等级为「{lvl_zh} / {lvl_en}」。"]
+    if not attempted:
+        lines.append("你还没有完成任何练习模块：先去【知识学习】浏览章节，再到各练习模块作答，能力画像会随成绩实时更新。")
+        return lines
+    strong = [(zh, v) for zh, v in attempted if v >= 80]
+    weak = [(zh, v) for zh, v in attempted if v < 60]
+    if strong:
+        lines.append("能力亮点：" + "、".join(f"{zh}（{v}分）" for zh, v in strong[:3]) + "，继续保持！")
+    if weak:
+        lines.append("待提升：" + "、".join(f"{zh}（{v}分）" for zh, v in weak[:3]) + "，稍加练习就能明显进步。")
+    if not strong and not weak and len(attempted) >= 3:
+        lines.append("各维度发展均衡，属于稳扎稳打的均衡型学习者。")
+    return lines
+
+
+def portrait_advice_lines(scores):
+    """成长建议：低于60分维度 + 未做的流程维度"""
+    out = []
+    tried_any = any(scores[k] > 0 for k in ("class", "own", "area", "map", "quiz"))
+    for zh, k, _ in PORTRAIT_DIMS:
+        if k == "flow":
+            if tried_any and scores[k] == 0:
+                out.append(PORTRAIT_ADVICE[k])
+        elif 0 < scores[k] < 60:
+            out.append(PORTRAIT_ADVICE[k])
+    return out
+
+
+def svg_radar(scores, width=400, height=380):
+    """六维能力雷达图（内联 SVG，浏览器渲染中文，无服务器字体依赖）"""
+    cx, cy, R = width / 2, height / 2 - 16, 118
+    n = len(PORTRAIT_DIMS)
+
+    def pt(i, r):
+        ang = math.radians(-90 + i * 360.0 / n)
+        return round(cx + r * math.cos(ang), 1), round(cy + r * math.sin(ang), 1)
+
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">']
+    # 网格环 25/50/75/100
+    for g in (25, 50, 75, 100):
+        pts = " ".join(f"{x},{y}" for x, y in (pt(i, R * g / 100.0) for i in range(n)))
+        parts.append(f'<polygon points="{pts}" fill="none" stroke="#CFD8DC" stroke-width="1"/>')
+    # 轴线与维度名
+    for i, (zh, k, en) in enumerate(PORTRAIT_DIMS):
+        x, y = pt(i, R)
+        lx, ly = pt(i, R + 28)
+        parts.append(f'<line x1="{cx}" y1="{cy}" x2="{x}" y2="{y}" stroke="#B0BEC5" stroke-width="1"/>')
+        parts.append(f'<text x="{lx}" y="{ly}" font-size="15" font-weight="bold" fill="#37474F" text-anchor="middle" dominant-baseline="middle">{zh}</text>')
+    # 数据多边形
+    pts = " ".join(f"{x},{y}" for x, y in (pt(i, R * scores[k] / 100.0) for i, (zh, k, en) in enumerate(PORTRAIT_DIMS)))
+    parts.append(f'<polygon points="{pts}" fill="#BBDEFB" fill-opacity="0.85" stroke="#1565C0" stroke-width="2"/>')
+    # 分数点与数值
+    for i, (zh, k, en) in enumerate(PORTRAIT_DIMS):
+        x, y = pt(i, R * scores[k] / 100.0)
+        parts.append(f'<circle cx="{x}" cy="{y}" r="4" fill="#1565C0"/>')
+        if scores[k] > 0:
+            parts.append(f'<text x="{x}" y="{y - 12}" font-size="13" fill="#0D47A1" text-anchor="middle">{scores[k]}</text>')
+    parts.append(f'<text x="{cx}" y="{height - 10}" font-size="14" fill="#78909C" text-anchor="middle">能力雷达图 / Ability Radar</text>')
+    parts.append('</svg>')
+    return "".join(parts)
+
+
+def svg_avatar(scores, total, lvl_zh, width=360, height=390):
+    """卡通「小小地籍调查员」画像（SVG，随等级换帽子/装备/徽章）"""
+    idx = 0
+    for i, (th, zh, en) in enumerate(PORTRAIT_LEVELS):
+        if total >= th:
+            idx = i
+    cx = width / 2
+    skin, shirt = "#F6C9A0", "#1565C0"
+    attempted = any(scores[k] > 0 for k in ("class", "own", "area", "map", "quiz"))
+    P = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">']
+    # 地面
+    P.append(f'<rect x="0" y="{height - 40}" width="{width}" height="40" fill="#E8F5E9"/>')
+    P.append(f'<text x="{cx}" y="{height - 14}" font-size="12" fill="#66BB6A" text-anchor="middle">宗地 · 我的学习园地</text>')
+    # 腿与鞋
+    P.append(f'<rect x="{cx - 34}" y="296" width="26" height="40" fill="#455A64"/>')
+    P.append(f'<rect x="{cx + 8}" y="296" width="26" height="40" fill="#455A64"/>')
+    P.append(f'<ellipse cx="{cx - 22}" cy="336" rx="19" ry="10" fill="#37474F"/>')
+    P.append(f'<ellipse cx="{cx + 22}" cy="336" rx="19" ry="10" fill="#37474F"/>')
+    # 身体与手臂
+    P.append(f'<ellipse cx="{cx}" cy="244" rx="46" ry="68" fill="{shirt}"/>')
+    P.append(f'<ellipse cx="{cx - 52}" cy="233" rx="17" ry="26" fill="{shirt}"/>')
+    P.append(f'<ellipse cx="{cx + 52}" cy="233" rx="17" ry="26" fill="{shirt}"/>')
+    # 装备（5档：书→图纸卷→三角板→测旗）
+    if idx == 0:
+        P.append(f'<rect x="{cx + 32}" y="222" width="22" height="30" rx="3" fill="#EF5350"/>')
+        P.append(f'<line x1="{cx + 34}" y1="226" x2="{cx + 52}" y2="226" stroke="#FFFFFF" stroke-width="2"/>')
+        P.append(f'<line x1="{cx + 34}" y1="231" x2="{cx + 52}" y2="231" stroke="#FFFFFF" stroke-width="2"/>')
+        P.append(f'<line x1="{cx + 34}" y1="236" x2="{cx + 52}" y2="236" stroke="#FFFFFF" stroke-width="2"/>')
+    elif idx == 1:
+        P.append(f'<rect x="{cx + 26}" y="218" width="34" height="24" rx="3" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>')
+        P.append(f'<line x1="{cx + 30}" y1="222" x2="{cx + 56}" y2="222" stroke="#9E9D24" stroke-width="2"/>')
+        P.append(f'<line x1="{cx + 30}" y1="227" x2="{cx + 56}" y2="227" stroke="#9E9D24" stroke-width="2"/>')
+        P.append(f'<line x1="{cx + 30}" y1="232" x2="{cx + 56}" y2="232" stroke="#9E9D24" stroke-width="2"/>')
+    elif idx == 2:
+        P.append(f'<polygon points="{cx + 44},{218} {cx + 66},{222} {cx + 44},{226}" fill="#FF8F00" stroke="#E65100" stroke-width="1"/>')
+        P.append(f'<line x1="{cx + 46}" y1="224" x2="{cx + 46}" y2="240" stroke="#5D4037" stroke-width="2"/>')
+    else:
+        P.append(f'<line x1="{cx + 34}" y1="246" x2="{cx + 66}" y2="246" stroke="#5D4037" stroke-width="2"/>')
+        P.append(f'<polygon points="{cx + 66},{238} {cx + 78},{244} {cx + 66},{250}" fill="#EF5350" stroke="#C62828" stroke-width="1"/>')
+        P.append(f'<text x="{cx + 72}" y="{244 + 4}" font-size="11" fill="#FFFFFF" text-anchor="middle">测</text>')
+    # 头
+    P.append(f'<ellipse cx="{cx}" cy="123" rx="48" ry="49" fill="{skin}"/>')
+    # 眼睛
+    P.append(f'<circle cx="{cx - 17}" cy="123" r="6" fill="#212121"/>')
+    P.append(f'<circle cx="{cx + 17}" cy="123" r="6" fill="#212121"/>')
+    # 腮红
+    P.append(f'<ellipse cx="{cx - 28}" cy="142" rx="7" ry="6" fill="#FFCDD2"/>')
+    P.append(f'<ellipse cx="{cx + 28}" cy="142" rx="7" ry="6" fill="#FFCDD2"/>')
+    # 微笑
+    P.append(f'<path d="M {cx - 14} 144 Q {cx} 160 {cx + 14} 144" stroke="#212121" stroke-width="2" fill="none"/>')
+    # 帽子（5档：草帽→鸭舌帽→安全帽→高级盔→皇冠）
+    if idx == 0:
+        P.append(f'<ellipse cx="{cx}" cy="78" rx="54" ry="18" fill="#A1887F"/>')
+        P.append(f'<polygon points="{cx - 20},{78} {cx + 20},{78} {cx},{34}" fill="#8D6E63"/>')
+        P.append(f'<rect x="{cx - 22}" y="58" width="44" height="4" fill="#6D4C41"/>')
+    elif idx == 1:
+        P.append(f'<path d="M {cx - 34} 96 Q {cx - 40} 62 {cx - 6} 64 L {cx + 8} 60 L {cx + 36} 92 L {cx + 26} 94 Z" fill="#EF6C00"/>')
+        P.append(f'<path d="M {cx - 6} 64 L {cx + 8} 60 L {cx + 12} 92 L {cx - 2} 92 Z" fill="#E65100"/>')
+    elif idx == 2:
+        P.append(f'<ellipse cx="{cx}" cy="82" rx="48" ry="24" fill="#FFCA28"/>')
+        P.append(f'<ellipse cx="{cx}" cy="68" rx="40" ry="18" fill="#FFB300"/>')
+        P.append(f'<line x1="{cx - 40}" y1="82" x2="{cx + 40}" y2="82" stroke="#FFF176" stroke-width="2"/>')
+    elif idx == 3:
+        P.append(f'<path d="M {cx - 38} 96 L {cx - 44} 70 L {cx - 14} 78 L {cx} 44 L {cx + 14} 78 L {cx + 44} 70 L {cx + 38} 96 Z" fill="#9E9E9E"/>')
+        P.append(f'<rect x="{cx - 40}" y="96" width="80" height="6" rx="3" fill="#757575"/>')
+        P.append(f'<line x1="{cx}" y1="44" x2="{cx}" y2="36" stroke="#FFD54F" stroke-width="3"/>')
+    else:
+        P.append(f'<polygon points="{cx - 42},{88} {cx - 32},{56} {cx - 14},{74} {cx},{40} {cx + 14},{74} {cx + 32},{56} {cx + 42},{88}" fill="#FFD54F" stroke="#F9A825" stroke-width="2"/>')
+        P.append(f'<circle cx="{cx}" cy="{40}" r="5" fill="#E53935"/>')
+        P.append(f'<circle cx="{cx - 20}" cy="52" r="4" fill="#E53935"/>')
+        P.append(f'<circle cx="{cx + 20}" cy="52" r="4" fill="#E53935"/>')
+    # 胸前金星（≥80分维度）
+    star_x = cx - 30
+    for zh, k, en in PORTRAIT_DIMS:
+        if scores[k] >= 80 and star_x <= cx + 34:
+            P.append(f'<text x="{star_x}" y="208" font-size="16" fill="#FFB300" text-anchor="middle">★</text>')
+            star_x += 22
+    # 高级及以上金徽章
+    if idx >= 3:
+        P.append(f'<circle cx="{cx + 36}" cy="206" r="9" fill="#FFC107" stroke="#B8860B" stroke-width="1"/>')
+        P.append(f'<text x="{cx + 36}" y="{206 + 4}" font-size="10" fill="#5D4037" text-anchor="middle">金</text>')
+    # 鼓励气泡（有作答记录时）
+    if attempted:
+        tip = "继续加油！"
+        if idx >= 3:
+            tip = "太棒了！"
+        P.append(f'<ellipse cx="{cx + 96}" cy="58" rx="52" ry="18" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>')
+        P.append(f'<polygon points="{cx + 66},{72} {cx + 80},{88} {cx + 88},{70}" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>')
+        P.append(f'<text x="{cx + 96}" y="{58 + 4}" font-size="13" fill="#E65100" text-anchor="middle">{tip}</text>')
+    # 等级名牌
+    P.append(f'<rect x="{cx - 92}" y="{height - 40}" width="184" height="22" rx="6" fill="#FFF8E1" stroke="#F9A825" stroke-width="1"/>')
+    P.append(f'<text x="{cx}" y="{height - 40 + 15}" font-size="13" font-weight="bold" fill="#E65100" text-anchor="middle">{lvl_zh}</text>')
+    P.append(f'<text x="{cx}" y="20" font-size="13" fill="#78909C" text-anchor="middle">小小地籍调查员 / My Surveyor Portrait</text>')
+    P.append('</svg>')
+    return "".join(P)
+
+
+# ============================================================
 # 会话状态
 # ============================================================
 if 'student_name' not in st.session_state:
@@ -799,15 +1019,15 @@ with st.sidebar.expander(t("💬 和张老师聊天", "💬 Chat with Prof. Zhan
 # 模块导航
 modules_zh = ["📖 知识学习", "🌾 土地分类练习", "⚖️ 权属判断", "📐 面积计算实训",
               "🔢 调查流程排序", "🔍 宗地数据查询", "🗺️ 宗地图识别", "📝 综合测验",
-              "📊 学习统计与提交", "ℹ️ 使用说明"]
+              "🧑🎓 学生能力画像", "📊 学习统计与提交", "ℹ️ 使用说明"]
 modules_en = ["📖 Knowledge", "🌾 Land Classification", "⚖️ Ownership", "📐 Area Calculation",
               "🔢 Survey Procedure", "🔍 Parcel Search", "🗺️ Parcel Map Quiz", "📝 Final Quiz",
-              "📊 My Scores & Report", "ℹ️ Help"]
+              "🧑🎓 Ability Portrait", "📊 My Scores & Report", "ℹ️ Help"]
 modules = modules_zh if st.session_state.lang == "zh" else modules_en
 module = st.sidebar.radio(t("功能模块", "Modules"), modules)
 
 st.sidebar.markdown("---")
-st.sidebar.caption("V2.5 Web版")
+st.sidebar.caption("V2.5 Web版 · 含学生能力画像")
 
 # ============================================================
 # 模块1：知识学习
@@ -1206,6 +1426,64 @@ elif module.startswith("📝"):
                 st.rerun()
 
 # ============================================================
+# 模块8.5：学生能力画像（文字画像 + 能力雷达图 + 卡通画像）
+# ============================================================
+elif module.startswith("🧑🎓"):
+    st.header(t("🧑🎓 学生能力画像", "🧑🎓 Ability Portrait"))
+    scores = portrait_scores_from(st.session_state)
+    total = portrait_total(scores)
+    lvl_zh, lvl_en = portrait_level_from(total)
+    st.progress(min(100, int(total)))
+    st.caption(f"综合得分 **{total:.0f}** 分　|　{t('能力等级', 'Rank')} **{lvl_zh} / {lvl_en}**")
+
+    c1, c2 = st.columns([1, 1])
+    with c1:
+        st.markdown(svg_radar(scores), unsafe_allow_html=True)
+    with c2:
+        st.markdown(svg_avatar(scores, total, lvl_zh), unsafe_allow_html=True)
+
+    st.markdown("---")
+    st.markdown(f"**{t('六维能力值', 'Six Dimension Scores')}**")
+    for zh, k, en in PORTRAIT_DIMS:
+        v = scores[k]
+        stars = "★" * (v // 20) + "☆" * (5 - v // 20)
+        st.markdown(f"- {zh} / {en}：**{v}** 分　{stars}")
+
+    # 学习投入标签
+    elapsed = datetime.datetime.now() - st.session_state.start_time
+    mins = int(elapsed.total_seconds() // 60)
+    total_answered = (st.session_state.class_total + st.session_state.own_total
+                      + st.session_state.area_total + st.session_state.map_total)
+    tags = []
+    if mins >= 60:
+        tags.append(t("勤奋专注", "Dedicated"))
+    if total_answered >= 20:
+        tags.append(t("练习充分", "Practice-oriented"))
+    if tags:
+        st.markdown(f"**{t('学习投入', 'Learning Input')}：**" + "、".join(tags) + "。")
+
+    st.markdown("---")
+    st.markdown(f"**{t('文字画像', 'Portrait Description')}**")
+    for ln in portrait_summary_lines(scores, total):
+        st.markdown("- " + ln)
+
+    adv = portrait_advice_lines(scores)
+    if adv:
+        st.markdown(f"**{t('成长建议', 'Growth Advice')}**")
+        for a in adv:
+            st.markdown("- " + a)
+
+    # 晋升提示
+    promoted = False
+    for th, zh, en in PORTRAIT_LEVELS:
+        if total < th:
+            st.caption(f"🚀 {t('再提升', 'Gain another')} **{th - total:.0f}** {t('分即可晋升为', 'points to become')}「{zh} / {en}」！")
+            promoted = True
+            break
+    if not promoted:
+        st.caption("🏆 " + t("已达到最高等级「首席调查员 / Chief Surveyor」，实至名归！", "You reached the top rank: Chief Surveyor!"))
+
+# ============================================================
 # 模块9：学习统计与提交
 # ============================================================
 elif module.startswith("📊"):
@@ -1255,6 +1533,15 @@ elif module.startswith("📊"):
     st.markdown("---")
     st.subheader(f"🎯 {t('综合成绩', 'Overall Score')}：**{total:.1f}** {t('分', 'points')}")
 
+    # 学生能力画像（与桌面版同口径：六维得分 + 5档等级 + 文字画像 + 成长建议）
+    p_scores = portrait_scores_from(st.session_state)
+    p_total = portrait_total(p_scores)
+    p_lvl_zh, p_lvl_en = portrait_level_from(p_total)
+    p_lines = portrait_summary_lines(p_scores, p_total)
+    p_adv = portrait_advice_lines(p_scores)
+    p_summary_txt = "；".join(p_lines[1:]) if len(p_lines) > 1 else p_lines[0]
+    p_adv_txt = "；".join(p_adv) if p_adv else "各维度保持练习，持续进步。"
+
     # 生成报告文本
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     report = f"""地籍管理实训系统 学习报告
@@ -1274,6 +1561,18 @@ elif module.startswith("📊"):
 流程排序 Procedure: {flow_pct:.1f}% ({st.session_state.flow_score}/8)
 ----------------------------
 综合成绩 Overall: {total:.1f} 分
+----------------------------
+学生能力画像 Ability Portrait
+能力等级 Rank: {p_lvl_zh} / {p_lvl_en}
+分类辨析 Classification: {p_scores['class']} 分
+权属判断 Ownership: {p_scores['own']} 分
+面积计算 Area Calc: {p_scores['area']} 分
+识图能力 Parcel Map: {p_scores['map']} 分
+流程逻辑 Flow: {p_scores['flow']} 分
+综合运用 Quiz: {p_scores['quiz']} 分
+{p_summary_txt}
+成长建议 Growth Advice: {p_adv_txt}
+----------------------------
 防伪码 Verify Code: {st.session_state.verify_code}
 """
 
@@ -1298,6 +1597,7 @@ elif module.startswith("📊"):
         <input type="hidden" name="宗地图识别" value="{map_pct:.1f}% ({st.session_state.map_score}/{st.session_state.map_total})">
         <input type="hidden" name="流程排序" value="{flow_pct:.1f}% ({st.session_state.flow_score}/8)">
         <input type="hidden" name="综合成绩" value="{total:.1f}分">
+        <input type="hidden" name="学生能力画像" value="{p_lvl_zh} / {p_lvl_en}，{p_summary_txt}">
         <input type="hidden" name="防伪码" value="{st.session_state.verify_code}">
         <button type="submit" style="background-color:#ff4b4b;color:white;padding:12px 24px;border:none;border-radius:8px;font-size:16px;cursor-pointer;width:100%;">
             🚀 {t('一键提交学习报告给老师', 'Submit Report to Teacher')}
@@ -1344,6 +1644,7 @@ elif module.startswith("ℹ️"):
     - 🔍 宗地数据查询：24宗示例宗地检索
     - 🗺️ 宗地图识别：结合宗地图识别各类要素
     - 📝 综合测验：随机抽15题自动判分
+    - 🧑🎓 学生能力画像：六维雷达图 + 卡通调查员画像 + 文字画像，随成绩成长
     """,
     """
     **How to use:**
@@ -1361,4 +1662,5 @@ elif module.startswith("ℹ️"):
     - 🔍 Parcel Search: 24 sample parcels database
     - 🗺️ Parcel Map Quiz: Identify map elements
     - 📝 Final Quiz: 15 random questions, auto-graded
+    - 🧑🎓 Ability Portrait: radar chart + cartoon surveyor + text portrait, grows with your scores
     """))
