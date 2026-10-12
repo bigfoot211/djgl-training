@@ -5,7 +5,8 @@
 中英双语 · 全部功能与桌面版一致
 """
 import streamlit as st
-import json, os, random, math, datetime
+import json, os, random, math, datetime, smtplib
+from email.message import EmailMessage
 import pandas as pd
 
 # ============================================================
@@ -933,6 +934,114 @@ def svg_avatar(scores, total, lvl_zh, width=360, height=390):
 
 
 # ============================================================
+# 内联 SVG 宗地图（浏览器端渲染中文，无服务器字体依赖）
+# ============================================================
+def svg_parcel_area(pts, pname, width=440, height=380):
+    """面积计算实训：按坐标点绘制宗地多边形 + 网格轴刻度（内联 SVG）"""
+    xs = [p[0] for p in pts]; ys = [p[1] for p in pts]
+    xmin, xmax = min(xs), max(xs)
+    ymin, ymax = min(ys), max(ys)
+    xr = (xmax - xmin) or 1.0
+    yr = (ymax - ymin) or 1.0
+    pad_x, pad_y = xr * 0.15, yr * 0.18
+    plot_x, plot_y = 52, 58                       # 绘图区左上角
+    plot_w = width - plot_x - 30
+    plot_h = height - plot_y - 62
+    scale = min(plot_w / (xr + 2 * pad_x), plot_h / (yr + 2 * pad_y))
+    def px(v): return plot_x + (v - (xmin - pad_x)) * scale
+    def py(v): return plot_y + ((ymax + pad_y) - v) * scale
+
+    # 刻度步长
+    xstep = 10 ** math.floor(math.log10((xr / 5) or 1))
+    while xr / xstep > 5: xstep *= 2
+    while xr / xstep < 2: xstep /= 2
+    ystep = 10 ** math.floor(math.log10((yr / 5) or 1))
+    while yr / ystep > 5: ystep *= 2
+    while yr / ystep < 2: ystep /= 2
+
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">']
+    parts.append(f'<text x="{width/2}" y="24" font-size="15" font-weight="bold" fill="#1B5E20" text-anchor="middle">{pname}</text>')
+    # 网格线与 X 轴刻度
+    for v in range(int(math.ceil((xmin - pad_x) / xstep)) * xstep, int(xmax + pad_x) + 1, int(xstep)):
+        if v < xmin - pad_x or v > xmax + pad_x: continue
+        parts.append(f'<line x1="{px(v):.1f}" y1="{py(ymin-pad_y):.1f}" x2="{px(v):.1f}" y2="{py(ymax+pad_y):.1f}" stroke="#EEEEEE" stroke-width="1"/>')
+        parts.append(f'<text x="{px(v):.1f}" y="{py(ymin-pad_y)+15:.1f}" font-size="10" fill="#666" text-anchor="middle">{v:g}</text>')
+    # Y 轴刻度
+    for v in range(int(math.ceil((ymin - pad_y) / ystep)) * ystep, int(ymax + pad_y) + 1, int(ystep)):
+        if v < ymin - pad_y or v > ymax + pad_y: continue
+        parts.append(f'<line x1="{px(xmin-pad_x):.1f}" y1="{py(v):.1f}" x2="{px(xmax+pad_x):.1f}" y2="{py(v):.1f}" stroke="#EEEEEE" stroke-width="1"/>')
+        parts.append(f'<text x="{px(xmin-pad_x)-6:.1f}" y="{py(v)+4:.1f}" font-size="10" fill="#666" text-anchor="end">{v:g}</text>')
+    # 坐标轴框
+    parts.append(f'<rect x="{px(xmin-pad_x):.1f}" y="{py(ymax+pad_y):.1f}" width="{(xr+2*pad_x)*scale:.1f}" height="{(yr+2*pad_y)*scale:.1f}" fill="none" stroke="#BDBDBD" stroke-width="1"/>')
+    # 宗地多边形（自动闭合）
+    poly = " ".join(f"{px(p[0]):.1f},{py(p[1]):.1f}" for p in pts) + f" {px(pts[0][0]):.1f},{py(pts[0][1]):.1f}"
+    parts.append(f'<polygon points="{poly}" fill="#A5D6A7" fill-opacity="0.45" stroke="#2E7D32" stroke-width="2"/>')
+    # 顶点标注
+    for i, (x, y) in enumerate(pts):
+        parts.append(f'<circle cx="{px(x):.1f}" cy="{py(y):.1f}" r="4" fill="#1B5E20"/>')
+        parts.append(f'<text x="{px(x)+8:.1f}" y="{py(y)-5:.1f}" font-size="11" font-weight="bold" fill="#1B5E20">P{i}</text>')
+    parts.append(f'<text x="{plot_x+plot_w/2:.1f}" y="{height-9}" font-size="12" fill="#444" text-anchor="middle">X (m)</text>')
+    parts.append(f'<text x="15" y="{plot_y+plot_h/2:.1f}" font-size="12" fill="#444" text-anchor="middle" transform="rotate(-90 15 {plot_y+plot_h/2:.1f})">Y (m)</text>')
+    parts.append('</svg>')
+    return "".join(parts)
+
+
+def svg_parcel_card(parcel_id, holder, cls2, area, width=440, height=400):
+    """宗地图示例：示意多边形 + 中文标注 + 北箭头（内联 SVG）"""
+    xs = [0, 100, 120, 30, 0]
+    ys = [0, 0, 80, 100, 0]
+    plot_x, plot_y, plot_w, plot_h = 45, 60, width - 85, height - 120
+    scale = min(plot_w / 130, plot_h / 110)
+    def px(v): return plot_x + v * scale
+    def py(v): return plot_y + (100 - v) * scale
+
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">']
+    parts.append(f'<text x="{width/2}" y="24" font-size="15" font-weight="bold" fill="#37474F" text-anchor="middle">宗地图 / Parcel Map</text>')
+    poly = " ".join(f"{px(x):.1f},{py(y):.1f}" for x, y in zip(xs, ys))
+    parts.append(f'<polygon points="{poly}" fill="#C5E1A5" fill-opacity="0.5" stroke="#33691E" stroke-width="2"/>')
+    for txt, yy in [(f"宗地号: {parcel_id}", 92), (f"权利人: {holder}", 84),
+                    (f"地类: {cls2}", 76), (f"面积: {area:.0f} ㎡", 68)]:
+        parts.append(f'<text x="{plot_x + 62 * scale:.1f}" y="{py(yy):.1f}" font-size="12" fill="#1B5E20" text-anchor="middle">{txt}</text>')
+    # 北箭头
+    ax_x = plot_x + 105 * scale
+    parts.append(f'<line x1="{ax_x:.1f}" y1="{py(78):.1f}" x2="{ax_x:.1f}" y2="{py(94):.1f}" stroke="#D32F2F" stroke-width="2"/>')
+    parts.append(f'<polygon points="{ax_x-5:.1f},{py(94):.1f} {ax_x+5:.1f},{py(94):.1f} {ax_x:.1f},{py(88):.1f}" fill="#D32F2F"/>')
+    parts.append(f'<text x="{ax_x:.1f}" y="{py(98):.1f}" font-size="13" font-weight="bold" fill="#D32F2F" text-anchor="middle">北</text>')
+    parts.append('</svg>')
+    return "".join(parts)
+
+
+def send_report_email(subject, body):
+    """通过 Resend HTTP API 将学习报告发送到老师邮箱（绕过Streamlit SMTP端口限制）"""
+    try:
+        import requests
+        api_key = st.secrets["resend"]["api_key"]
+        teacher_email = st.secrets["resend"].get("to_email", "39116272@qq.com")
+        from_email = st.secrets["resend"].get("from_email", "onboarding@resend.dev")
+        
+        resp = requests.post(
+            "https://api.resend.com/emails",
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "from": from_email,
+                "to": [teacher_email],
+                "subject": subject,
+                "text": body
+            },
+            timeout=30
+        )
+        if resp.status_code in (200, 201):
+            return True, ""
+        else:
+            return False, f"HTTP {resp.status_code}: {resp.text}"
+    except Exception as e:
+        return False, str(e)
+
+
+# ============================================================
 # 会话状态
 # ============================================================
 if 'student_name' not in st.session_state:
@@ -1192,21 +1301,8 @@ elif module.startswith("📐"):
     with c1:
         st.dataframe(df_pts, use_container_width=True)
     with c2:
-        # 自动画宗地图
-        import matplotlib.pyplot as plt
-        fig, ax = plt.subplots(figsize=(4, 3))
-        xs = [p[0] for p in pts] + [pts[0][0]]
-        ys = [p[1] for p in pts] + [pts[0][1]]
-        ax.fill(xs, ys, alpha=0.3, color='#4CAF50')
-        ax.plot(xs, ys, 'o-', color='#2E7D32', linewidth=2, markersize=6)
-        for i, (x, y) in enumerate(pts):
-            ax.annotate(f'P{i}', (x, y), textcoords="offset points", xytext=(5,5), fontsize=9)
-        ax.set_xlabel('X (m)')
-        ax.set_ylabel('Y (m)')
-        ax.set_title(pname)
-        ax.grid(alpha=0.3)
-        ax.set_aspect('equal')
-        st.pyplot(fig, use_container_width=True)
+        # 自动画宗地图（内联 SVG，浏览器渲染中文，无服务器字体依赖）
+        st.markdown(svg_parcel_area(pts, pname), unsafe_allow_html=True)
     st.caption(t("提示：使用鞋带公式 S = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|", "Hint: Use shoelace formula S = ½|Σ(xi·yi+1 − xi+1·yi)|"))
     user_area = st.number_input(t("请输入你计算的宗地面积（平方米）", "Enter your calculated area (m²)"),
                                 min_value=0.0, step=1.0, format="%.2f")
@@ -1579,35 +1675,18 @@ elif module.startswith("📊"):
     st.markdown("---")
     st.subheader(t("提交给老师", "Submit to Teacher"))
 
-    # 用HTML表单直接从学生浏览器提交到formsubmit，成功率高
-    form_html = f"""
-    <form action="https://formsubmit.co/39116272@qq.com" method="POST">
-        <input type="hidden" name="_subject" value="地籍管理实训报告 - {name} - {sid}">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="姓名" value="{name}">
-        <input type="hidden" name="班级" value="{cls}">
-        <input type="hidden" name="学号" value="{sid}">
-        <input type="hidden" name="学习时间" value="{now}">
-        <input type="hidden" name="在线时长" value="{minutes}分{seconds}秒">
-        <input type="hidden" name="累计答题数" value="{total_answered}题">
-        <input type="hidden" name="综合测验" value="{quiz_score:.1f}分">
-        <input type="hidden" name="土地分类练习" value="{class_pct:.1f}% ({st.session_state.class_score}/{st.session_state.class_total})">
-        <input type="hidden" name="权属判断" value="{own_pct:.1f}% ({st.session_state.own_score}/{st.session_state.own_total})">
-        <input type="hidden" name="面积计算" value="{area_pct:.1f}% ({st.session_state.area_score}/{st.session_state.area_total})">
-        <input type="hidden" name="宗地图识别" value="{map_pct:.1f}% ({st.session_state.map_score}/{st.session_state.map_total})">
-        <input type="hidden" name="流程排序" value="{flow_pct:.1f}% ({st.session_state.flow_score}/8)">
-        <input type="hidden" name="综合成绩" value="{total:.1f}分">
-        <input type="hidden" name="学生能力画像" value="{p_lvl_zh} / {p_lvl_en}，{p_summary_txt}">
-        <input type="hidden" name="防伪码" value="{st.session_state.verify_code}">
-        <button type="submit" style="background-color:#ff4b4b;color:white;padding:12px 24px;border:none;border-radius:8px;font-size:16px;cursor-pointer;width:100%;">
-            🚀 {t('一键提交学习报告给老师', 'Submit Report to Teacher')}
-        </button>
-    </form>
-    """
-    st.markdown(form_html, unsafe_allow_html=True)
-    st.caption(t("*首次提交老师邮箱会收到验证邮件，点确认后即可正常接收。",
-                 "*First submission requires email confirmation from teacher."))
+    email_subject = f"地籍管理实训报告 - {name} - {sid}"
+    if st.button(t("🚀 一键提交学习报告给老师", "🚀 Submit Report to Teacher"), 
+                 type="primary", use_container_width=True):
+        with st.spinner(t("正在发送...", "Sending...")):
+            ok, err = send_report_email(email_subject, report)
+            if ok:
+                st.success(t("✅ 报告已成功发送给老师！", "✅ Report sent to teacher successfully!"))
+                st.balloons()
+            else:
+                st.error(t(f"发送失败：{err}", f"Send failed: {err}"))
+                st.info(t("如果多次失败，请下载报告后手动发送至老师邮箱。", 
+                          "If sending keeps failing, please download the report and send it manually."))
 
     st.download_button(
         label=t("📥 下载学习报告（.txt）", "📥 Download Report (.txt)"),
