@@ -1211,7 +1211,12 @@ elif module.startswith("🌾"):
             st.session_state.class_b_idx = random.randrange(len(CLASS_PRACTICE))
             # 生成固定选项，存在session里，不会每次点单选就变
             idx = st.session_state.class_b_idx
-            wrong = random.sample([i for i in range(len(CLASS_PRACTICE)) if i != idx], 3)
+            # 干扰项必须从"不属于目标一级类"的二级类中抽取，
+            # 否则同一级类下的其他二级类（如河流水面/坑塘水面/沟渠同属水域及水利设施用地）
+            # 会被误抽成干扰项，导致一题中有多个正确答案。
+            correct_first = CLASS_PRACTICE[idx][1]
+            wrong_pool = [i for i in range(len(CLASS_PRACTICE)) if CLASS_PRACTICE[i][1] != correct_first]
+            wrong = random.sample(wrong_pool, 3)
             all_opts = [idx] + wrong
             random.shuffle(all_opts)
             st.session_state.class_b_opts = all_opts
