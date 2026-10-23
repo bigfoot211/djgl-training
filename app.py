@@ -1175,10 +1175,19 @@ if module.startswith("📖"):
 # ============================================================
 elif module.startswith("🌾"):
     st.header(t("🌾 土地分类练习", "🌾 Land Classification Practice"))
-    mode = st.radio(t("练习模式", "Mode"),
-        [t("模式A：判断二级地类属于哪个一级类", "Mode A: which first-level class?"),
-         t("模式B：选出属于某一级类的二级地类", "Mode B: pick second-level class")])
-    if mode.startswith(t("模式A", "Mode A")):
+    mode_labels = [
+        t("模式A：判断二级地类属于哪个一级类", "Mode A: which first-level class?"),
+        t("模式B：选出属于某一级类的二级地类", "Mode B: pick second-level class"),
+    ]
+    mode_idx = st.radio(t("练习模式", "Mode"), range(len(mode_labels)),
+                        format_func=lambda i: mode_labels[i])
+    # 切换模式时清掉另一个模式的旧题目状态，保证切过去立刻出新题
+    if st.session_state.get("_last_mode_idx", None) != mode_idx:
+        st.session_state.pop("class_idx", None)
+        st.session_state.pop("class_b_idx", None)
+        st.session_state.pop("class_b_opts", None)
+        st.session_state._last_mode_idx = mode_idx
+    if mode_idx == 0:
         if 'class_idx' not in st.session_state or st.button(t("换一题", "Next Question")):
             st.session_state.class_idx = random.randrange(len(CLASS_PRACTICE))
         idx = st.session_state.class_idx
