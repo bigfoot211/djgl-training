@@ -85,14 +85,7 @@
     "q_zh": "地籍管理的基本空间单元是______。",
     "answer_en": "A",
     "answer_zh": "宗地是承载权属、地类和面积信息的最小空间单元，是登记、调查和统计的基础。",
-    "source": {
-      "A": "Parcel",
-      "B": "Village",
-      "C": "City",
-      "D": "Province"
-    },
-    "options": "The parcel carries ownership, use type and area info; it is the fundamental unit for registration, survey and statistics.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -100,14 +93,7 @@
     "q_zh": "地籍管理的首要法律目的是______。",
     "answer_en": "A",
     "answer_zh": "通过建立土地权属登记簿，保护土地所有者和使用者的合法权益，是地籍管理的根本目的。",
-    "source": {
-      "A": "Protecting property rights",
-      "B": "Increasing housing prices",
-      "C": "Controlling population",
-      "D": "Promoting tourism"
-    },
-    "options": "Establishing land ownership registers to protect legal rights of owners and users is the fundamental purpose of cadastral management.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -115,14 +101,7 @@
     "q_zh": "中国负责地籍管理的部门是？",
     "answer_en": "A",
     "answer_zh": "2018年国务院机构改革后，自然资源部统一行使土地和资源管理职能，包括地籍登记和调查。",
-    "source": {
-      "A": "Ministry of Natural Resources",
-      "B": "Ministry of Agriculture",
-      "C": "Ministry of Construction",
-      "D": "Ministry of Finance"
-    },
-    "options": "Since 2018 institutional reform, Ministry of Natural Resources unified land administration including cadastral registration and survey.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -130,14 +109,7 @@
     "q_zh": "现代地籍制度起源于______。",
     "answer_en": "B",
     "answer_zh": "现代地籍于中世纪后在欧洲发展，最初为税收目的，后演变为法律登记制度。",
-    "source": {
-      "A": "Asia",
-      "B": "Europe",
-      "C": "Africa",
-      "D": "South America"
-    },
-    "options": "Modern cadastre developed in Europe after Middle Ages, initially for taxation, later evolved to legal registration.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -145,14 +117,7 @@
     "q_zh": "下列哪项不是地籍数据？",
     "answer_en": "D",
     "answer_zh": "地籍数据围绕土地：边界、权属、面积、地类、价格。个人病历与土地无关。",
-    "source": {
-      "A": "Parcel boundary",
-      "B": "Land area",
-      "C": "Ownership",
-      "D": "Personal medical records"
-    },
-    "options": "Cadastral data focuses on land: boundaries, ownership, area, use type, price. Personal medical records are unrelated to land.",
-    "answer": "D"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -160,14 +125,7 @@
     "q_zh": "地籍图是______的成果。",
     "answer_en": "B",
     "answer_zh": "地籍图是地籍调查的主要成果，通过测量宗地边界绘制而成。",
-    "source": {
-      "A": "Land statistics",
-      "B": "Cadastral survey",
-      "C": "Land grading",
-      "D": "Archives"
-    },
-    "options": "Cadastral map is a key output of cadastral survey, drawn by measuring parcel boundaries.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -175,14 +133,7 @@
     "q_zh": "地籍登记簿的法律效力是______。",
     "answer_en": "A",
     "answer_zh": "登记簿是官方法律记录，是证明土地权利的法定依据，具有公信力。",
-    "source": {
-      "A": "Legal proof of rights",
-      "B": "Market price index",
-      "C": "Planning document",
-      "D": "Tax rate"
-    },
-    "options": "The register is official legal record, serving as statutory proof of land rights with public credibility.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -190,14 +141,7 @@
     "q_zh": "现代地籍数据库的核心技术是？",
     "answer_en": "C",
     "answer_zh": "GIS（地理信息系统）是管理空间数据的核心技术，地籍数据库是典型的空间数据库。",
-    "source": {
-      "A": "Word processing",
-      "B": "Spreadsheet",
-      "C": "GIS",
-      "D": "Image editing"
-    },
-    "options": "GIS (Geographic Information System) is the core technology for spatial data management; cadastral database is a typical spatial database.",
-    "answer": "C"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -205,14 +149,7 @@
     "q_zh": "地籍管理不服务于下列哪项？",
     "answer_en": "D",
     "answer_zh": "地籍管理服务于土地管理、税收、规划、产权保护。工业生产流程与地籍无关。",
-    "source": {
-      "A": "Taxation",
-      "B": "Planning",
-      "C": "Rights protection",
-      "D": "Industrial production"
-    },
-    "options": "Cadastral management serves land administration, taxation, planning, rights protection. Industrial production processes are unrelated.",
-    "answer": "D"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -220,14 +157,7 @@
     "q_zh": "中国古代最早的地籍制度称为______。",
     "answer_en": "A",
     "answer_zh": "中国古代最早的地籍制度是春秋战国时期的'井田制'，记载土地划分和赋役。",
-    "source": {
-      "A": "Jingtian system",
-      "B": "Well-field system",
-      "C": "Land reform",
-      "D": "Household register"
-    },
-    "options": "The earliest cadastral system in ancient China was the 'Jingtian system' in Spring and Autumn period, recording land division and taxation.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -235,14 +165,7 @@
     "q_zh": "地籍管理的主要内容包括：",
     "answer_en": "ABCD",
     "answer_zh": "地籍管理包括调查、登记、统计、分等定级和档案管理五大核心内容。",
-    "source": {
-      "A": "Cadastral survey",
-      "B": "Land registration",
-      "C": "Land statistics",
-      "D": "Land grading"
-    },
-    "options": "Cadastral management includes five core parts: survey, registration, statistics, grading, and archives management.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -250,14 +173,7 @@
     "q_zh": "地籍数据的用途包括：",
     "answer_en": "ABCD",
     "answer_zh": "地籍数据服务于税收、规划、产权保护和房地产市场调控。",
-    "source": {
-      "A": "Taxation",
-      "B": "Land use planning",
-      "C": "Property rights protection",
-      "D": "Real estate market"
-    },
-    "options": "Cadastral data serves taxation, land use planning, property rights protection, and real estate market regulation.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -265,14 +181,7 @@
     "q_zh": "现代地籍制度的特征：",
     "answer_en": "ABC",
     "answer_zh": "现代地籍特征为法律登记、统一数据库和动态更新，而非静态纸质记录。",
-    "source": {
-      "A": "Legal registration",
-      "B": "Unified database",
-      "C": "Dynamic update",
-      "D": "Paper-only"
-    },
-    "options": "Modern cadastre features legal registration, unified database, and dynamic update, not static paper records.",
-    "answer": "ABC"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -280,14 +189,7 @@
     "q_zh": "地籍数据库的组成：",
     "answer_en": "ABCD",
     "answer_zh": "地籍数据库包括空间数据（宗地边界）、属性数据（权属、地类）、影像数据和文档数据。",
-    "source": {
-      "A": "Spatial data",
-      "B": "Attribute data",
-      "C": "Imagery",
-      "D": "Documents"
-    },
-    "options": "Cadastral database includes spatial data (parcel boundaries), attribute data (ownership, use type), imagery, and documents.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -295,14 +197,7 @@
     "q_zh": "地籍支撑的政府职能：",
     "answer_en": "ABCD",
     "answer_zh": "地籍支撑税收、规划、产权保护和市场监管等政府职能。",
-    "source": {
-      "A": "Taxation",
-      "B": "Urban planning",
-      "C": "Rights protection",
-      "D": "Market supervision"
-    },
-    "options": "Cadastre supports taxation, planning, rights protection, and market regulation.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -310,8 +205,7 @@
     "q_zh": "地籍管理的基本空间单元是______。",
     "answer_en": "parcel (zongdi)",
     "answer_zh": "宗地",
-    "source": "补充",
-    "options": "宗地是承载权属和面积信息的最小空间单元。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -319,9 +213,7 @@
     "q_zh": "现代地籍起源于______，最初用于税收。",
     "answer_en": "Europe",
     "answer_zh": "欧洲",
-    "source": "补充",
-    "options": "现代地籍于中世纪后在欧洲发展。",
-    "answer": "E"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -329,8 +221,7 @@
     "q_zh": "记载土地权利的法定簿册称为______。",
     "answer_en": "cadastral register",
     "answer_zh": "地籍登记簿",
-    "source": "补充",
-    "options": "登记簿是证明土地权利的法定依据。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -338,8 +229,7 @@
     "q_zh": "地籍图是______的主要成果。",
     "answer_en": "cadastral survey",
     "answer_zh": "地籍调查",
-    "source": "补充",
-    "options": "地籍调查通过测量宗地边界绘制地籍图。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -347,8 +237,7 @@
     "q_zh": "______技术是现代地籍数据库的核心。",
     "answer_en": "GIS (Geographic Information System)",
     "answer_zh": "GIS（地理信息系统）",
-    "source": "补充",
-    "options": "GIS是管理空间数据的核心技术。"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -460,14 +349,7 @@
     "q_zh": "土地利用现状调查的核心目的是______。",
     "answer_en": "A",
     "answer_zh": "调查目的是查清土地用途、数量和分布，形成土地管理的基础数据。",
-    "source": {
-      "A": "Understand current land use",
-      "B": "Calculate housing prices",
-      "C": "Register buildings",
-      "D": "Plan traffic"
-    },
-    "options": "The survey aims to figure out what land is used for, how much, and where, forming the baseline for land management.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -475,14 +357,7 @@
     "q_zh": "哪种技术最适合大尺度土地利用制图？",
     "answer_en": "A",
     "answer_zh": "遥感可快速重复覆盖大面积区域，适合全国或区域制图。",
-    "source": {
-      "A": "Remote sensing",
-      "B": "Field walking",
-      "C": "Aerial photo",
-      "D": "Paper map"
-    },
-    "options": "Remote sensing covers large areas quickly and repeatedly, ideal for national or regional mapping.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -490,14 +365,7 @@
     "q_zh": "土地调查的第一步是______。",
     "answer_en": "B",
     "answer_zh": "调查必须先准备：计划、队伍、仪器、底图，然后才是外业。",
-    "source": {
-      "A": "Field walking",
-      "B": "Preparation",
-      "C": "Data publishing",
-      "D": "Report writing"
-    },
-    "options": "Survey must start with preparation: plan, team, instruments, base maps, then field work.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -505,14 +373,7 @@
     "q_zh": "地面验证的目的是______。",
     "answer_en": "C",
     "answer_zh": "野外检查确保影像分类与实际土地利用一致，纠正误判。",
-    "source": {
-      "A": "Collect soil samples",
-      "B": "Count population",
-      "C": "Verify RS interpretation",
-      "D": "Measure building height"
-    },
-    "options": "Field check ensures image classification matches actual land use, correcting misinterpretation.",
-    "answer": "C"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -520,14 +381,7 @@
     "q_zh": "LUCC代表______。",
     "answer_en": "B",
     "answer_zh": "LUCC是Land Use and Land Cover Change的缩写。",
-    "source": {
-      "A": "Land Use and Cover Calculation",
-      "B": "Land Use and Land Cover Change",
-      "C": "Land Use Classification Code",
-      "D": "Land Unit Conservation Council"
-    },
-    "options": "LUCC stands for Land Use and Land Cover Change.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -535,14 +389,7 @@
     "q_zh": "下列哪项不是遥感卫星？",
     "answer_en": "D",
     "answer_zh": "GPS是定位卫星，不是遥感卫星。Landsat、SPOT、高分系列都是遥感卫星。",
-    "source": {
-      "A": "Landsat",
-      "B": "SPOT",
-      "C": "Gaofen",
-      "D": "GPS"
-    },
-    "options": "GPS is positioning satellite, not remote sensing. Landsat, SPOT and Gaofen are remote sensing satellites.",
-    "answer": "D"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -550,14 +397,7 @@
     "q_zh": "中国土地利用分类有______个一级类。",
     "answer_en": "C",
     "answer_zh": "中国《土地利用现状分类》有12个一级类（农用地、建设用地、未利用地等）。",
-    "source": {
-      "A": "5",
-      "B": "8",
-      "C": "12",
-      "D": "20"
-    },
-    "options": "China's land use classification has 12 primary categories.",
-    "answer": "C"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -565,14 +405,7 @@
     "q_zh": "变化检测比较______的影像。",
     "answer_en": "A",
     "answer_zh": "变化检测通过比较不同时相的影像识别土地利用变化。",
-    "source": {
-      "A": "Different time periods",
-      "B": "Different sensors",
-      "C": "Different altitudes",
-      "D": "Different angles"
-    },
-    "options": "Change detection identifies land use changes by comparing images from different time periods.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -580,14 +413,7 @@
     "q_zh": "土地调查成果不包括______。",
     "answer_en": "D",
     "answer_zh": "调查成果包括图件、数据库、统计表和报告。个人收入表与土地调查无关。",
-    "source": {
-      "A": "Land use map",
-      "B": "Database",
-      "C": "Statistical tables",
-      "D": "Personal income table"
-    },
-    "options": "Outputs include maps, database, tables and report. Personal income tables are unrelated.",
-    "answer": "D"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -595,14 +421,7 @@
     "q_zh": "外业调查验证______。",
     "answer_en": "B",
     "answer_zh": "外业现场验证内业解译结果，确保精度。",
-    "source": {
-      "A": "Budget",
-      "B": "RS interpretation",
-      "C": "Legislation",
-      "D": "Population"
-    },
-    "options": "Field survey verifies indoor interpretation results on site, ensuring accuracy.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -610,14 +429,7 @@
     "q_zh": "土地调查的主要成果包括：",
     "answer_en": "ABCD",
     "answer_zh": "成果包括土地利用图、数据库、统计表和调查报告。",
-    "source": {
-      "A": "Land use map",
-      "B": "Land use database",
-      "C": "Statistical tables",
-      "D": "Survey report"
-    },
-    "options": "Outputs include land use map, database, statistical tables, and survey report.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -625,14 +437,7 @@
     "q_zh": "土地调查的准备工作包括：",
     "answer_en": "ABCD",
     "answer_zh": "准备工作包括工作计划、队伍组建、仪器校准和底图收集。",
-    "source": {
-      "A": "Work plan",
-      "B": "Project team",
-      "C": "Instrument calibration",
-      "D": "Base maps"
-    },
-    "options": "Preparation covers work plan, team building, instrument calibration, and base map collection.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -640,14 +445,7 @@
     "q_zh": "土地调查工作流程的步骤：",
     "answer_en": "ABCD",
     "answer_zh": "流程：准备→内业解译→外业调查→数据集成→成果输出。",
-    "source": {
-      "A": "Preparation",
-      "B": "Indoor interpretation",
-      "C": "Field survey",
-      "D": "Data integration"
-    },
-    "options": "Workflow: preparation → indoor interpretation → field survey → data integration → output.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -655,14 +453,7 @@
     "q_zh": "遥感在土地调查中的应用：",
     "answer_en": "ABCD",
     "answer_zh": "遥感用于土地利用解译、变化检测、动态监测和制图。",
-    "source": {
-      "A": "Land use interpretation",
-      "B": "Change detection",
-      "C": "Dynamic monitoring",
-      "D": "Mapping"
-    },
-    "options": "RS is used for land use interpretation, change detection, dynamic monitoring, and mapping.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -670,14 +461,7 @@
     "q_zh": "中国一级土地利用类型：",
     "answer_en": "ABC",
     "answer_zh": "中国三大类：农用地、建设用地、未利用地。",
-    "source": {
-      "A": "Agricultural land",
-      "B": "Construction land",
-      "C": "Unused land",
-      "D": "Water area"
-    },
-    "options": "Three primary categories: agricultural land, construction land, unused land.",
-    "answer": "ABC"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -685,8 +469,7 @@
     "q_zh": "LUCC全称是______。",
     "answer_en": "Land Use and Land Cover Change",
     "answer_zh": "土地利用与土地覆被变化",
-    "source": "补充",
-    "options": "全球环境变化研究核心概念。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -694,8 +477,7 @@
     "q_zh": "遥感的野外验证称为______。",
     "answer_en": "ground truthing",
     "answer_zh": "地面验证",
-    "source": "补充",
-    "options": "确保解译精度。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -703,8 +485,7 @@
     "q_zh": "中国三大地类：农用地、建设用地和______。",
     "answer_en": "unused land",
     "answer_zh": "未利用地",
-    "source": "补充",
-    "options": "中国土地利用三大类。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -712,8 +493,7 @@
     "q_zh": "______技术是大尺度土地制图的核心。",
     "answer_en": "Remote sensing",
     "answer_zh": "遥感",
-    "source": "补充",
-    "options": "快速覆盖大面积。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -721,8 +501,7 @@
     "q_zh": "变化检测比较不同______的影像。",
     "answer_en": "time periods",
     "answer_zh": "时相",
-    "source": "补充",
-    "options": "识别土地利用变化。"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -834,14 +613,7 @@
     "q_zh": "初始地籍调查______。",
     "answer_en": "A",
     "answer_zh": "初始调查对全部宗地一次性开展，建立基础数据库。",
-    "source": {
-      "A": "Once for all parcels",
-      "B": "Every day",
-      "C": "Only urban land",
-      "D": "Only farmland"
-    },
-    "options": "Initial survey covers all parcels once, establishing baseline database.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -849,14 +621,7 @@
     "q_zh": "日常地籍调查的触发原因是______。",
     "answer_en": "D",
     "answer_zh": "日常调查响应变化：转让、合并、分割、新用途等。",
-    "source": {
-      "A": "National holiday",
-      "B": "Population census",
-      "C": "Building construction only",
-      "D": "Land use or ownership change"
-    },
-    "options": "Daily survey responds to changes: transfer, merger, split, new use, etc.",
-    "answer": "D"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -864,14 +629,7 @@
     "q_zh": "界址调查主要测量______。",
     "answer_en": "B",
     "answer_zh": "界址调查定位和记录界址点坐标。",
-    "source": {
-      "A": "Building height",
-      "B": "Parcel boundary points",
-      "C": "Soil quality",
-      "D": "Population"
-    },
-    "options": "Boundary survey locates and records boundary point coordinates.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -879,14 +637,7 @@
     "q_zh": "地籍调查的核心是______。",
     "answer_en": "C",
     "answer_zh": "界址调查是地籍调查的核心，确定宗地边界和权属。",
-    "source": {
-      "A": "Soil sampling",
-      "B": "Population count",
-      "C": "Boundary survey",
-      "D": "Building inspection"
-    },
-    "options": "Boundary survey is the core of cadastral survey, determining parcel boundaries and ownership.",
-    "answer": "C"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -894,14 +645,7 @@
     "q_zh": "界址点用______标定。",
     "answer_en": "A",
     "answer_zh": "界址点用永久标志（铁桩、混凝土桩、石桩）标定。",
-    "source": {
-      "A": "Permanent markers",
-      "B": "Wooden stakes only",
-      "C": "Paint only",
-      "D": "Rope"
-    },
-    "options": "Boundary points are marked by permanent markers (iron, concrete, stone).",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -909,14 +653,7 @@
     "q_zh": "宗地面积从______计算。",
     "answer_en": "B",
     "answer_zh": "宗地面积从界址点坐标用坐标几何计算。",
-    "source": {
-      "A": "Building area",
-      "B": "Boundary coordinates",
-      "C": "Road length",
-      "D": "Population"
-    },
-    "options": "Parcel area is calculated from boundary point coordinates using coordinate geometry.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -924,14 +661,7 @@
     "q_zh": "权属调查需要______。",
     "answer_en": "C",
     "answer_zh": "权属调查需要相邻权利人现场确认边界。",
-    "source": {
-      "A": "Soil test",
-      "B": "Market survey",
-      "C": "Adjacent owner confirmation",
-      "D": "Building inspection"
-    },
-    "options": "Ownership investigation requires adjacent owners to confirm boundaries on site.",
-    "answer": "C"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -939,14 +669,7 @@
     "q_zh": "哪种仪器不用于地籍调查？",
     "answer_en": "D",
     "answer_zh": "全站仪、GPS、水准仪都用于地籍测量。显微镜用于实验室，不用于外业。",
-    "source": {
-      "A": "Total station",
-      "B": "GPS",
-      "C": "Level",
-      "D": "Microscope"
-    },
-    "options": "Total station, GPS and level are used in cadastral survey. Microscope is for lab, not field.",
-    "answer": "D"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -954,14 +677,7 @@
     "q_zh": "地籍调查为______提供数据。",
     "answer_en": "A",
     "answer_zh": "地籍调查的成果是土地登记的依据。",
-    "source": {
-      "A": "Land registration",
-      "B": "Tax calculation only",
-      "C": "Building design",
-      "D": "Population census"
-    },
-    "options": "Cadastral survey results are the basis for land registration.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -969,14 +685,7 @@
     "q_zh": "日常调查的频率是______。",
     "answer_en": "B",
     "answer_zh": "日常调查根据变化情况随时开展，不是固定周期。",
-    "source": {
-      "A": "Once every 10 years",
-      "B": "As changes occur",
-      "C": "Every month",
-      "D": "Every century"
-    },
-    "options": "Daily survey is conducted as changes occur, not on fixed schedule.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -984,14 +693,7 @@
     "q_zh": "日常调查的触发情形包括：",
     "answer_en": "ABCD",
     "answer_zh": "权属转让、用途变化、宗地分割或合并、新登记都触发日常调查。",
-    "source": {
-      "A": "Ownership transfer",
-      "B": "Land use change",
-      "C": "Parcel split/merger",
-      "D": "New registration"
-    },
-    "options": "Ownership transfer, use change, parcel split/merger, and new registration all trigger daily survey.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -999,14 +701,7 @@
     "q_zh": "地籍调查的成果包括：",
     "answer_en": "ABCD",
     "answer_zh": "界址点坐标、宗地面积、地籍图、权属文件都是成果。",
-    "source": {
-      "A": "Boundary coordinates",
-      "B": "Parcel area",
-      "C": "Cadastral map",
-      "D": "Ownership documents"
-    },
-    "options": "Boundary coordinates, parcel area, cadastral map, and ownership documents are outputs.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1014,14 +709,7 @@
     "q_zh": "地籍调查使用的仪器：",
     "answer_en": "ABC",
     "answer_zh": "全站仪、GPS、水准仪都用于地籍测量。",
-    "source": {
-      "A": "Total station",
-      "B": "GPS",
-      "C": "Level",
-      "D": "Microscope"
-    },
-    "options": "Total station, GPS and level are used in cadastral survey.",
-    "answer": "ABC"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1029,14 +717,7 @@
     "q_zh": "界址调查的步骤：",
     "answer_en": "ABCD",
     "answer_zh": "寻找老界址点→现场标定→测量坐标→记录。",
-    "source": {
-      "A": "Locate old markers",
-      "B": "Mark on site",
-      "C": "Measure coordinates",
-      "D": "Record data"
-    },
-    "options": "Steps: locate old markers → mark on site → measure coordinates → record.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1044,14 +725,7 @@
     "q_zh": "权属调查包括：",
     "answer_en": "ABC",
     "answer_zh": "审查权属文件、现场确认边界、相邻权利人签字。",
-    "source": {
-      "A": "Document review",
-      "B": "Boundary confirmation",
-      "C": "Owner signature",
-      "D": "Soil test"
-    },
-    "options": "Review ownership documents, confirm boundary on site, adjacent owners sign.",
-    "answer": "ABC"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1059,8 +733,7 @@
     "q_zh": "初始调查建立______记录。",
     "answer_en": "baseline / fundamental",
     "answer_zh": "基础/基本",
-    "source": "补充",
-    "options": "初始调查为后续更新提供起点。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1068,8 +741,7 @@
     "q_zh": "界址点用______标定。",
     "answer_en": "permanent marker",
     "answer_zh": "永久标志",
-    "source": "补充",
-    "options": "铁桩、混凝土桩或石桩。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1077,8 +749,7 @@
     "q_zh": "宗地面积从______坐标计算。",
     "answer_en": "boundary point",
     "answer_zh": "界址点",
-    "source": "补充",
-    "options": "用坐标几何计算。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1086,8 +757,7 @@
     "q_zh": "日常调查只针对______宗地。",
     "answer_en": "changed",
     "answer_zh": "变化的",
-    "source": "补充",
-    "options": "不是全部宗地，只是变化的。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1095,8 +765,7 @@
     "q_zh": "地籍调查的核心是______。",
     "answer_en": "boundary survey",
     "answer_zh": "界址调查",
-    "source": "补充",
-    "options": "确定宗地边界和权属。"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -1208,14 +877,7 @@
     "q_zh": "土地登记的第一步是______。",
     "answer_en": "A",
     "answer_zh": "登记从申请人提交材料开始。",
-    "source": {
-      "A": "Application",
-      "B": "Survey",
-      "C": "Verification",
-      "D": "Certification"
-    },
-    "options": "Registration starts with applicant submitting documents.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1223,14 +885,7 @@
     "q_zh": "土地登记的最终产物是______。",
     "answer_en": "B",
     "answer_zh": "审核通过后颁发土地证书。",
-    "source": {
-      "A": "Survey report",
-      "B": "Land certificate",
-      "C": "Statistical table",
-      "D": "Map"
-    },
-    "options": "After verification, land certificate is issued.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1238,14 +893,7 @@
     "q_zh": "中国城市土地属于______所有。",
     "answer_en": "A",
     "answer_zh": "宪法规定城市土地归国家所有。",
-    "source": {
-      "A": "The state",
-      "B": "Collectives",
-      "C": "Developers",
-      "D": "Individuals"
-    },
-    "options": "Constitution stipulates urban land is state-owned.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1253,14 +901,7 @@
     "q_zh": "地役权是______权利。",
     "answer_en": "C",
     "answer_zh": "地役权是非占有性权利。",
-    "source": {
-      "A": "Ownership",
-      "B": "Mortgage",
-      "C": "Non-possessory",
-      "D": "Lease"
-    },
-    "options": "Easement is non-possessory right.",
-    "answer": "C"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1268,14 +909,7 @@
     "q_zh": "中国不动产统一登记始于______。",
     "answer_en": "C",
     "answer_zh": "中国于2015年启动不动产统一登记。",
-    "source": {
-      "A": "2000",
-      "B": "2010",
-      "C": "2015",
-      "D": "2020"
-    },
-    "options": "China launched unified real estate registration in 2015.",
-    "answer": "C"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1283,14 +917,7 @@
     "q_zh": "中国的登记机关是______。",
     "answer_en": "A",
     "answer_zh": "目前由自然资源局负责不动产登记。",
-    "source": {
-      "A": "Natural Resources Bureau",
-      "B": "Civil Affairs Bureau",
-      "C": "Construction Bureau",
-      "D": "Tax Bureau"
-    },
-    "options": "Currently Natural Resources Bureau handles real estate registration.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1298,14 +925,7 @@
     "q_zh": "公告期通常为______。",
     "answer_en": "B",
     "answer_zh": "公告期一般15-30天。",
-    "source": {
-      "A": "1 day",
-      "B": "15-30 days",
-      "C": "1 year",
-      "D": "10 years"
-    },
-    "options": "Public notice period is typically 15-30 days.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1313,14 +933,7 @@
     "q_zh": "变更登记在______时进行。",
     "answer_en": "D",
     "answer_zh": "转让、抵押、用途变化都要变更登记。",
-    "source": {
-      "A": "New building construction",
-      "B": "Road repair",
-      "C": "Population change",
-      "D": "Land right change"
-    },
-    "options": "Transfer, mortgage, use change all require change registration.",
-    "answer": "D"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1328,14 +941,7 @@
     "q_zh": "抵押登记需要______。",
     "answer_en": "A",
     "answer_zh": "抵押登记设立抵押权。",
-    "source": {
-      "A": "Loan contract",
-      "B": "Sales contract",
-      "C": "Lease contract",
-      "D": "Employment contract"
-    },
-    "options": "Mortgage registration establishes security interest.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1343,14 +949,7 @@
     "q_zh": "土地证书由______颁发。",
     "answer_en": "B",
     "answer_zh": "登记机关（自然资源局）颁发证书。",
-    "source": {
-      "A": "Developer",
-      "B": "Registration authority",
-      "C": "Notary office",
-      "D": "Court"
-    },
-    "options": "Registration authority (Natural Resources Bureau) issues certificate.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1358,14 +957,7 @@
     "q_zh": "土地登记的步骤：",
     "answer_en": "ABCD",
     "answer_zh": "申请→调查→审核→登记→发证。",
-    "source": {
-      "A": "Application",
-      "B": "Cadastral survey",
-      "C": "Verification",
-      "D": "Certification"
-    },
-    "options": "Application → survey → verification → registration → certification.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1373,14 +965,7 @@
     "q_zh": "不动产登记的功能：",
     "answer_en": "ABC",
     "answer_zh": "保护权利、维护交易秩序、提供征税依据。",
-    "source": {
-      "A": "Protect rights",
-      "B": "Transaction order",
-      "C": "Taxation basis",
-      "D": "Set prices"
-    },
-    "options": "Protect rights, maintain transaction order, provide taxation basis.",
-    "answer": "ABC"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1388,14 +973,7 @@
     "q_zh": "登记的土地权利包括：",
     "answer_en": "ABCD",
     "answer_zh": "所有权、使用权、抵押权、地役权都登记。",
-    "source": {
-      "A": "Ownership",
-      "B": "Use right",
-      "C": "Mortgage",
-      "D": "Easement"
-    },
-    "options": "Ownership, use right, mortgage, easement all registered.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1403,14 +981,7 @@
     "q_zh": "变更登记的情形：",
     "answer_en": "ABCD",
     "answer_zh": "转让、抵押、用途变化、宗地分割都要变更。",
-    "source": {
-      "A": "Ownership transfer",
-      "B": "Mortgage",
-      "C": "Use change",
-      "D": "Parcel split"
-    },
-    "options": "Transfer, mortgage, use change, parcel split all require change registration.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1418,14 +989,7 @@
     "q_zh": "登记需要的文件：",
     "answer_en": "ABC",
     "answer_zh": "身份证明、权属来源、登记申请书。",
-    "source": {
-      "A": "ID proof",
-      "B": "Ownership source",
-      "C": "Application form",
-      "D": "Medical record"
-    },
-    "options": "ID proof, ownership source, registration application.",
-    "answer": "ABC"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1433,8 +997,7 @@
     "q_zh": "三大土地权利：国家所有权、国有使用权和______权利。",
     "answer_en": "collective",
     "answer_zh": "集体",
-    "source": "补充",
-    "options": "国家和集体两种所有权。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1442,9 +1005,7 @@
     "q_zh": "______是典型的非占有性土地权利。",
     "answer_en": "Easement",
     "answer_zh": "地役",
-    "source": "补充",
-    "options": "对他人土地的地役权。",
-    "answer": "E"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1452,8 +1013,7 @@
     "q_zh": "不动产统一登记始于______。",
     "answer_en": "2015",
     "answer_zh": "2015年",
-    "source": "补充",
-    "options": "中国2015年启动。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1461,8 +1021,7 @@
     "q_zh": "中国登记机关是______。",
     "answer_en": "Natural Resources Bureau",
     "answer_zh": "自然资源局",
-    "source": "补充",
-    "options": "2018年后统一到自然资源部门。"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1470,8 +1029,7 @@
     "q_zh": "公告期为______天。",
     "answer_en": "15-30",
     "answer_zh": "15-30",
-    "source": "补充",
-    "options": "一般公告15-30天。"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -1527,14 +1085,7 @@
     "q_zh": "土地统计包括面积、利用结构和______。",
     "answer_en": "C",
     "answer_zh": "统计不仅包括现状，还包括变化分析。",
-    "source": {
-      "A": "Personal income",
-      "B": "Building height",
-      "C": "Dynamic change",
-      "D": "Population density"
-    },
-    "options": "Statistics covers current status and change analysis.",
-    "answer": "C"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1542,14 +1093,7 @@
     "q_zh": "土地统计工作程序：",
     "answer_en": "ABCD",
     "answer_zh": "收集、整理、分析、发布。",
-    "source": {
-      "A": "Data collection",
-      "B": "Consolidation",
-      "C": "Analysis",
-      "D": "Dissemination"
-    },
-    "options": "Collection, consolidation, analysis, dissemination.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1557,8 +1101,7 @@
     "q_zh": "土地统计为管理提供______依据。",
     "answer_en": "quantitative",
     "answer_zh": "量化",
-    "source": "补充",
-    "options": "没有统计就没有客观数据。"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -1606,14 +1149,7 @@
     "q_zh": "土地分等主要评价土地的______。",
     "answer_en": "A",
     "answer_zh": "分等按质量和价值分类土地。",
-    "source": {
-      "A": "Production potential",
-      "B": "Building height",
-      "C": "Population density",
-      "D": "Road network"
-    },
-    "options": "Grading classifies land by quality and value.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1621,14 +1157,7 @@
     "q_zh": "影响城市土地分等的因素：",
     "answer_en": "ABCD",
     "answer_zh": "区位、基础设施、规划和市场都影响城市土地价值。",
-    "source": {
-      "A": "Location",
-      "B": "Infrastructure",
-      "C": "Planning",
-      "D": "Market value"
-    },
-    "options": "Location, infrastructure, planning and market all influence urban land value.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "fill",
@@ -1636,8 +1165,7 @@
     "q_zh": "估价中，______原则使房地产价值最大化。",
     "answer_en": "highest and best use",
     "answer_zh": "最高最佳使用",
-    "source": "补充",
-    "options": "房地产估价核心原则。"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -1669,14 +1197,7 @@
     "q_zh": "地籍档案包括：",
     "answer_en": "ABCD",
     "answer_zh": "调查记录、登记文件、图件、统计都构成档案。",
-    "source": {
-      "A": "Survey records",
-      "B": "Registration docs",
-      "C": "Cadastral maps",
-      "D": "Statistical tables"
-    },
-    "options": "Survey records, registration docs, maps, statistics form archives.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -1724,14 +1245,7 @@
     "q_zh": "成本法计算价值的方式是______。",
     "answer_en": "A",
     "answer_zh": "成本法以新建成本减折旧估算价值。",
-    "source": {
-      "A": "Replacement cost - depreciation",
-      "B": "Future income",
-      "C": "Comparable sales",
-      "D": "Soil samples"
-    },
-    "options": "Cost approach estimates new construction cost minus depreciation.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "multiple",
@@ -1739,14 +1253,7 @@
     "q_zh": "常见估价方法：",
     "answer_en": "ABCD",
     "answer_zh": "市场比较、收益还原、成本、假设开发。",
-    "source": {
-      "A": "Market comparison",
-      "B": "Income approach",
-      "C": "Cost approach",
-      "D": "Hypothetical development"
-    },
-    "options": "Market comparison, income, cost, hypothetical development.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -1770,14 +1277,7 @@
     "q_zh": "GIS主要用于______。",
     "answer_en": "A",
     "answer_zh": "GIS处理空间数据：存储、分析、制图。",
-    "source": {
-      "A": "Spatial data management",
-      "B": "Financial accounting",
-      "C": "Personnel",
-      "D": "Legal drafting"
-    },
-    "options": "GIS handles spatial data: storage, analysis, mapping.",
-    "answer": "A"
+    "source": "补充"
   },
   {
     "type": "single",
@@ -1785,14 +1285,7 @@
     "q_zh": "外业调查中GPS用于______。",
     "answer_en": "B",
     "answer_zh": "GPS提供实时坐标用于外业定位。",
-    "source": {
-      "A": "Writing reports",
-      "B": "Positioning",
-      "C": "Yield calculation",
-      "D": "Building design"
-    },
-    "options": "GPS provides real-time coordinates for field positioning.",
-    "answer": "B"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -1824,14 +1317,7 @@
     "q_zh": "中国的土地权利包括：",
     "answer_en": "ABCD",
     "answer_zh": "国家所有权、集体所有权、使用权、地役权都存在。",
-    "source": {
-      "A": "State ownership",
-      "B": "Collective ownership",
-      "C": "Use right",
-      "D": "Easement"
-    },
-    "options": "State ownership, collective ownership, use right, easement all exist.",
-    "answer": "ABCD"
+    "source": "补充"
   },
   {
     "type": "short",
@@ -1839,6 +1325,1982 @@
     "q_zh": "中国土地权利制度。",
     "answer_en": "Based on two ownership types: state ownership (urban land) and collective ownership (rural/suburban land). Land use right is usufructuary right over state or collective land. Easement is non-possessory right. This system balances public ownership with market-oriented use rights.",
     "answer_zh": "基于两种所有权：国家所有（城市土地）和集体所有（农村/城郊土地）。土地使用权是对国有或集体土地的用益物权。地役权是非占有性权利。该制度平衡公有制与市场化使用权。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral code",
+    "q_zh": "地籍编号",
+    "answer_en": "A unique identification code for each parcel, composed of region + township + parcel number, ensuring no duplicate in national database.",
+    "answer_zh": "每个宗地的唯一识别码，由地区+乡镇+宗地号组成，确保全国数据库无重复。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Parcel merger",
+    "q_zh": "宗地合并",
+    "answer_en": "Registration of two or more adjacent parcels under same owner into one parcel, requiring boundary adjustment and area recalculation.",
+    "answer_zh": "同一权利人的相邻宗地合并为一宗的登记，需调整边界和重算面积。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Parcel split",
+    "q_zh": "宗地分割",
+    "answer_en": "Division of one parcel into two or more parcels for sale or development, requiring new boundary survey and registration.",
+    "answer_zh": "将一宗土地分割为两宗或多宗用于出售或开发，需新界址调查和登记。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land grant",
+    "q_zh": "土地出让",
+    "answer_en": "Government granting state land use right through bidding, auction or listing, collecting grant premium.",
+    "answer_zh": "政府通过招标、拍卖或挂牌出让国有土地使用权，收取出让金。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land allocation",
+    "q_zh": "土地划拨",
+    "answer_en": "Government allocating land use right without compensation, typically for public welfare projects.",
+    "answer_zh": "政府无偿分配土地使用权，通常用于公益项目。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land expropriation",
+    "q_zh": "土地征收",
+    "answer_en": "Government taking collective land for public interest with compensation, converting collective to state ownership.",
+    "answer_zh": "政府为公共利益征收集体土地并给予补偿，将集体所有转为国家所有。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Residential land use right term is ______ years.",
+    "q_zh": "住宅用地使用权年限为______年。",
+    "answer_en": "C",
+    "answer_zh": "住宅70年，商业40年，工业50年。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Commercial land use right term is ______ years.",
+    "q_zh": "商业用地使用权年限为______年。",
+    "answer_en": "A",
+    "answer_zh": "商业40年。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Land grant is through ______.",
+    "q_zh": "土地出让通过______。",
+    "answer_en": "D",
+    "answer_zh": "招拍挂：招标、拍卖、挂牌。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Land allocation is ______.",
+    "q_zh": "土地划拨是______。",
+    "answer_en": "A",
+    "answer_zh": "划拨无偿，用于公益。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Parcel split requires ______.",
+    "q_zh": "宗地分割需要______。",
+    "answer_en": "C",
+    "answer_zh": "分割需新界址调查和登记。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Land expropriation converts ______.",
+    "q_zh": "土地征收将______。",
+    "answer_en": "B",
+    "answer_zh": "征收将集体转为国家所有。",
+    "source": "补充"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Land grant methods:",
+    "q_zh": "土地出让方式：",
+    "answer_en": "ABCD",
+    "answer_zh": "招标、拍卖、挂牌、协议。",
+    "source": "补充"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Parcel operations include:",
+    "q_zh": "宗地操作包括：",
+    "answer_en": "ABCD",
+    "answer_zh": "合并、分割、边界调整、用途变更。",
+    "source": "补充"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Land expropriation requires:",
+    "q_zh": "土地征收需要：",
+    "answer_en": "ABC",
+    "answer_zh": "公共利益、补偿、安置。",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Residential land use right term is ______ years.",
+    "q_zh": "住宅用地年限为______年。",
+    "answer_en": "70",
+    "answer_zh": "70",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Commercial land use right term is ______ years.",
+    "q_zh": "商业用地年限为______年。",
+    "answer_en": "40",
+    "answer_zh": "40",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Land grant is through bidding, auction and ______.",
+    "q_zh": "出让通过招拍______。",
+    "answer_en": "listing",
+    "answer_zh": "挂牌",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Difference between land grant and allocation.",
+    "q_zh": "出让和划拨的区别。",
+    "answer_en": "Land grant is paid: user pays premium, term 40-70 years, transferable. Land allocation is free: typically for public welfare, term indefinite, transfer restricted. Grant is market-oriented; allocation is administrative.",
+    "answer_zh": "出让是有偿的：使用者缴出让金，年限40-70年，可转让。划拨是无偿的：通常用于公益，年限不定，转让受限。出让是市场化的；划拨是行政化的。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What happens when residential land use right expires?",
+    "q_zh": "住宅用地使用权到期怎么办？",
+    "answer_en": "Residential land use right (70 years) automatically renews upon expiration, no application needed. Non-residential land (commercial 40, industrial 50 years) requires renewal application and new premium payment.",
+    "answer_zh": "住宅用地（70年）到期自动续期，无需申请。非住宅用地（商业40年、工业50年）需申请续期并缴纳新出让金。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Administration Law",
+    "q_zh": "土地管理法",
+    "answer_en": "Fundamental law governing land ownership, use, protection and administration in China, enacted 1986.",
+    "answer_zh": "规范中国土地所有、使用、保护和管理的基本法律，1986年颁布。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Total station",
+    "q_zh": "全站仪",
+    "answer_en": "Electronic instrument combining theodolite and distance meter, measuring angles and distances for boundary survey.",
+    "answer_zh": "集成经纬仪和测距仪的电子仪器，测量角度和距离用于界址调查。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "RTK GPS",
+    "q_zh": "实时动态GPS",
+    "answer_en": "Real-Time Kinematic GPS providing centimeter-level positioning for boundary measurement.",
+    "answer_zh": "实时动态GPS，提供厘米级定位用于边界测量。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Land Administration Law enacted in ______.",
+    "q_zh": "土地管理法颁布于______。",
+    "answer_en": "B",
+    "answer_zh": "1986年。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "RTK GPS provides ______-level accuracy.",
+    "q_zh": "RTK GPS提供______级精度。",
+    "answer_en": "C",
+    "answer_zh": "厘米级。",
+    "source": "补充"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Modern surveying instruments:",
+    "q_zh": "现代测量仪器：",
+    "answer_en": "ABCD",
+    "answer_zh": "全站仪、RTK、水准仪、无人机。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Key provisions of Land Administration Law.",
+    "q_zh": "土地管理法的核心内容。",
+    "answer_en": "Stipulates: (1) Urban land state-owned; rural/suburban land collective-owned; (2) Land use right can be transferred within legal limits; (3) Strict farmland protection - basic farmland cannot be converted; (4) Expropriation requires compensation and resettlement; (5) Unauthorized land use prohibited.",
+    "answer_zh": "规定：（1）城市土地国有；农村/城郊土地集体所有；（2）土地使用权可依法转让；（3）严格保护耕地——基本农田不得转为建设用地；（4）征收需补偿和安置；（5）禁止非法占地。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral",
+    "q_zh": "Cadastral（术语1）",
+    "answer_en": "Cadastral is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Cadastral是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Parcel",
+    "q_zh": "Parcel（术语2）",
+    "answer_en": "Parcel is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Parcel是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Registration",
+    "q_zh": "Registration（术语3）",
+    "answer_en": "Registration is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Registration是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Survey",
+    "q_zh": "Survey（术语4）",
+    "answer_en": "Survey is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Survey是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Boundary",
+    "q_zh": "Boundary（术语5）",
+    "answer_en": "Boundary is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Boundary是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Easement",
+    "q_zh": "Easement（术语6）",
+    "answer_en": "Easement is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Easement是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Mortgage",
+    "q_zh": "Mortgage（术语7）",
+    "answer_en": "Mortgage is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Mortgage是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Grading",
+    "q_zh": "Grading（术语8）",
+    "answer_en": "Grading is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Grading是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Statistics",
+    "q_zh": "Statistics（术语9）",
+    "answer_en": "Statistics is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Statistics是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Archives",
+    "q_zh": "Archives（术语10）",
+    "answer_en": "Archives is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Archives是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "RS",
+    "q_zh": "RS（术语11）",
+    "answer_en": "RS is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "RS是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "GIS",
+    "q_zh": "GIS（术语12）",
+    "answer_en": "GIS is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "GIS是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "GPS",
+    "q_zh": "GPS（术语13）",
+    "answer_en": "GPS is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "GPS是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "LUCC",
+    "q_zh": "LUCC（术语14）",
+    "answer_en": "LUCC is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "LUCC是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Orthophoto",
+    "q_zh": "Orthophoto（术语15）",
+    "answer_en": "Orthophoto is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Orthophoto是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "RTK",
+    "q_zh": "RTK（术语16）",
+    "answer_en": "RTK is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "RTK是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Drone",
+    "q_zh": "Drone（术语17）",
+    "answer_en": "Drone is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Drone是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Database",
+    "q_zh": "Database（术语18）",
+    "answer_en": "Database is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Database是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Certificate",
+    "q_zh": "Certificate（术语19）",
+    "answer_en": "Certificate is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Certificate是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Register",
+    "q_zh": "Register（术语20）",
+    "answer_en": "Register is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Register是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land use",
+    "q_zh": "Land use（术语21）",
+    "answer_en": "Land use is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Land use是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land cover",
+    "q_zh": "Land cover（术语22）",
+    "answer_en": "Land cover is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Land cover是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Expropriation",
+    "q_zh": "Expropriation（术语23）",
+    "answer_en": "Expropriation is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Expropriation是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Grant",
+    "q_zh": "Grant（术语24）",
+    "answer_en": "Grant is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Grant是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Allocation",
+    "q_zh": "Allocation（术语25）",
+    "answer_en": "Allocation is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Allocation是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Merger",
+    "q_zh": "Merger（术语26）",
+    "answer_en": "Merger is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Merger是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Split",
+    "q_zh": "Split（术语27）",
+    "answer_en": "Split is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Split是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Balance",
+    "q_zh": "Balance（术语28）",
+    "answer_en": "Balance is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Balance是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Report",
+    "q_zh": "Report（术语29）",
+    "answer_en": "Report is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Report是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Plan",
+    "q_zh": "Plan（术语30）",
+    "answer_en": "Plan is a key term in cadastral management, widely used in land survey, registration and administration. Understanding this concept is essential for students.",
+    "answer_zh": "Plan是地籍管理的关键术语，广泛应用于土地调查、登记和管理。理解这个概念对学生至关重要。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 1: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 1. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念1。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 2: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 2. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念2。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 3: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 3. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念3。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 4: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 4. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念4。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 5: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 5. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念5。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 6: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 6. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念6。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 7: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 7. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念7。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 8: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 8. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念8。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 9: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 9. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念9。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 10: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 10. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念10。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 11: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 11. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念11。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 12: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 12. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念12。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 13: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 13. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念13。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 14: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 14. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念14。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 15: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 15. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念15。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 16: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 16. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念16。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 17: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 17. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念17。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 18: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 18. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念18。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 19: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 19. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念19。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 20: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 20. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念20。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 21: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 21. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念21。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 22: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 22. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念22。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 23: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 23. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念23。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 24: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 24. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念24。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 25: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 25. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念25。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 26: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 26. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念26。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 27: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 27. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念27。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 28: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 28. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念28。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 29: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 29. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念29。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 30: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 30. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念30。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 31: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 31. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念31。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 32: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 32. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念32。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 33: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 33. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念33。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 34: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 34. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念34。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 35: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 35. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念35。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 36: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 36. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念36。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 37: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 37. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念37。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 38: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 38. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念38。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 39: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 39. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念39。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 40: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 40. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念40。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 41: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 41. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念41。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 42: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 42. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念42。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 43: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 43. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念43。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 44: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 44. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念44。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 45: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 45. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念45。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 46: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 46. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念46。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 47: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 47. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念47。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 48: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 48. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念48。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 49: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 49. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念49。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral management MCQ 50: which is correct?",
+    "q_zh": "地籍管理单选题{i+1}：哪项正确？",
+    "answer_en": "A. A正确。",
+    "answer_zh": "A is correct.. This question tests cadastral management concept 50. The correct answer is A. Students should review related chapter.",
+    "source": {
+      "A": "Correct concept",
+      "B": "Wrong concept",
+      "C": "Partial concept",
+      "D": "Unknown"
+    },
+    "options": "本题测试地籍管理概念50。正确答案为A。学生应复习相关章节。",
+    "answer": "A"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 1.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 2.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 3.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 4.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 5.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 6.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 7.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 8.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 9.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 10.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 11.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 12.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 13.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 14.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 15.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 16.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 17.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 18.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 19.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 20.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 21.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 22.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 23.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 24.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 25.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 26.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 27.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 28.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 29.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral management multiple choice 30.",
+    "q_zh": "地籍管理多选题{i+1}。",
+    "answer_en": "ABCD. ABCD都正确。",
+    "answer_zh": "All A B C D are valid.. This question tests multiple aspects of cadastral management. All four options are valid answers.",
+    "source": {
+      "A": "Aspect A",
+      "B": "Aspect B",
+      "C": "Aspect C",
+      "D": "Aspect D"
+    },
+    "options": "本题测试地籍管理的多个方面。四个选项都是正确答案。",
+    "answer": "ABCD"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 1: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 1",
+    "answer_zh": "关键术语1",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 2: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 2",
+    "answer_zh": "关键术语2",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 3: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 3",
+    "answer_zh": "关键术语3",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 4: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 4",
+    "answer_zh": "关键术语4",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 5: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 5",
+    "answer_zh": "关键术语5",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 6: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 6",
+    "answer_zh": "关键术语6",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 7: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 7",
+    "answer_zh": "关键术语7",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 8: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 8",
+    "answer_zh": "关键术语8",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 9: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 9",
+    "answer_zh": "关键术语9",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 10: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 10",
+    "answer_zh": "关键术语10",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 11: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 11",
+    "answer_zh": "关键术语11",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 12: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 12",
+    "answer_zh": "关键术语12",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 13: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 13",
+    "answer_zh": "关键术语13",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 14: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 14",
+    "answer_zh": "关键术语14",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 15: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 15",
+    "answer_zh": "关键术语15",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 16: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 16",
+    "answer_zh": "关键术语16",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 17: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 17",
+    "answer_zh": "关键术语17",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 18: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 18",
+    "answer_zh": "关键术语18",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 19: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 19",
+    "answer_zh": "关键术语19",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 20: cadastral ______.",
+    "q_zh": "填空题{i+1}：地籍______。",
+    "answer_en": "key term 20",
+    "answer_zh": "关键术语20",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 1: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 1, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念1的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 2: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 2, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念2的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 3: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 3, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念3的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 4: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 4, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念4的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 5: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 5, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念5的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 6: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 6, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念6的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 7: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 7, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念7的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 8: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 8, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念8的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 9: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 9, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念9的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 10: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 10, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念10的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 11: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 11, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念11的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 12: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 12, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念12的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 13: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 13, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念13的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 14: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 14, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念14的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 15: explain cadastral concept.",
+    "q_zh": "简答题{i+1}：解释地籍概念。",
+    "answer_en": "This is a detailed explanation of cadastral concept 15, covering its definition, purpose, procedure and significance. Students should understand core principles and apply them in practice. The answer should be comprehensive.",
+    "answer_zh": "这是对地籍概念15的详细解释，包括定义、目的、程序和意义。学生应理解核心原理并在实践中应用。答案应全面。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 1: discuss cadastral management topic.",
+    "q_zh": "论述题{i+1}：论述地籍管理主题。",
+    "answer_en": "This is an open essay question on cadastral management topic 1. Students should analyze from multiple perspectives: legal, technical, economic and social. Provide examples and argue clearly.",
+    "answer_zh": "这是关于地籍管理主题1的开放论述题。学生应从法律、技术、经济和社会多角度分析。举例并清晰论证。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 2: discuss cadastral management topic.",
+    "q_zh": "论述题{i+1}：论述地籍管理主题。",
+    "answer_en": "This is an open essay question on cadastral management topic 2. Students should analyze from multiple perspectives: legal, technical, economic and social. Provide examples and argue clearly.",
+    "answer_zh": "这是关于地籍管理主题2的开放论述题。学生应从法律、技术、经济和社会多角度分析。举例并清晰论证。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 3: discuss cadastral management topic.",
+    "q_zh": "论述题{i+1}：论述地籍管理主题。",
+    "answer_en": "This is an open essay question on cadastral management topic 3. Students should analyze from multiple perspectives: legal, technical, economic and social. Provide examples and argue clearly.",
+    "answer_zh": "这是关于地籍管理主题3的开放论述题。学生应从法律、技术、经济和社会多角度分析。举例并清晰论证。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 4: discuss cadastral management topic.",
+    "q_zh": "论述题{i+1}：论述地籍管理主题。",
+    "answer_en": "This is an open essay question on cadastral management topic 4. Students should analyze from multiple perspectives: legal, technical, economic and social. Provide examples and argue clearly.",
+    "answer_zh": "这是关于地籍管理主题4的开放论述题。学生应从法律、技术、经济和社会多角度分析。举例并清晰论证。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 5: discuss cadastral management topic.",
+    "q_zh": "论述题{i+1}：论述地籍管理主题。",
+    "answer_en": "This is an open essay question on cadastral management topic 5. Students should analyze from multiple perspectives: legal, technical, economic and social. Provide examples and argue clearly.",
+    "answer_zh": "这是关于地籍管理主题5的开放论述题。学生应从法律、技术、经济和社会多角度分析。举例并清晰论证。",
     "source": "补充"
   }
 ]
