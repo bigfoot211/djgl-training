@@ -1677,7 +1677,7 @@ elif module.startswith("📚"):
 # 模块8.6：课堂答题（老师展示 + 学生扫码作答 + 实时统计）
 # ============================================================
 elif module.startswith("📱"):
-    st.header(t("📱 课堂答题 / Live Quiz"))
+    st.header("📱 课堂答题 / Live Quiz")
     st.caption(t("老师展示题目，学生扫码作答，实时统计ABCD分布",
                  "Teacher displays question, students answer via QR code, real-time statistics"))
 
