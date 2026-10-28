@@ -1128,10 +1128,10 @@ with st.sidebar.expander(t("💬 和张老师聊天", "💬 Chat with Prof. Zhan
 # 模块导航
 modules_zh = ["📖 知识学习", "🌾 土地分类练习", "⚖️ 权属判断", "📐 面积计算实训",
               "🔢 调查流程排序", "🔍 宗地数据查询", "🗺️ 宗地图识别", "📝 综合测验",
-              "📚 在线刷题", "📱 课堂答题", "🧑🎓 学生能力画像", "📊 学习统计与提交", "ℹ️ 使用说明"]
+              "📚 在线刷题", "🧑🎓 学生能力画像", "📊 学习统计与提交", "ℹ️ 使用说明"]
 modules_en = ["📖 Knowledge", "🌾 Land Classification", "⚖️ Ownership", "📐 Area Calculation",
               "🔢 Survey Procedure", "🔍 Parcel Search", "🗺️ Parcel Map Quiz", "📝 Final Quiz",
-              "📚 Question Bank", "📱 Live Quiz", "🧑🎓 Ability Portrait", "📊 My Scores & Report", "ℹ️ Help"]
+              "📚 Question Bank", "🧑🎓 Ability Portrait", "📊 My Scores & Report", "ℹ️ Help"]
 modules = modules_zh if st.session_state.lang == "zh" else modules_en
 module = st.sidebar.radio(t("功能模块", "Modules"), modules)
 
@@ -1672,98 +1672,6 @@ elif module.startswith("📚"):
                         st.info(f"🇬🇧 {q.get('answer_en','')}")
                         if q.get('answer_zh'):
                             st.caption(f"🇨🇳 {q['answer_zh']}")
-
-# ============================================================
-# 模块8.6：课堂答题（老师展示 + 学生扫码作答 + 实时统计）
-# ============================================================
-elif module.startswith("📱"):
-    st.header("📱 课堂答题 / Live Quiz")
-    st.caption(t("老师展示题目，学生扫码作答，实时统计ABCD分布",
-                 "Teacher displays question, students answer via QR code, real-time statistics"))
-
-    # 加载题库
-    qbank_path = os.path.join(BASE_DIR, "questions.json")
-    import json as _json
-    with open(qbank_path, "r", encoding="utf-8") as f:
-        QBANK = _json.load(f)
-
-    # 初始化全局答题数据
-    import __main__
-    if not hasattr(__main__, 'QUIZ_DATA'):
-        __main__.QUIZ_DATA = {}
-    quiz_data = __main__.QUIZ_DATA
-
-    # 检测是否学生端（URL带 ?role=student）
-    params = st.query_params
-    is_student = params.get("role", [""]) == "student"
-
-    if is_student:
-        # ===== 学生端 =====
-        st.subheader(t("✍️ 学生答题", "✍️ Student Answer"))
-        qid_input = st.text_input(t("输入题号（如 1）", "Enter question number (e.g. 1)"))
-        if qid_input:
-            try:
-                qidx = int(qid_input) - 1
-                if 0 <= qidx < len(QBANK):
-                    q = QBANK[qidx]
-                    st.markdown(f"**{q['q_zh']}**")
-                    st.caption(q['q_en'])
-                    if q.get('options'):
-                        choice = st.radio(t("请选择你的答案", "Choose your answer"),
-                                          list(q['options'].keys()))
-                        if st.button(t("提交答案", "Submit")):
-                            qid_key = str(qidx)
-                            if qid_key not in quiz_data:
-                                quiz_data[qid_key] = {k: 0 for k in q['options'].keys()}
-                            quiz_data[qid_key][choice] += 1
-                            st.success(t(f"已提交！你选了 {choice}", f"Submitted! You chose {choice}"))
-                    else:
-                        st.info(t("本题不是选择题", "This is not a multiple choice question"))
-                else:
-                    st.warning(t("题号超出范围", "Question number out of range"))
-            except ValueError:
-                st.warning(t("请输入数字题号", "Please enter a number"))
-    else:
-        # ===== 老师端 =====
-        st.subheader(t("👨‍🏫 老师控制台", "👨‍🏫 Teacher Control"))
-
-        # 选择题号
-        qid = st.number_input(t("选择题号", "Select question number"),
-                              min_value=1, max_value=len(QBANK), value=1) - 1
-        q = QBANK[qid]
-
-        # 显示题目
-        st.markdown(f"### {q['q_zh']}")
-        st.caption(q['q_en'])
-        if q.get('options'):
-            for k, v in q['options'].items():
-                st.markdown(f"- **{k}**. {v}")
-
-        # 生成学生答题链接
-        student_url = f"?role=student"
-        st.markdown(f"📱 **学生扫码/点击答题链接**：[点击进入答题]({student_url})")
-        st.info(t("提示：把这个链接生成二维码，学生扫码即可答题",
-                  "Tip: Generate QR code from this link for students to scan"))
-
-        # 实时统计
-        st.markdown("---")
-        st.subheader(t("📊 实时答题统计", "📊 Real-time Statistics"))
-        qid_key = str(qid)
-        if qid_key in quiz_data:
-            stats = quiz_data[qid_key]
-            total = sum(stats.values())
-            st.write(t(f"已答题人数：{total}", f"Total answers: {total}"))
-            for k, v in stats.items():
-                pct = int(v/total*100) if total > 0 else 0
-                st.progress(pct, text=f"{k}: {v}人 ({pct}%)")
-        else:
-            st.info(t("暂无答题数据", "No answers yet"))
-
-        # 重置按钮
-        if st.button(t("重置本题统计", "Reset statistics")):
-            if qid_key in quiz_data:
-                del quiz_data[qid_key]
-                st.rerun()
 
 # ============================================================
 # 模块8.5：学生能力画像（文字画像 + 能力雷达图 + 卡通画像）
