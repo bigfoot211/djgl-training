@@ -1128,10 +1128,10 @@ with st.sidebar.expander(t("💬 和张老师聊天", "💬 Chat with Prof. Zhan
 # 模块导航
 modules_zh = ["📖 知识学习", "🌾 土地分类练习", "⚖️ 权属判断", "📐 面积计算实训",
               "🔢 调查流程排序", "🔍 宗地数据查询", "🗺️ 宗地图识别", "📝 综合测验",
-              "🧑🎓 学生能力画像", "📊 学习统计与提交", "ℹ️ 使用说明"]
+              "📚 在线刷题", "🧑🎓 学生能力画像", "📊 学习统计与提交", "ℹ️ 使用说明"]
 modules_en = ["📖 Knowledge", "🌾 Land Classification", "⚖️ Ownership", "📐 Area Calculation",
               "🔢 Survey Procedure", "🔍 Parcel Search", "🗺️ Parcel Map Quiz", "📝 Final Quiz",
-              "🧑🎓 Ability Portrait", "📊 My Scores & Report", "ℹ️ Help"]
+              "📚 Question Bank", "🧑🎓 Ability Portrait", "📊 My Scores & Report", "ℹ️ Help"]
 modules = modules_zh if st.session_state.lang == "zh" else modules_en
 module = st.sidebar.radio(t("功能模块", "Modules"), modules)
 
@@ -1534,6 +1534,144 @@ elif module.startswith("📝"):
             if st.button(t("重新抽题再测一次", "Try Again")):
                 st.session_state.quiz_started = False
                 st.rerun()
+
+# ============================================================
+# 模块8.6：在线刷题（历年真题题库，中英对照）
+# ============================================================
+elif module.startswith("📚"):
+    st.header(t("📚 在线刷题 · 历年真题库", "📚 Question Bank · Past Exams"))
+
+    # 加载题库
+    qbank_path = os.path.join(BASE_DIR, "questions.json")
+    if not os.path.exists(qbank_path):
+        st.warning(t("题库文件 questions.json 不存在", "questions.json not found"))
+    else:
+        import json as _json
+        with open(qbank_path, "r", encoding="utf-8") as f:
+            QBANK = _json.load(f)
+
+        # 题型中文/英文映射
+        type_map = {
+            "glossary":  ("名词解释", "Glossary"),
+            "single":    ("单选题", "Single Choice"),
+            "multiple":  ("多选题", "Multiple Choice"),
+            "fill":      ("填空题", "Fill in the Blank"),
+            "short":     ("简答题", "Short Answer"),
+            "essay":     ("论述题", "Essay"),
+        }
+        type_zh_list = [v[0] for v in type_map.values()]
+        type_en_list = [v[1] for v in type_map.values()]
+
+        # 统计
+        type_counts = {}
+        for q in QBANK:
+            type_counts[q["type"]] = type_counts.get(q["type"], 0) + 1
+        st.caption(t(f"题库共 {len(QBANK)} 题：" +
+                     " / ".join(f"{type_map[k][0]}{v}" for k, v in type_counts.items()),
+                     f"Total {len(QBANK)} questions: " +
+                     " / ".join(f"{type_map[k][1]}: {v}" for k, v in type_counts.items())))
+
+        # 选择题型
+        if st.session_state.lang == "zh":
+            chosen_type_zh = st.selectbox(t("选择题型", "Select Question Type"), type_zh_list)
+            chosen_type = [k for k, v in type_map.items() if v[0] == chosen_type_zh][0]
+        else:
+            chosen_type_en = st.selectbox(t("选择题型", "Select Question Type"), type_en_list)
+            chosen_type = [k for k, v in type_map.items() if v[1] == chosen_type_en][0]
+
+        # 筛选该题型的题目
+        pool = [q for q in QBANK if q["type"] == chosen_type]
+        if not pool:
+            st.info(t("该题型暂无题目", "No questions in this type yet"))
+        else:
+            # 初始化/换题
+            if "qb_idx" not in st.session_state or st.session_state.get("qb_type") != chosen_type:
+                st.session_state.qb_idx = random.randrange(len(pool))
+                st.session_state.qb_type = chosen_type
+                st.session_state.qb_revealed = False
+                st.session_state.qb_user_ans = None
+
+            q = pool[st.session_state.qb_idx]
+
+            # 题目展示（中英对照）
+            st.subheader(f"{t('题目', 'Question')} {st.session_state.qb_idx + 1} / {len(pool)}")
+
+            if st.session_state.lang == "zh":
+                st.markdown(f"**🇨🇳 {q.get('q_zh','')}**")
+                st.markdown(f"🇬🇧 {q['q_en']}")
+            else:
+                st.markdown(f"**🇬🇧 {q['q_en']}**")
+                if q.get('q_zh'):
+                    st.caption(f"🇨🇳 {q['q_zh']}")
+
+            st.markdown("---")
+
+            # 作答区
+            if chosen_type in ("single", "multiple"):
+                opts = q.get("options", {})
+                opt_labels = [f"{k}. {v}" for k, v in opts.items()]
+                if chosen_type == "single":
+                    user_choice = st.radio(t("你的选择", "Your answer"),
+                                           opt_labels, key=f"qb_opt_{st.session_state.qb_idx}",
+                                           index=None)
+                    if user_choice:
+                        st.session_state.qb_user_ans = user_choice.split(".")[0]
+                else:
+                    chosen = st.multiselect(t("你的选择（多选）", "Your answer (multiple)"),
+                                             opt_labels, key=f"qb_multi_{st.session_state.qb_idx}")
+                    st.session_state.qb_user_ans = "".join(sorted(c.split(".")[0] for c in chosen))
+            elif chosen_type == "fill":
+                st.text_input(t("你的答案", "Your answer"),
+                              key=f"qb_fill_{st.session_state.qb_idx}",
+                              on_change=lambda: setattr(st.session_state, "qb_user_ans",
+                                st.session_state.get(f"qb_fill_{st.session_state.qb_idx}", "")))
+            elif chosen_type in ("glossary", "short", "essay"):
+                st.text_area(t("你的作答（写完点查看答案对照）", "Your answer (click reveal to compare)"),
+                             key=f"qb_text_{st.session_state.qb_idx}", height=120)
+
+            st.markdown("---")
+
+            # 按钮区
+            c1, c2 = st.columns(2)
+            with c1:
+                if st.button(t("🔍 查看答案", "🔍 Reveal Answer"), type="primary"):
+                    st.session_state.qb_revealed = True
+            with c2:
+                if st.button(t("➡️ 下一题", "➡️ Next Question")):
+                    st.session_state.qb_idx = random.randrange(len(pool))
+                    st.session_state.qb_revealed = False
+                    st.session_state.qb_user_ans = None
+                    st.rerun()
+
+            # 答案展示
+            if st.session_state.qb_revealed:
+                st.markdown("### ✅ " + t("参考答案", "Reference Answer"))
+                if chosen_type in ("single", "multiple"):
+                    st.success(f"{t('正确答案', 'Correct answer')}：{q['answer']}")
+                    # 自动判分
+                    ua = st.session_state.qb_user_ans or ""
+                    if chosen_type == "single":
+                        if ua == q["answer"]:
+                            st.balloons(); st.success(t("✅ 回答正确！", "✅ Correct!"))
+                        elif ua:
+                            st.error(t(f"❌ 你的答案：{ua}", f"❌ Your answer: {ua}"))
+                    else:
+                        ua_sorted = "".join(sorted(ua))
+                        ca_sorted = "".join(sorted(q["answer"]))
+                        if ua_sorted == ca_sorted:
+                            st.balloons(); st.success(t("✅ 全对！", "✅ All correct!"))
+                        elif ua:
+                            st.warning(t(f"你选了：{ua}（正确：{q['answer']}）",
+                                         f"Your choice: {ua} (correct: {q['answer']})"))
+                else:
+                    if st.session_state.lang == "zh":
+                        st.info(f"🇨🇳 {q.get('answer_zh','')}")
+                        if q.get('answer_en'):
+                            st.caption(f"🇬🇧 {q['answer_en']}")
+                    else:
+                        st.info(f"🇬🇧 {q.get('answer_en','')}")
+                        if q.get('answer_zh'):
+                            st.caption(f"🇨🇳 {q['answer_zh']}")
 
 # ============================================================
 # 模块8.5：学生能力画像（文字画像 + 能力雷达图 + 卡通画像）
