@@ -80,46 +80,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Main contents of cadastral management include:",
-    "q_zh": "地籍管理的主要内容包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "地籍管理包括调查、登记、统计、分等定级和档案管理五大核心内容。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Purposes of cadastral data include:",
-    "q_zh": "地籍数据的用途包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "地籍数据服务于税收、规划、产权保护和房地产市场调控。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Characteristics of modern cadastral system:",
-    "q_zh": "现代地籍制度的特征：",
-    "answer_en": "ABC",
-    "answer_zh": "现代地籍特征为法律登记、统一数据库和动态更新，而非静态纸质记录。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Components of cadastral database:",
-    "q_zh": "地籍数据库的组成：",
-    "answer_en": "ABCD",
-    "answer_zh": "地籍数据库包括空间数据（宗地边界）、属性数据（权属、地类）、影像数据和文档数据。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Government functions supported by cadastre:",
-    "q_zh": "地籍支撑的政府职能：",
-    "answer_en": "ABCD",
-    "answer_zh": "地籍支撑税收、规划、产权保护和市场监管等政府职能。",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "What are the main contents of cadastral management?",
     "q_zh": "地籍管理的主要内容是什么？",
@@ -221,46 +181,6 @@
     "q_zh": "外业调查",
     "answer_en": "On-site data collection by surveyors walking or driving through the area to verify land use, measure boundaries, and collect attribute information. Essential for ground truthing.",
     "answer_zh": "调查员步行或驾车在现场收集数据，验证土地利用、测量边界和收集属性信息。地面验证的关键环节。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Main outputs of land use survey include:",
-    "q_zh": "土地调查的主要成果包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "成果包括土地利用图、数据库、统计表和调查报告。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Preparation work for land use survey includes:",
-    "q_zh": "土地调查的准备工作包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "准备工作包括工作计划、队伍组建、仪器校准和底图收集。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Steps of land use survey workflow:",
-    "q_zh": "土地调查工作流程的步骤：",
-    "answer_en": "ABCD",
-    "answer_zh": "流程：准备→内业解译→外业调查→数据集成→成果输出。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Remote sensing applications in land survey:",
-    "q_zh": "遥感在土地调查中的应用：",
-    "answer_en": "ABCD",
-    "answer_zh": "遥感用于土地利用解译、变化检测、动态监测和制图。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land use types in China's primary classification:",
-    "q_zh": "中国一级土地利用类型：",
-    "answer_en": "ABC",
-    "answer_zh": "中国三大类：农用地、建设用地、未利用地。",
     "source": "补充"
   },
   {
@@ -368,46 +288,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Daily survey triggers include:",
-    "q_zh": "日常调查的触发情形包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "权属转让、用途变化、宗地分割或合并、新登记都触发日常调查。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Cadastral survey outputs include:",
-    "q_zh": "地籍调查的成果包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "界址点坐标、宗地面积、地籍图、权属文件都是成果。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Instruments used in cadastral survey:",
-    "q_zh": "地籍调查使用的仪器：",
-    "answer_en": "ABC",
-    "answer_zh": "全站仪、GPS、水准仪都用于地籍测量。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Boundary survey steps:",
-    "q_zh": "界址调查的步骤：",
-    "answer_en": "ABCD",
-    "answer_zh": "寻找老界址点→现场标定→测量坐标→记录。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Ownership investigation includes:",
-    "q_zh": "权属调查包括：",
-    "answer_en": "ABC",
-    "answer_zh": "审查权属文件、现场确认边界、相邻权利人签字。",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "Difference between initial and daily cadastral survey.",
     "q_zh": "初始地籍调查和日常地籍调查的区别。",
@@ -496,46 +376,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Steps of land registration:",
-    "q_zh": "土地登记的步骤：",
-    "answer_en": "ABCD",
-    "answer_zh": "申请→调查→审核→登记→发证。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Functions of real estate registration:",
-    "q_zh": "不动产登记的功能：",
-    "answer_en": "ABC",
-    "answer_zh": "保护权利、维护交易秩序、提供征税依据。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land rights registered include:",
-    "q_zh": "登记的土地权利包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "所有权、使用权、抵押权、地役权都登记。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Change registration scenarios:",
-    "q_zh": "变更登记的情形：",
-    "answer_en": "ABCD",
-    "answer_zh": "转让、抵押、用途变化、宗地分割都要变更。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Documents required for registration:",
-    "q_zh": "登记需要的文件：",
-    "answer_en": "ABC",
-    "answer_zh": "身份证明、权属来源、登记申请书。",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "Describe the legal procedure of land registration.",
     "q_zh": "描述土地登记的法定程序。",
@@ -616,14 +456,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Factors affecting urban land grading:",
-    "q_zh": "影响城市土地分等的因素：",
-    "answer_en": "ABCD",
-    "answer_zh": "区位、基础设施、规划和市场都影响城市土地价值。",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "Difference between land grading and evaluation.",
     "q_zh": "土地分等和土地评价的区别。",
@@ -637,14 +469,6 @@
     "q_zh": "地籍档案管理",
     "answer_en": "Sorting, storing, updating and maintaining various text, map and digital documents generated in cadastral investigation and registration activities.",
     "answer_zh": "对地籍调查和登记活动中形成的各种文字、图件和数字文档进行分类、存储、更新和维护。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Cadastral archives include:",
-    "q_zh": "地籍档案包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "调查记录、登记文件、图件、统计都构成档案。",
     "source": "补充"
   },
   {
@@ -672,14 +496,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Common valuation methods:",
-    "q_zh": "常见估价方法：",
-    "answer_en": "ABCD",
-    "answer_zh": "市场比较、收益还原、成本、假设开发。",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "Three classic valuation approaches.",
     "q_zh": "三种经典估价方法。",
@@ -701,14 +517,6 @@
     "q_zh": "3S在地籍管理中的功能。",
     "answer_en": "RS: land use interpretation and change detection; GPS: field positioning and boundary measurement; GIS: spatial data management, analysis and mapping. Integrated workflow improves efficiency and accuracy.",
     "answer_zh": "遥感：土地利用解译和变化监测；GPS：外业定位和边界测量；GIS：空间数据管理、分析和制图。集成工作流提高效率和精度。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land rights in China include:",
-    "q_zh": "中国的土地权利包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "国家所有权、集体所有权、使用权、地役权都存在。",
     "source": "补充"
   },
   {
@@ -752,14 +560,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Parcel operations include:",
-    "q_zh": "宗地操作包括：",
-    "answer_en": "ABCD",
-    "answer_zh": "合并、分割、边界调整、用途变更。",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "Difference between land grant and allocation.",
     "q_zh": "出让和划拨的区别。",
@@ -781,14 +581,6 @@
     "q_zh": "土地管理法",
     "answer_en": "Fundamental law governing land ownership, use, protection and administration in China, enacted 1986.",
     "answer_zh": "规范中国土地所有、使用、保护和管理的基本法律，1986年颁布。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Modern surveying instruments:",
-    "q_zh": "现代测量仪器：",
-    "answer_en": "ABCD",
-    "answer_zh": "全站仪、RTK、水准仪、无人机。",
     "source": "补充"
   },
   {
@@ -2035,5 +1827,415 @@
     "answer_en": "Challenges: (1) Complex and diverse land use patterns make accurate classification difficult; (2) Rapid urbanization causes frequent land use changes; (3) Ensuring consistency across different regions; (4) Accommodating new land use types (e.g., renewable energy, ecological land). Future trends: (1) Deep learning and AI for automated classification; (2) Integration of multi-source data (RS, GPS, GIS); (3) Dynamic and real-time monitoring; (4) More detailed and flexible classification system. The Third National Land Survey (2019) reflects these trends with updated categories and modern technology.",
     "answer_zh": "挑战：（1）复杂多样的土地利用模式使准确分类困难；（2）快速城市化导致土地利用频繁变化；（3）确保不同地区一致性；（4）适应新的土地利用类型（如可再生能源、生态用地）。未来趋势：（1）深度学习和AI用于自动分类；（2）多源数据集成（遥感、GPS、GIS）；（3）动态实时监测；（4）更详细灵活的分类体系。第三次全国土地调查（2019）反映了这些趋势，使用更新的类别和现代技术。",
     "source": "第2章PPT"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "地籍管理的主要内容包括：",
+    "q_en": "Main contents of cadastral management include:",
+    "options": {
+      "A": "土地调查",
+      "B": "土地登记",
+      "C": "土地统计",
+      "D": "地籍档案管理",
+      "E": "土地税收"
+    },
+    "answer": "ABCD",
+    "answer_zh": "地籍管理主要包括土地调查、土地登记、土地统计、地籍档案管理等内容。",
+    "answer_en": "Cadastral management mainly includes land survey, land registration, land statistics, and cadastral archives management.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "地籍数据的用途包括：",
+    "q_en": "Uses of cadastral data include:",
+    "options": {
+      "A": "土地管理",
+      "B": "税收",
+      "C": "规划",
+      "D": "产权保护",
+      "E": "工业生产"
+    },
+    "answer": "ABCD",
+    "answer_zh": "地籍数据用于土地管理、税收、规划、产权保护等，工业生产流程与地籍无关。",
+    "answer_en": "Cadastral data is used for land management, taxation, planning, and property rights protection.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "现代地籍制度的特征：",
+    "q_en": "Characteristics of modern cadastral system:",
+    "options": {
+      "A": "法律化",
+      "B": "数字化",
+      "C": "市场化",
+      "D": "封闭性"
+    },
+    "answer": "ABC",
+    "answer_zh": "现代地籍制度具有法律化、数字化、市场化等特征，不再是封闭的。",
+    "answer_en": "Modern cadastral system features legalization, digitization, and marketization.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "地籍数据库的组成：",
+    "q_en": "Components of cadastral database:",
+    "options": {
+      "A": "空间数据",
+      "B": "属性数据",
+      "C": "影像数据",
+      "D": "文档数据",
+      "E": "财务数据"
+    },
+    "answer": "ABCD",
+    "answer_zh": "地籍数据库包括空间数据（宗地边界）、属性数据（权属、地类）、影像数据和文档数据。",
+    "answer_en": "Cadastral database includes spatial data, attribute data, image data, and document data.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "地籍支撑的政府职能：",
+    "q_en": "Government functions supported by cadastre:",
+    "options": {
+      "A": "土地管理",
+      "B": "税收征管",
+      "C": "规划制定",
+      "D": "产权保护",
+      "E": "国防军事"
+    },
+    "answer": "ABCD",
+    "answer_zh": "地籍支撑土地管理、税收征管、规划制定、产权保护等政府职能。",
+    "answer_en": "Cadastre supports land management, taxation, planning, and property protection.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "土地调查的主要成果包括：",
+    "q_en": "Main results of land survey include:",
+    "options": {
+      "A": "地籍图",
+      "B": "调查表",
+      "C": "数据库",
+      "D": "报告",
+      "E": "财务报表"
+    },
+    "answer": "ABCD",
+    "answer_zh": "土地调查主要成果包括地籍图、调查表、数据库和调查报告。",
+    "answer_en": "Land survey results include cadastral maps, survey forms, database, and reports.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "土地调查的准备工作包括：",
+    "q_en": "Preparation work for land survey includes:",
+    "options": {
+      "A": "资料收集",
+      "B": "技术设计",
+      "C": "人员培训",
+      "D": "仪器准备",
+      "E": "房屋拆迁"
+    },
+    "answer": "ABCD",
+    "answer_zh": "土地调查准备工作包括资料收集、技术设计、人员培训和仪器准备。",
+    "answer_en": "Preparation includes data collection, technical design, training, and instrument preparation.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "土地调查工作流程的步骤：",
+    "q_en": "Steps of land survey workflow:",
+    "options": {
+      "A": "准备",
+      "B": "外业调查",
+      "C": "内业整理",
+      "D": "检查验收",
+      "E": "公开拍卖"
+    },
+    "answer": "ABCD",
+    "answer_zh": "土地调查流程包括准备、外业调查、内业整理和检查验收。",
+    "answer_en": "Workflow includes preparation, field survey, indoor processing, and inspection.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "遥感在土地调查中的应用：",
+    "q_en": "Applications of remote sensing in land survey:",
+    "options": {
+      "A": "土地利用分类",
+      "B": "动态监测",
+      "C": "边界识别",
+      "D": "面积量算",
+      "E": "权属确认"
+    },
+    "answer": "ABCD",
+    "answer_zh": "遥感用于土地利用分类、动态监测、边界识别和面积量算。",
+    "answer_en": "RS is used for land use classification, dynamic monitoring, boundary identification, and area calculation.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "中国一级土地利用类型：",
+    "q_en": "Primary land use types in China:",
+    "options": {
+      "A": "农用地",
+      "B": "建设用地",
+      "C": "未利用地",
+      "D": "商业用地"
+    },
+    "answer": "ABC",
+    "answer_zh": "中国一级土地利用类型分为农用地、建设用地和未利用地三大类。",
+    "answer_en": "China has three primary land use types: agricultural land, construction land, and unused land.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "日常地籍调查的触发情形包括：",
+    "q_en": "Triggering situations for daily cadastral survey include:",
+    "options": {
+      "A": "土地权属变更",
+      "B": "用途变更",
+      "C": "面积变更",
+      "D": "边界调整",
+      "E": "物价上涨"
+    },
+    "answer": "ABCD",
+    "answer_zh": "日常调查触发情形包括权属变更、用途变更、面积变更和边界调整。",
+    "answer_en": "Daily survey triggers include ownership change, use change, area change, and boundary adjustment.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "地籍调查的成果包括：",
+    "q_en": "Results of cadastral survey include:",
+    "options": {
+      "A": "地籍调查表",
+      "B": "地籍图",
+      "C": "宗地数据库",
+      "D": "界址点成果",
+      "E": "房产证"
+    },
+    "answer": "ABCD",
+    "answer_zh": "地籍调查成果包括调查表、地籍图、数据库和界址点成果。",
+    "answer_en": "Results include survey forms, cadastral maps, database, and boundary point data.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "地籍调查使用的仪器：",
+    "q_en": "Instruments used in cadastral survey:",
+    "options": {
+      "A": "全站仪",
+      "B": "GPS-RTK",
+      "C": "水准仪",
+      "D": "显微镜"
+    },
+    "answer": "ABC",
+    "answer_zh": "地籍调查使用全站仪、GPS-RTK、水准仪等测量仪器。",
+    "answer_en": "Cadastral survey uses total station, GPS-RTK, and level instruments.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "界址调查的步骤：",
+    "q_en": "Steps of boundary survey:",
+    "options": {
+      "A": "指界",
+      "B": "界址点设置",
+      "C": "测量",
+      "D": "签字确认",
+      "E": "拍卖"
+    },
+    "answer": "ABCD",
+    "answer_zh": "界址调查包括指界、界址点设置、测量和签字确认。",
+    "answer_en": "Boundary survey includes boundary pointing, marker setting, measurement, and confirmation.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "权属调查包括：",
+    "q_en": "Ownership investigation includes:",
+    "options": {
+      "A": "权属来源调查",
+      "B": "权属性质确认",
+      "C": "界址认定",
+      "D": "房屋估价"
+    },
+    "answer": "ABC",
+    "answer_zh": "权属调查包括权属来源调查、权属性质确认和界址认定。",
+    "answer_en": "Ownership investigation includes source investigation, nature confirmation, and boundary determination.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "土地登记的步骤：",
+    "q_en": "Steps of land registration:",
+    "options": {
+      "A": "申请",
+      "B": "受理",
+      "C": "审核",
+      "D": "登簿发证",
+      "E": "拍卖"
+    },
+    "answer": "ABCD",
+    "answer_zh": "土地登记包括申请、受理、审核、登簿发证四个步骤。",
+    "answer_en": "Land registration includes application, acceptance, review, and certification.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "不动产登记的功能：",
+    "q_en": "Functions of real estate registration:",
+    "options": {
+      "A": "确认产权",
+      "B": "保护交易安全",
+      "C": "支撑税收",
+      "D": "提高房价"
+    },
+    "answer": "ABC",
+    "answer_zh": "不动产登记具有确认产权、保护交易安全、支撑税收等功能。",
+    "answer_en": "Real estate registration confirms property rights, protects transaction security, and supports taxation.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "登记的土地权利包括：",
+    "q_en": "Registered land rights include:",
+    "options": {
+      "A": "所有权",
+      "B": "使用权",
+      "C": "抵押权",
+      "D": "租赁权",
+      "E": "交易权"
+    },
+    "answer": "ABCD",
+    "answer_zh": "登记的土地权利包括所有权、使用权、抵押权和租赁权等。",
+    "answer_en": "Registered rights include ownership, use rights, mortgage rights, and lease rights.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "变更登记的情形：",
+    "q_en": "Situations for change registration:",
+    "options": {
+      "A": "权属转移",
+      "B": "用途变更",
+      "C": "面积变更",
+      "D": "姓名变更",
+      "E": "物价变动"
+    },
+    "answer": "ABCD",
+    "answer_zh": "变更登记情形包括权属转移、用途变更、面积变更和姓名变更。",
+    "answer_en": "Change registration includes ownership transfer, use change, area change, and name change.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "登记需要的文件：",
+    "q_en": "Documents required for registration:",
+    "options": {
+      "A": "登记申请书",
+      "B": "身份证明",
+      "C": "权属来源证明",
+      "D": "拍卖公告"
+    },
+    "answer": "ABC",
+    "answer_zh": "登记需要登记申请书、身份证明、权属来源证明等文件。",
+    "answer_en": "Registration requires application form, ID, and ownership source proof.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "影响城市土地分等的因素：",
+    "q_en": "Factors affecting urban land grading:",
+    "options": {
+      "A": "区位",
+      "B": "基础设施",
+      "C": "环境质量",
+      "D": "人口密度",
+      "E": "建筑高度"
+    },
+    "answer": "ABCD",
+    "answer_zh": "影响城市土地分等的因素包括区位、基础设施、环境质量和人口密度。",
+    "answer_en": "Factors include location, infrastructure, environmental quality, and population density.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "地籍档案包括：",
+    "q_en": "Cadastral archives include:",
+    "options": {
+      "A": "地籍图",
+      "B": "调查表",
+      "C": "登记资料",
+      "D": "统计报表",
+      "E": "财务凭证"
+    },
+    "answer": "ABCD",
+    "answer_zh": "地籍档案包括地籍图、调查表、登记资料和统计报表。",
+    "answer_en": "Cadastral archives include maps, survey forms, registration records, and statistical reports.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "常见不动产估价方法：",
+    "q_en": "Common real estate valuation methods:",
+    "options": {
+      "A": "市场比较法",
+      "B": "收益还原法",
+      "C": "成本法",
+      "D": "剩余法",
+      "E": "投票法"
+    },
+    "answer": "ABCD",
+    "answer_zh": "常见估价方法包括市场比较法、收益还原法、成本法和剩余法。",
+    "answer_en": "Common methods include market comparison, income approach, cost approach, and residual method.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "中国的土地权利包括：",
+    "q_en": "Land rights in China include:",
+    "options": {
+      "A": "国家所有权",
+      "B": "集体所有权",
+      "C": "使用权",
+      "D": "抵押权",
+      "E": "私人所有权"
+    },
+    "answer": "ABCD",
+    "answer_zh": "中国土地权利包括国家所有权、集体所有权、使用权和抵押权。",
+    "answer_en": "Land rights in China include state ownership, collective ownership, use rights, and mortgage rights.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "宗地操作包括：",
+    "q_en": "Parcel operations include:",
+    "options": {
+      "A": "合并",
+      "B": "分割",
+      "C": "边界调整",
+      "D": "注销",
+      "E": "拍卖"
+    },
+    "answer": "ABCD",
+    "answer_zh": "宗地操作包括合并、分割、边界调整和注销。",
+    "answer_en": "Parcel operations include merge, split, boundary adjustment, and cancellation.",
+    "source": "整理"
+  },
+  {
+    "type": "multiple",
+    "q_zh": "现代测量仪器：",
+    "q_en": "Modern surveying instruments:",
+    "options": {
+      "A": "全站仪",
+      "B": "GPS-RTK",
+      "C": "无人机",
+      "D": "激光雷达",
+      "E": "算盘"
+    },
+    "answer": "ABCD",
+    "answer_zh": "现代测量仪器包括全站仪、GPS-RTK、无人机和激光雷达。",
+    "answer_en": "Modern instruments include total station, GPS-RTK, drone, and LiDAR.",
+    "source": "整理"
   }
 ]
