@@ -1607,7 +1607,8 @@ elif module.startswith("📚"):
             st.markdown("---")
 
             # 作答区
-            if chosen_type in ("single", "multiple"):
+            has_options = bool(q.get("options"))
+            if chosen_type in ("single", "multiple") and has_options:
                 opts = q.get("options", {})
                 opt_labels = [f"{k}. {v}" for k, v in opts.items()]
                 if chosen_type == "single":
@@ -1620,7 +1621,7 @@ elif module.startswith("📚"):
                     chosen = st.multiselect(t("你的选择（多选）", "Your answer (multiple)"),
                                              opt_labels, key=f"qb_multi_{st.session_state.qb_idx}")
                     st.session_state.qb_user_ans = "".join(sorted(c.split(".")[0] for c in chosen))
-            elif chosen_type == "fill":
+            elif chosen_type == "fill" or (chosen_type in ("single","multiple") and not has_options):
                 st.text_input(t("你的答案", "Your answer"),
                               key=f"qb_fill_{st.session_state.qb_idx}",
                               on_change=lambda: setattr(st.session_state, "qb_user_ans",
@@ -1646,23 +1647,25 @@ elif module.startswith("📚"):
             # 答案展示
             if st.session_state.qb_revealed:
                 st.markdown("### ✅ " + t("参考答案", "Reference Answer"))
-                if chosen_type in ("single", "multiple"):
-                    st.success(f"{t('正确答案', 'Correct answer')}：{q['answer']}")
+                correct_answer = q.get('answer', '')
+                has_options = bool(q.get("options"))
+                if chosen_type in ("single", "multiple") and has_options and correct_answer:
+                    st.success(f"{t('正确答案', 'Correct answer')}：{correct_answer}")
                     # 自动判分
                     ua = st.session_state.qb_user_ans or ""
                     if chosen_type == "single":
-                        if ua == q["answer"]:
+                        if ua == correct_answer:
                             st.balloons(); st.success(t("✅ 回答正确！", "✅ Correct!"))
                         elif ua:
                             st.error(t(f"❌ 你的答案：{ua}", f"❌ Your answer: {ua}"))
                     else:
                         ua_sorted = "".join(sorted(ua))
-                        ca_sorted = "".join(sorted(q["answer"]))
+                        ca_sorted = "".join(sorted(correct_answer))
                         if ua_sorted == ca_sorted:
                             st.balloons(); st.success(t("✅ 全对！", "✅ All correct!"))
                         elif ua:
-                            st.warning(t(f"你选了：{ua}（正确：{q['answer']}）",
-                                         f"Your choice: {ua} (correct: {q['answer']})"))
+                            st.warning(t(f"你选了：{ua}（正确：{correct_answer}）",
+                                         f"Your choice: {ua} (correct: {correct_answer})"))
                 else:
                     if st.session_state.lang == "zh":
                         st.info(f"🇨🇳 {q.get('answer_zh','')}")
