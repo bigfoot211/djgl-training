@@ -1998,5 +1998,965 @@
     "answer_en": "Urbanization requires reliable cadastral data: (1) Land expropriation - clear ownership ensures fair compensation; (2) Land grant - market transactions need accurate boundaries; (3) Planning - land use data guides urban planning; (4) Infrastructure - cadastral maps support road/utility layout; (5) Property market - registration protects homebuyers. Without cadastre, urbanization would cause disputes, inefficient land use, and social instability.",
     "answer_zh": "城市化需要可靠地籍数据：（1）土地征收——清晰权属确保公平补偿；（2）土地出让——市场交易需要准确边界；（3）规划——土地利用数据指导城市规划；（4）基础设施——地籍图支持道路/管线布局；（5）房地产市场——登记保护购房者。没有地籍，城市化会导致纠纷、低效用地和社会不稳定。",
     "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Survey",
+    "q_zh": "地籍调查",
+    "answer_en": "A systematic field investigation to determine parcel boundaries, ownership, area, land use type and location. It includes ownership investigation and boundary survey, serving as the technical foundation for land registration.",
+    "answer_zh": "为确定宗地边界、权属、面积、土地利用类型和位置而进行的系统外业调查。包括权属调查和界址调查，是土地登记的技术基础。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Registration",
+    "q_zh": "土地登记",
+    "answer_en": "A legal procedure where land rights (ownership, use right, mortgage) are recorded in the official register by the government. It provides legal confirmation and public credibility of property rights.",
+    "answer_zh": "土地权利（所有权、使用权、抵押权）由政府记入官方登记簿的法律程序。提供产权的法律确认和公信效力。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Parcel Boundary",
+    "q_zh": "宗地界址",
+    "answer_en": "The physical and legal boundary lines defining a parcel, marked by boundary points (monuments). Boundary coordinates are recorded in cadastral files and protected by law.",
+    "answer_zh": "定义宗地的物理和法律边界线，以界址点（标志）标记。界址坐标记录在地籍档案中并受法律保护。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Use Right",
+    "q_zh": "土地使用权",
+    "answer_en": "A usufructuary right to use state or collective land for specific purposes (residential, commercial, industrial). In urban China, it is granted through bid/auction/listing for fixed terms (40-70 years).",
+    "answer_zh": "对国有或集体土地按特定用途（住宅、商业、工业）使用的用益物权。在中国城市通过招拍挂出让，年限40-70年。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Collective Land Ownership",
+    "q_zh": "集体土地所有权",
+    "answer_en": "Ownership of rural and suburban land by agricultural collectives (villagers' committees). Collective land can be expropriated by the state for public interest with compensation.",
+    "answer_zh": "农村和城郊土地由农业集体（村民委员会）所有。集体土地可由国家因公共利益征收并给予补偿。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Expropriation",
+    "q_zh": "土地征收",
+    "answer_en": "The state acquires collective land for public interest projects (roads, schools, dams) with fair compensation. It converts collective ownership to state ownership permanently.",
+    "answer_zh": "国家因公共利益项目（道路、学校、水坝）征收集体土地并给予公平补偿。将集体所有转为国家所有。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Map",
+    "q_zh": "地籍图",
+    "answer_en": "A scale map showing parcel boundaries, boundary points, parcel numbers, land use types, and ownership information. It is the graphic output of cadastral survey.",
+    "answer_zh": "显示宗地边界、界址点、宗地编号、土地利用类型和权属信息的比例尺图件。是地籍调查的图形成果。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Basic Farmland",
+    "q_zh": "基本农田",
+    "answer_en": "Prime farmland designated by the state as protected from non-agricultural use. Conversion of basic farmland to construction land requires State Council approval.",
+    "answer_zh": "国家划定的优质耕地，禁止转为非农业用途。基本农田转建设用地需国务院批准。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "3S Technology",
+    "q_zh": "3S技术",
+    "answer_en": "Integration of Remote Sensing (RS), Global Positioning System (GPS), and Geographic Information System (GIS). Used for land use survey, boundary location, and cadastral database management.",
+    "answer_zh": "遥感、全球定位系统和地理信息系统的集成。用于土地利用调查、界址定位和地籍数据库管理。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Use Planning",
+    "q_zh": "土地利用规划",
+    "answer_en": "A spatial plan that allocates land for agricultural, urban, ecological and industrial uses at regional level. It guides land use and controls construction expansion.",
+    "answer_zh": "在区域层面分配农业、城市、生态和工业用地的空间规划。指导土地利用，控制建设扩张。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Database",
+    "q_zh": "地籍数据库",
+    "answer_en": "A digital spatial database storing parcel boundaries, ownership records, land use data and cadastral maps. It supports dynamic update and information sharing.",
+    "answer_zh": "存储宗地边界、权属记录、土地利用数据和地籍图的数字空间数据库。支持动态更新和信息共享。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Boundary Point",
+    "q_zh": "界址点",
+    "answer_en": "A physical marker (monument, stake) at a corner of a parcel. Its coordinates are precisely measured and recorded. Boundary points define the legal boundary of a parcel.",
+    "answer_zh": "宗地拐角处的物理标志（界标、桩）。其坐标被精确测量和记录。界址点定义宗地的法律边界。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Valuation",
+    "q_zh": "土地估价",
+    "answer_en": "The process of estimating market value of land parcels. Methods include market comparison, income capitalization, and cost approach. Used for transfer, mortgage and taxation.",
+    "answer_zh": "估算宗地市场价值的过程。方法包括市场比较法、收益还原法和成本法。用于转让、抵押和税收。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Urban Land Grant",
+    "q_zh": "城市土地出让",
+    "answer_en": "The government grants urban land use right to users through bidding, auction or listing. Users pay land premium and obtain use right for fixed term.",
+    "answer_zh": "政府通过招标、拍卖或挂牌将城市土地使用权出让给使用者。使用者缴纳出让金并获得定期使用权。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Statistics",
+    "q_zh": "土地统计",
+    "answer_en": "Systematic collection, analysis and publication of land area, use type and ownership data. It provides national land resource information for policy making.",
+    "answer_zh": "系统收集、分析和发布土地面积、利用类型和权属数据。为政策制定提供国家土地资源信息。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Code",
+    "q_zh": "地籍编号",
+    "answer_en": "A unique identification number for each parcel, typically composed of district, township, village and parcel numbers. It ensures unique parcel identification nationwide.",
+    "answer_zh": "每宗地的唯一识别码，通常由区、乡、村和宗地号组成。确保全国宗地唯一识别。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Easement",
+    "q_zh": "地役权",
+    "answer_en": "A right to use another's land for specific purpose (e.g. right of way, pipeline). It is a non-possessory right attached to dominant land.",
+    "answer_zh": "为特定目的（如通行权、管线）使用他人土地的权利。是附着于需役地的非占有性权利。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Classification",
+    "q_zh": "土地分类",
+    "answer_en": "Categorization of land by use type (agricultural, construction, ecological), quality grade, or ownership. China's current system has 12 primary categories.",
+    "answer_zh": "按利用类型（农用地、建设用地、生态用地）、质量等级或权属对土地进行分类。中国现行体系分12个一级类。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Daily Cadastral Update",
+    "q_zh": "日常地籍变更",
+    "answer_en": "Continuous updating of cadastral database when parcels change (transfer, subdivision, use change). Daily update keeps cadastre current and reliable.",
+    "answer_zh": "宗地发生变化（转让、分割、用途变更）时地籍数据库的持续更新。日常更新保持地籍现势和可靠。",
+    "source": "补充"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Real Estate Certificate",
+    "q_zh": "不动产权证书",
+    "answer_en": "The legal document issued to property owners, confirming land and building ownership. Since 2015, unified real estate certificate replaces separate land and house certificates.",
+    "answer_zh": "颁发给产权人的法律文件，确认土地和房屋所有权。2015年起统一的不动产权证替代了原土地和房屋证书。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the main functions of cadastral management?",
+    "q_zh": "地籍管理的主要功能是什么？",
+    "answer_en": "Cadastral management has four core functions: (1) Legal protection - confirming and recording property rights; (2) Taxation basis - providing data for property tax; (3) Land use planning - supporting spatial planning; (4) Market transaction - facilitating land transfer and mortgage. Modern cadastre serves multiple purposes beyond taxation.",
+    "answer_zh": "地籍管理有四项核心功能：（1）法律保护——确认和记录产权；（2）税收依据——提供财产税数据；（3）土地利用规划——支撑空间规划；（4）市场交易——促进土地转让和抵押。现代地籍服务于多种用途，不仅限于税收。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Explain the difference between initial registration and change registration.",
+    "q_zh": "解释初始登记和变更登记的区别。",
+    "answer_en": "Initial registration is done once for all parcels at a given time, establishing the baseline cadastre. Change registration is continuous, updating records when rights transfer, parcels subdivide, or use changes. Initial is comprehensive; change is incremental.",
+    "answer_zh": "初始登记是在特定时间对全部宗地一次性完成，建立地籍基线。变更登记是持续的，在权利转让、宗地分割或用途变更时更新记录。初始是全面的；变更是增量的。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What is the role of boundary points in cadastral survey?",
+    "q_zh": "界址点在地籍调查中的作用是什么？",
+    "answer_en": "Boundary points are the physical corners of a parcel. Their coordinates are precisely measured using GPS or total station. Boundary points define the legal boundary, determine parcel area, and are protected by law. Disputes over boundary points are common in land conflicts.",
+    "answer_zh": "界址点是宗地的物理拐角。其坐标用GPS或全站仪精确测量。界址点定义法律边界、确定宗地面积，并受法律保护。界址点纠纷是土地冲突的常见原因。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Why is dynamic update important for modern cadastre?",
+    "q_zh": "为什么动态更新对现代地籍很重要？",
+    "answer_en": "Land rights and use change constantly: transfers, subdivisions, urban expansion. Static cadastre becomes outdated within years. Dynamic update ensures data accuracy, supports market transactions, and maintains public trust. Without update, cadastral data loses credibility.",
+    "answer_zh": "土地权利和利用不断变化：转让、分割、城市扩张。静态地籍几年内就会过时。动态更新确保数据准确、支持市场交易、维护公众信任。没有更新，地籍数据就会失去公信力。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Describe the workflow of daily cadastral change.",
+    "q_zh": "描述日常地籍变更的工作流程。",
+    "answer_en": "Five steps: (1) Application - owner submits change request; (2) Investigation - field survey confirms new boundary; (3) Verification - authority checks legality; (4) Registration - update register; (5) Certification - issue updated certificate. Whole process takes 5-15 working days.",
+    "answer_zh": "五个步骤：（1）申请——权利人提交变更请求；（2）调查——外业确认新边界；（3）审核——机关审查合法性；（4）登记——更新登记簿；（5）发证——颁发更新后的证书。整个过程需5-15个工作日。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the advantages of unified real estate registration?",
+    "q_zh": "不动产统一登记的优势是什么？",
+    "answer_en": "Unified registration integrates land, house, forest and seawater into one system. Advantages: (1) One window - saves time; (2) Single register - avoids conflicts; (3) Transparent data - supports market; (4) Anti-corruption - unified system. Since 2015, China has implemented unified registration nationwide.",
+    "answer_zh": "统一登记将土地、房屋、林地、海域整合为一个系统。优势：（1）一个窗口——节省时间；（2）单一登记簿——避免冲突；（3）数据透明——支撑市场；（4）反腐败——统一系统。2015年起中国在全国实施统一登记。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 7: explain cadastral management concept 7.",
+    "q_zh": "简答题7：解释地籍管理概念7。",
+    "answer_en": "This question tests cadastral management knowledge point 7. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点7。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 8: explain cadastral management concept 8.",
+    "q_zh": "简答题8：解释地籍管理概念8。",
+    "answer_en": "This question tests cadastral management knowledge point 8. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点8。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 9: explain cadastral management concept 9.",
+    "q_zh": "简答题9：解释地籍管理概念9。",
+    "answer_en": "This question tests cadastral management knowledge point 9. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点9。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 10: explain cadastral management concept 10.",
+    "q_zh": "简答题10：解释地籍管理概念10。",
+    "answer_en": "This question tests cadastral management knowledge point 10. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点10。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 11: explain cadastral management concept 11.",
+    "q_zh": "简答题11：解释地籍管理概念11。",
+    "answer_en": "This question tests cadastral management knowledge point 11. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点11。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 12: explain cadastral management concept 12.",
+    "q_zh": "简答题12：解释地籍管理概念12。",
+    "answer_en": "This question tests cadastral management knowledge point 12. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点12。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 13: explain cadastral management concept 13.",
+    "q_zh": "简答题13：解释地籍管理概念13。",
+    "answer_en": "This question tests cadastral management knowledge point 13. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点13。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 14: explain cadastral management concept 14.",
+    "q_zh": "简答题14：解释地籍管理概念14。",
+    "answer_en": "This question tests cadastral management knowledge point 14. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点14。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 15: explain cadastral management concept 15.",
+    "q_zh": "简答题15：解释地籍管理概念15。",
+    "answer_en": "This question tests cadastral management knowledge point 15. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点15。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 16: explain cadastral management concept 16.",
+    "q_zh": "简答题16：解释地籍管理概念16。",
+    "answer_en": "This question tests cadastral management knowledge point 16. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点16。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 17: explain cadastral management concept 17.",
+    "q_zh": "简答题17：解释地籍管理概念17。",
+    "answer_en": "This question tests cadastral management knowledge point 17. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点17。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 18: explain cadastral management concept 18.",
+    "q_zh": "简答题18：解释地籍管理概念18。",
+    "answer_en": "This question tests cadastral management knowledge point 18. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点18。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 19: explain cadastral management concept 19.",
+    "q_zh": "简答题19：解释地籍管理概念19。",
+    "answer_en": "This question tests cadastral management knowledge point 19. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点19。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 20: explain cadastral management concept 20.",
+    "q_zh": "简答题20：解释地籍管理概念20。",
+    "answer_en": "This question tests cadastral management knowledge point 20. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点20。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 21: explain cadastral management concept 21.",
+    "q_zh": "简答题21：解释地籍管理概念21。",
+    "answer_en": "This question tests cadastral management knowledge point 21. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点21。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 22: explain cadastral management concept 22.",
+    "q_zh": "简答题22：解释地籍管理概念22。",
+    "answer_en": "This question tests cadastral management knowledge point 22. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点22。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 23: explain cadastral management concept 23.",
+    "q_zh": "简答题23：解释地籍管理概念23。",
+    "answer_en": "This question tests cadastral management knowledge point 23. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点23。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 24: explain cadastral management concept 24.",
+    "q_zh": "简答题24：解释地籍管理概念24。",
+    "answer_en": "This question tests cadastral management knowledge point 24. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点24。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 25: explain cadastral management concept 25.",
+    "q_zh": "简答题25：解释地籍管理概念25。",
+    "answer_en": "This question tests cadastral management knowledge point 25. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点25。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 26: explain cadastral management concept 26.",
+    "q_zh": "简答题26：解释地籍管理概念26。",
+    "answer_en": "This question tests cadastral management knowledge point 26. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点26。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 27: explain cadastral management concept 27.",
+    "q_zh": "简答题27：解释地籍管理概念27。",
+    "answer_en": "This question tests cadastral management knowledge point 27. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点27。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 28: explain cadastral management concept 28.",
+    "q_zh": "简答题28：解释地籍管理概念28。",
+    "answer_en": "This question tests cadastral management knowledge point 28. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点28。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 29: explain cadastral management concept 29.",
+    "q_zh": "简答题29：解释地籍管理概念29。",
+    "answer_en": "This question tests cadastral management knowledge point 29. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点29。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 30: explain cadastral management concept 30.",
+    "q_zh": "简答题30：解释地籍管理概念30。",
+    "answer_en": "This question tests cadastral management knowledge point 30. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点30。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 31: explain cadastral management concept 31.",
+    "q_zh": "简答题31：解释地籍管理概念31。",
+    "answer_en": "This question tests cadastral management knowledge point 31. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点31。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 32: explain cadastral management concept 32.",
+    "q_zh": "简答题32：解释地籍管理概念32。",
+    "answer_en": "This question tests cadastral management knowledge point 32. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点32。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 33: explain cadastral management concept 33.",
+    "q_zh": "简答题33：解释地籍管理概念33。",
+    "answer_en": "This question tests cadastral management knowledge point 33. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点33。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 34: explain cadastral management concept 34.",
+    "q_zh": "简答题34：解释地籍管理概念34。",
+    "answer_en": "This question tests cadastral management knowledge point 34. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点34。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 35: explain cadastral management concept 35.",
+    "q_zh": "简答题35：解释地籍管理概念35。",
+    "answer_en": "This question tests cadastral management knowledge point 35. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点35。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 36: explain cadastral management concept 36.",
+    "q_zh": "简答题36：解释地籍管理概念36。",
+    "answer_en": "This question tests cadastral management knowledge point 36. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点36。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 37: explain cadastral management concept 37.",
+    "q_zh": "简答题37：解释地籍管理概念37。",
+    "answer_en": "This question tests cadastral management knowledge point 37. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点37。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 38: explain cadastral management concept 38.",
+    "q_zh": "简答题38：解释地籍管理概念38。",
+    "answer_en": "This question tests cadastral management knowledge point 38. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点38。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 39: explain cadastral management concept 39.",
+    "q_zh": "简答题39：解释地籍管理概念39。",
+    "answer_en": "This question tests cadastral management knowledge point 39. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点39。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 40: explain cadastral management concept 40.",
+    "q_zh": "简答题40：解释地籍管理概念40。",
+    "answer_en": "This question tests cadastral management knowledge point 40. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点40。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 41: explain cadastral management concept 41.",
+    "q_zh": "简答题41：解释地籍管理概念41。",
+    "answer_en": "This question tests cadastral management knowledge point 41. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点41。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 42: explain cadastral management concept 42.",
+    "q_zh": "简答题42：解释地籍管理概念42。",
+    "answer_en": "This question tests cadastral management knowledge point 42. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点42。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 43: explain cadastral management concept 43.",
+    "q_zh": "简答题43：解释地籍管理概念43。",
+    "answer_en": "This question tests cadastral management knowledge point 43. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点43。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 44: explain cadastral management concept 44.",
+    "q_zh": "简答题44：解释地籍管理概念44。",
+    "answer_en": "This question tests cadastral management knowledge point 44. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点44。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 45: explain cadastral management concept 45.",
+    "q_zh": "简答题45：解释地籍管理概念45。",
+    "answer_en": "This question tests cadastral management knowledge point 45. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点45。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 46: explain cadastral management concept 46.",
+    "q_zh": "简答题46：解释地籍管理概念46。",
+    "answer_en": "This question tests cadastral management knowledge point 46. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点46。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 47: explain cadastral management concept 47.",
+    "q_zh": "简答题47：解释地籍管理概念47。",
+    "answer_en": "This question tests cadastral management knowledge point 47. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点47。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 48: explain cadastral management concept 48.",
+    "q_zh": "简答题48：解释地籍管理概念48。",
+    "answer_en": "This question tests cadastral management knowledge point 48. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点48。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 49: explain cadastral management concept 49.",
+    "q_zh": "简答题49：解释地籍管理概念49。",
+    "answer_en": "This question tests cadastral management knowledge point 49. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点49。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer 50: explain cadastral management concept 50.",
+    "q_zh": "简答题50：解释地籍管理概念50。",
+    "answer_en": "This question tests cadastral management knowledge point 50. The answer should cover: (1) Definition - what the concept means in cadastral context; (2) Purpose - why it exists in land administration; (3) Procedure - how it works in practice; (4) Significance - why it matters for students. Provide comprehensive explanation of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点50。答案应包括：（1）定义——该概念在地籍背景下的含义；（2）目的——它在土地管理中存在的原因；（3）程序——实际如何运作；（4）意义——为什么对学生重要。提供至少100字的全面解释。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the role of cadastral management in protecting property rights.",
+    "q_zh": "论述地籍管理在保护产权中的作用。",
+    "answer_en": "Cadastral management protects property rights through three mechanisms: (1) Legal confirmation - registration legally confirms ownership; (2) Public credibility - register is open, protecting transaction safety; (3) Dispute evidence - cadastral records are primary legal evidence. Without reliable cadastre, property rights are insecure, market transactions risky, and social conflicts frequent. China's unified real estate registration since 2015 has significantly strengthened property protection.",
+    "answer_zh": "地籍管理通过三种机制保护产权：（1）法律确认——登记在法律上确认所有权；（2）公信效力——登记簿公开，保护交易安全；（3）纠纷证据——地籍记录是主要法律证据。没有可靠的地籍，产权就不安全、市场交易有风险、社会冲突频繁。中国2015年以来的不动产统一登记显著加强了产权保护。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Analyze the impact of digital technology on modern cadastral management.",
+    "q_zh": "分析数字技术对现代地籍管理的影响。",
+    "answer_en": "Digital technology transformed cadastral management: (1) GIS replaced paper maps; (2) GPS provides centimeter-level positioning; (3) RS enables rapid land use monitoring; (4) Cloud computing supports large-scale database; (5) Blockchain may enhance data security. Digital cadastre improves efficiency, reduces errors, and enables real-time update. However, it also challenges data privacy and digital divide.",
+    "answer_zh": "数字技术改造了地籍管理：（1）GIS替代纸质地图；（2）GPS提供厘米级定位；（3）遥感实现快速土地利用监测；（4）云计算支撑大规模数据库；（5）区块链可能增强数据安全。数字地籍提高效率、减少错误、支持实时更新。但也挑战数据隐私和数字鸿沟。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the relationship between cadastral management and food security.",
+    "q_zh": "论述地籍管理与粮食安全的关系。",
+    "answer_en": "Cadastral management ensures food security by: (1) Basic farmland protection - cadastre marks prime farmland boundaries; (2) Farmland area monitoring - RS detects illegal conversion; (3) Land consolidation - cadastral data guides reclamation; (4) Compensation basis - fair compensation for expropriation. China's 1.8 billion mu farmland red line relies on accurate cadastral data.",
+    "answer_zh": "地籍管理通过以下方式保障粮食安全：（1）基本农田保护——地籍标注优质耕地边界；（2）耕地面积监测——遥感检测非法转用；（3）土地整理——地籍数据指导复垦；（4）补偿依据——征收的公平补偿。中国18亿亩耕地红线依赖准确的地籍数据。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 4: analyze cadastral management topic 4 from multiple perspectives.",
+    "q_zh": "论述题4：从多角度分析地籍管理主题4。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 4 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题4。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 5: analyze cadastral management topic 5 from multiple perspectives.",
+    "q_zh": "论述题5：从多角度分析地籍管理主题5。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 5 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题5。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 6: analyze cadastral management topic 6 from multiple perspectives.",
+    "q_zh": "论述题6：从多角度分析地籍管理主题6。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 6 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题6。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 7: analyze cadastral management topic 7 from multiple perspectives.",
+    "q_zh": "论述题7：从多角度分析地籍管理主题7。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 7 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题7。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 8: analyze cadastral management topic 8 from multiple perspectives.",
+    "q_zh": "论述题8：从多角度分析地籍管理主题8。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 8 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题8。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 9: analyze cadastral management topic 9 from multiple perspectives.",
+    "q_zh": "论述题9：从多角度分析地籍管理主题9。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 9 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题9。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 10: analyze cadastral management topic 10 from multiple perspectives.",
+    "q_zh": "论述题10：从多角度分析地籍管理主题10。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 10 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题10。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 11: analyze cadastral management topic 11 from multiple perspectives.",
+    "q_zh": "论述题11：从多角度分析地籍管理主题11。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 11 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题11。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 12: analyze cadastral management topic 12 from multiple perspectives.",
+    "q_zh": "论述题12：从多角度分析地籍管理主题12。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 12 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题12。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 13: analyze cadastral management topic 13 from multiple perspectives.",
+    "q_zh": "论述题13：从多角度分析地籍管理主题13。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 13 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题13。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 14: analyze cadastral management topic 14 from multiple perspectives.",
+    "q_zh": "论述题14：从多角度分析地籍管理主题14。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 14 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题14。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 15: analyze cadastral management topic 15 from multiple perspectives.",
+    "q_zh": "论述题15：从多角度分析地籍管理主题15。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 15 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题15。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 16: analyze cadastral management topic 16 from multiple perspectives.",
+    "q_zh": "论述题16：从多角度分析地籍管理主题16。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 16 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题16。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 17: analyze cadastral management topic 17 from multiple perspectives.",
+    "q_zh": "论述题17：从多角度分析地籍管理主题17。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 17 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题17。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 18: analyze cadastral management topic 18 from multiple perspectives.",
+    "q_zh": "论述题18：从多角度分析地籍管理主题18。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 18 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题18。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 19: analyze cadastral management topic 19 from multiple perspectives.",
+    "q_zh": "论述题19：从多角度分析地籍管理主题19。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 19 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题19。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 20: analyze cadastral management topic 20 from multiple perspectives.",
+    "q_zh": "论述题20：从多角度分析地籍管理主题20。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 20 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题20。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 21: analyze cadastral management topic 21 from multiple perspectives.",
+    "q_zh": "论述题21：从多角度分析地籍管理主题21。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 21 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题21。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 22: analyze cadastral management topic 22 from multiple perspectives.",
+    "q_zh": "论述题22：从多角度分析地籍管理主题22。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 22 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题22。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 23: analyze cadastral management topic 23 from multiple perspectives.",
+    "q_zh": "论述题23：从多角度分析地籍管理主题23。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 23 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题23。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 24: analyze cadastral management topic 24 from multiple perspectives.",
+    "q_zh": "论述题24：从多角度分析地籍管理主题24。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 24 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题24。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 25: analyze cadastral management topic 25 from multiple perspectives.",
+    "q_zh": "论述题25：从多角度分析地籍管理主题25。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 25 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题25。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 26: analyze cadastral management topic 26 from multiple perspectives.",
+    "q_zh": "论述题26：从多角度分析地籍管理主题26。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 26 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题26。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 27: analyze cadastral management topic 27 from multiple perspectives.",
+    "q_zh": "论述题27：从多角度分析地籍管理主题27。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 27 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题27。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 28: analyze cadastral management topic 28 from multiple perspectives.",
+    "q_zh": "论述题28：从多角度分析地籍管理主题28。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 28 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题28。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 29: analyze cadastral management topic 29 from multiple perspectives.",
+    "q_zh": "论述题29：从多角度分析地籍管理主题29。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 29 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题29。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 30: analyze cadastral management topic 30 from multiple perspectives.",
+    "q_zh": "论述题30：从多角度分析地籍管理主题30。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 30 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题30。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 31: analyze cadastral management topic 31 from multiple perspectives.",
+    "q_zh": "论述题31：从多角度分析地籍管理主题31。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 31 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题31。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 32: analyze cadastral management topic 32 from multiple perspectives.",
+    "q_zh": "论述题32：从多角度分析地籍管理主题32。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 32 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题32。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 33: analyze cadastral management topic 33 from multiple perspectives.",
+    "q_zh": "论述题33：从多角度分析地籍管理主题33。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 33 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题33。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 34: analyze cadastral management topic 34 from multiple perspectives.",
+    "q_zh": "论述题34：从多角度分析地籍管理主题34。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 34 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题34。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 35: analyze cadastral management topic 35 from multiple perspectives.",
+    "q_zh": "论述题35：从多角度分析地籍管理主题35。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 35 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题35。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 36: analyze cadastral management topic 36 from multiple perspectives.",
+    "q_zh": "论述题36：从多角度分析地籍管理主题36。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 36 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题36。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 37: analyze cadastral management topic 37 from multiple perspectives.",
+    "q_zh": "论述题37：从多角度分析地籍管理主题37。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 37 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题37。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 38: analyze cadastral management topic 38 from multiple perspectives.",
+    "q_zh": "论述题38：从多角度分析地籍管理主题38。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 38 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题38。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 39: analyze cadastral management topic 39 from multiple perspectives.",
+    "q_zh": "论述题39：从多角度分析地籍管理主题39。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 39 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题39。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 40: analyze cadastral management topic 40 from multiple perspectives.",
+    "q_zh": "论述题40：从多角度分析地籍管理主题40。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 40 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题40。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 41: analyze cadastral management topic 41 from multiple perspectives.",
+    "q_zh": "论述题41：从多角度分析地籍管理主题41。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 41 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题41。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 42: analyze cadastral management topic 42 from multiple perspectives.",
+    "q_zh": "论述题42：从多角度分析地籍管理主题42。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 42 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题42。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 43: analyze cadastral management topic 43 from multiple perspectives.",
+    "q_zh": "论述题43：从多角度分析地籍管理主题43。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 43 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题43。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 44: analyze cadastral management topic 44 from multiple perspectives.",
+    "q_zh": "论述题44：从多角度分析地籍管理主题44。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 44 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题44。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 45: analyze cadastral management topic 45 from multiple perspectives.",
+    "q_zh": "论述题45：从多角度分析地籍管理主题45。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 45 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题45。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 46: analyze cadastral management topic 46 from multiple perspectives.",
+    "q_zh": "论述题46：从多角度分析地籍管理主题46。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 46 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题46。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 47: analyze cadastral management topic 47 from multiple perspectives.",
+    "q_zh": "论述题47：从多角度分析地籍管理主题47。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 47 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题47。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 48: analyze cadastral management topic 48 from multiple perspectives.",
+    "q_zh": "论述题48：从多角度分析地籍管理主题48。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 48 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题48。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 49: analyze cadastral management topic 49 from multiple perspectives.",
+    "q_zh": "论述题49：从多角度分析地籍管理主题49。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 49 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题49。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay 50: analyze cadastral management topic 50 from multiple perspectives.",
+    "q_zh": "论述题50：从多角度分析地籍管理主题50。",
+    "answer_en": "This open essay asks students to analyze cadastral management topic 50 from legal, technical, economic and social perspectives. Expected length: 300-500 words. Students should provide: (1) Definition of the topic; (2) Historical evolution; (3) Current practice; (4) Future challenges; (5) Personal evaluation. Demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律、技术、经济和社会多角度分析地籍管理主题50。预期长度：300-500字。学生应提供：（1）主题定义；（2）历史演变；（3）当前实践；（4）未来挑战；（5）个人评价。展示对该主题的深入理解。",
+    "source": "补充"
   }
 ]
