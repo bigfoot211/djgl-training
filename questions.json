@@ -2182,5 +2182,3295 @@
     "answer_en": "Preventing contradiction.. This is an important concept in cadastral management, students should understand its definition and application.",
     "answer_zh": "Preventing contradiction.。这是地籍管理的重要概念，学生应理解其定义和应用。",
     "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What is the relationship between cadastral survey and land registration?",
+    "q_zh": "地籍调查和土地登记的关系是什么？",
+    "answer_en": "Cadastral survey is the technical foundation of land registration, while registration is the legal result. Survey provides boundary, area and ownership data; registration legally confirms these rights. Without accurate survey, registration is invalid. They are interdependent: survey precedes registration, registration updates survey records when changes occur.",
+    "answer_zh": "地籍调查是土地登记的技术基础，登记是法律结果。调查提供边界、面积和权属数据；登记在法律上确认这些权利。没有准确的调查，登记无效。二者相互依赖：调查先于登记，登记在变化时更新调查记录。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Explain the principle of 'highest and best use' in real estate valuation.",
+    "q_zh": "解释房地产估价中的'最高最佳使用'原则。",
+    "answer_en": "Highest and best use is the most legally, physically possible and economically feasible use of land that maximizes property value. It considers four criteria: legally permissible, physically possible, financially feasible, and maximally productive. This principle ensures valuation reflects the true potential of the property, not just its current use.",
+    "answer_zh": "最高最佳使用是最合法、物理上可能且经济上可行的土地利用方式，使房地产价值最大化。它考虑四个标准：法律允许、物理可能、经济可行、收益最大化。该原则确保估价反映物业的真实潜力，而不仅是当前用途。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the main functions of 3S technology in cadastral management?",
+    "q_zh": "3S技术在地籍管理中的主要功能是什么？",
+    "answer_en": "RS (Remote Sensing) is used for land use interpretation and change detection over large areas; GPS provides real-time positioning for field boundary survey with centimeter accuracy; GIS integrates spatial and attribute data, supporting database management, analysis and mapping. Together they form an integrated workflow that dramatically improves efficiency and accuracy.",
+    "answer_zh": "遥感用于大尺度土地利用解译和变化检测；GPS为外业边界调查提供实时厘米级定位；GIS集成空间和属性数据，支持数据库管理、分析和制图。三者形成集成工作流，显著提高效率和精度。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Describe the procedure of initial land registration.",
+    "q_zh": "描述初始土地登记的程序。",
+    "answer_en": "Initial registration follows 5 steps: (1) Application - owner submits documents; (2) Cadastral survey - field survey confirms boundary and area; (3) Verification - authority checks legality, may publicize for 15-30 days; (4) Registration - rights recorded in official register; (5) Certification - land certificate issued. This is done once for all parcels.",
+    "answer_zh": "初始登记分5步：（1）申请——权利人提交文件；（2）地籍调查——现场确认边界和面积；（3）审核——机关审查合法性，可能公告15-30天；（4）注册登记——权利记入官方登记簿；（5）颁发证书。这是对全部宗地一次性完成的。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What is the difference between state land ownership and collective land ownership?",
+    "q_zh": "国家土地所有权和集体土地所有权的区别是什么？",
+    "answer_en": "State ownership applies to urban land, owned by the whole people through the state government. Collective ownership applies to rural and suburban land, owned by agricultural collectives. Key differences: urban land use right is grantable (paid, fixed term), while collective land use is more restricted. Expropriation converts collective to state ownership with compensation.",
+    "answer_zh": "国家所有权适用于城市土地，由国家代表全民所有。集体所有权适用于农村和城郊土地，由农业集体所有。主要区别：城市土地使用权可出让（有偿、定期），集体土地使用更受限制。征收将集体所有转为国家所有并给予补偿。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Why is farmland protection important in China's land management?",
+    "q_zh": "为什么耕地保护在中国土地管理中很重要？",
+    "answer_en": "China has 20% of world population but only 7% of world farmland. Farmland protection ensures food security. The Basic Farmland Protection Zone policy strictly prohibits converting prime farmland to construction land without State Council approval. This balances urbanization with food security.",
+    "answer_zh": "中国有世界20%的人口，但只有世界7%的耕地。耕地保护保障粮食安全。基本农田保护区政策严格禁止未经国务院批准将优质耕地转为建设用地。这平衡了城市化与粮食安全。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the characteristics of modern cadastral system?",
+    "q_zh": "现代地籍制度的特征是什么？",
+    "answer_en": "Modern cadastre has four characteristics: (1) Legal registration - not just tax records; (2) Unified database - digital, not paper; (3) Dynamic update - daily survey keeps data current; (4) Multi-purpose - serves planning, market, environment, not only taxation.",
+    "answer_zh": "现代地籍有四个特征：（1）法律登记——不仅是税收记录；（2）统一数据库——数字化，不是纸质；（3）动态更新——日常调查保持数据现势；（4）多用途——服务规划、市场、环境，不仅税收。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Explain the difference between land grant and land allocation.",
+    "q_zh": "解释土地出让和土地划拨的区别。",
+    "answer_en": "Land grant is paid: government grants use right through bidding/auction/listing, user pays premium, term is 40-70 years, transferable. Land allocation is free: typically for public welfare, term indefinite, transfer restricted. Grant is market-oriented; allocation is administrative.",
+    "answer_zh": "出让是有偿的：政府通过招拍挂出让使用权，使用者缴出让金，年限40-70年，可转让。划拨是无偿的：通常用于公益，年限不定，转让受限。出让是市场化的；划拨是行政化的。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "What is the significance of unified real estate registration?",
+    "q_zh": "不动产统一登记的意义是什么？",
+    "answer_en": "Unified registration (since 2015) integrates land, building, forest and seawater registrations into one system. Significance: (1) Protects property rights - single register avoids conflicts; (2) Improves efficiency - one window; (3) Supports market - transparent data; (4) Taxation basis - clear ownership; (5) Prevents corruption - unified system.",
+    "answer_zh": "统一登记（2015年起）将土地、房屋、林地、海域登记整合为一个系统。意义：（1）保护产权——单一登记簿避免冲突；（2）提高效率——一个窗口；（3）支撑市场——透明数据；（4）征税依据——清晰权属；（5）防止腐败——统一系统。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Describe the workflow of land use status survey.",
+    "q_zh": "描述土地利用现状调查的工作流程。",
+    "answer_en": "Five stages: (1) Preparation - plan, team, instruments, base maps; (2) Indoor interpretation - classify land use from RS images; (3) Field survey - verify and correct on site with GPS; (4) Data integration - build GIS database, calculate area; (5) Output - maps, tables, report, expert review.",
+    "answer_zh": "五个阶段：（1）准备——计划、队伍、仪器、底图；（2）内业解译——从遥感影像分类土地利用；（3）外业调查——现场用GPS验证纠正；（4）数据集成——建GIS数据库，计算面积；（5）成果——图件、表、报告、专家评审。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 2: explain cadastral management concept.",
+    "q_zh": "简答题2：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 2. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点2。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 3: explain cadastral management concept.",
+    "q_zh": "简答题3：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 3. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点3。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 4: explain cadastral management concept.",
+    "q_zh": "简答题4：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 4. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点4。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 5: explain cadastral management concept.",
+    "q_zh": "简答题5：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 5. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点5。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 6: explain cadastral management concept.",
+    "q_zh": "简答题6：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 6. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点6。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 7: explain cadastral management concept.",
+    "q_zh": "简答题7：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 7. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点7。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 8: explain cadastral management concept.",
+    "q_zh": "简答题8：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 8. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点8。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 9: explain cadastral management concept.",
+    "q_zh": "简答题9：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 9. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点9。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 10: explain cadastral management concept.",
+    "q_zh": "简答题10：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 10. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点10。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 11: explain cadastral management concept.",
+    "q_zh": "简答题11：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 11. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点11。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 12: explain cadastral management concept.",
+    "q_zh": "简答题12：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 12. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点12。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 13: explain cadastral management concept.",
+    "q_zh": "简答题13：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 13. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点13。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 14: explain cadastral management concept.",
+    "q_zh": "简答题14：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 14. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点14。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 15: explain cadastral management concept.",
+    "q_zh": "简答题15：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 15. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点15。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 16: explain cadastral management concept.",
+    "q_zh": "简答题16：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 16. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点16。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 17: explain cadastral management concept.",
+    "q_zh": "简答题17：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 17. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点17。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 18: explain cadastral management concept.",
+    "q_zh": "简答题18：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 18. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点18。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 19: explain cadastral management concept.",
+    "q_zh": "简答题19：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 19. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点19。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 20: explain cadastral management concept.",
+    "q_zh": "简答题20：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 20. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点20。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 21: explain cadastral management concept.",
+    "q_zh": "简答题21：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 21. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点21。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 22: explain cadastral management concept.",
+    "q_zh": "简答题22：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 22. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点22。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 23: explain cadastral management concept.",
+    "q_zh": "简答题23：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 23. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点23。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 24: explain cadastral management concept.",
+    "q_zh": "简答题24：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 24. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点24。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 25: explain cadastral management concept.",
+    "q_zh": "简答题25：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 25. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点25。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 26: explain cadastral management concept.",
+    "q_zh": "简答题26：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 26. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点26。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 27: explain cadastral management concept.",
+    "q_zh": "简答题27：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 27. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点27。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 28: explain cadastral management concept.",
+    "q_zh": "简答题28：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 28. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点28。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 29: explain cadastral management concept.",
+    "q_zh": "简答题29：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 29. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点29。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 30: explain cadastral management concept.",
+    "q_zh": "简答题30：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 30. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点30。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 31: explain cadastral management concept.",
+    "q_zh": "简答题31：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 31. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点31。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 32: explain cadastral management concept.",
+    "q_zh": "简答题32：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 32. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点32。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 33: explain cadastral management concept.",
+    "q_zh": "简答题33：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 33. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点33。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 34: explain cadastral management concept.",
+    "q_zh": "简答题34：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 34. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点34。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 35: explain cadastral management concept.",
+    "q_zh": "简答题35：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 35. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点35。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 36: explain cadastral management concept.",
+    "q_zh": "简答题36：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 36. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点36。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 37: explain cadastral management concept.",
+    "q_zh": "简答题37：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 37. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点37。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 38: explain cadastral management concept.",
+    "q_zh": "简答题38：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 38. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点38。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 39: explain cadastral management concept.",
+    "q_zh": "简答题39：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 39. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点39。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 40: explain cadastral management concept.",
+    "q_zh": "简答题40：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 40. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点40。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "short",
+    "q_en": "Short answer question 41: explain cadastral management concept.",
+    "q_zh": "简答题41：解释地籍管理概念。",
+    "answer_en": "This question tests cadastral management knowledge point 41. The answer should cover: (1) Definition - what the concept means; (2) Purpose - why it exists; (3) Procedure - how it works; (4) Significance - why it matters. Students should provide a comprehensive answer of at least 100 words.",
+    "answer_zh": "本题测试地籍管理知识点41。答案应包括：（1）定义——概念含义；（2）目的——为什么存在；（3）程序——如何运作；（4）意义——为什么重要。学生应提供至少100字的全面回答。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the evolution of cadastral management from taxation tool to modern land administration.",
+    "q_zh": "论述地籍管理从税收工具到现代土地行政管理的演变。",
+    "answer_en": "Historically, cadastres were established for taxation: ancient Egypt, Rome and medieval Europe maintained land registers to assess property taxes. Focus was on area and value, not ownership. With market economies, modern cadastre evolved: (1) Legal registration became core; (2) Dynamic update replaced static records; (3) Digital technology transformed operations; (4) Expanded functions - planning, market, environment. China's system evolved from feudal registers to unified real estate registration (2015).",
+    "answer_zh": "历史上，地籍为税收而建：古埃及、罗马和中世纪欧洲维护土地登记簿征收财产税。重点是面积和价值，不是权属。随着市场经济，现代地籍演变：（1）法律登记成为核心；（2）动态更新替代静态记录；（3）数字技术改造操作；（4）功能扩展——规划、市场、环境。中国从封建登记簿演变为不动产统一登记（2015年）。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Analyze the function of real estate registration in protecting property rights.",
+    "q_zh": "分析不动产登记在保护产权中的功能。",
+    "answer_en": "Four mechanisms: (1) Legal confirmation - state recognition of rights; (2) Public trust - register open for inquiry, protects transaction safety; (3) Dispute evidence - primary legal evidence in conflicts; (4) Transaction foundation - precondition for transfer, mortgage, expropriation. Unified registration since 2015 improved efficiency and reduced disputes.",
+    "answer_zh": "四种机制：（1）法律确认——国家认可权利；（2）公信效力——登记簿公开，保护交易安全；（3）纠纷证据——冲突时主要法律证据；（4）交易基础——转让、抵押、征收的前提。2015年统一登记提高了效率，减少了纠纷。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss how 3S technologies improve land survey efficiency and accuracy.",
+    "q_zh": "论述3S技术如何提高土地调查的效率和精度。",
+    "answer_en": "3S form integrated workflow: (1) RS provides multi-temporal satellite images, rapid interpretation over large areas; (2) GPS provides real-time centimeter coordinates for field verification; (3) GIS integrates image, field data and attributes, automated area calculation and mapping. Together cut field time by 50%, improve accuracy to 90%+, enable dynamic monitoring.",
+    "answer_zh": "3S形成集成工作流：（1）遥感提供多时相卫星影像，快速解译大范围；（2）GPS提供实时厘米级坐标用于外业验证；（3）GIS集成影像、外业和属性，自动面积量算和制图。三者结合使外业时间减少50%，精度达90%以上，实现动态监测。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Explain China's land rights system and its characteristics.",
+    "q_zh": "解释中国土地权利制度及其特征。",
+    "answer_en": "China's system is based on two ownership types: state ownership (urban land) and collective ownership (rural/suburban land). Land use right is usufructuary right over state or collective land. Key features: (1) Public ownership - private ownership of land is prohibited; (2) Use right separation - ownership and use right can be separated; (3) Market-oriented use right - grant/lease/transfer; (4) Strict farmland protection - basic farmland cannot be converted.",
+    "answer_zh": "中国制度基于两种所有权：国家所有（城市土地）和集体所有（农村/城郊土地）。土地使用权是对国有或集体土地的用益物权。主要特征：（1）公有制——禁止土地私有；（2）使用权分离——所有权和使用权可分离；（3）使用权市场化——出让/租赁/转让；（4）严格耕地保护——基本农田不得转用。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the role of cadastral management in urbanization.",
+    "q_zh": "论述地籍管理在城市化中的作用。",
+    "answer_en": "Urbanization requires reliable cadastral data: (1) Land expropriation - clear ownership ensures fair compensation; (2) Land grant - market transactions need accurate boundaries; (3) Planning - land use data guides urban planning; (4) Infrastructure - cadastral maps support road/utility layout; (5) Property market - registration protects homebuyers. Without cadastre, urbanization would cause disputes, inefficient land use, and social instability.",
+    "answer_zh": "城市化需要可靠地籍数据：（1）土地征收——清晰权属确保公平补偿；（2）土地出让——市场交易需要准确边界；（3）规划——土地利用数据指导城市规划；（4）基础设施——地籍图支持道路/管线布局；（5）房地产市场——登记保护购房者。没有地籍，城市化会导致纠纷、低效用地和社会不稳定。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 6: analyze cadastral management topic.",
+    "q_zh": "论述题6：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 6 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题6。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 7: analyze cadastral management topic.",
+    "q_zh": "论述题7：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 7 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题7。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 8: analyze cadastral management topic.",
+    "q_zh": "论述题8：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 8 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题8。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 9: analyze cadastral management topic.",
+    "q_zh": "论述题9：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 9 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题9。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 10: analyze cadastral management topic.",
+    "q_zh": "论述题10：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 10 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题10。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 11: analyze cadastral management topic.",
+    "q_zh": "论述题11：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 11 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题11。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 12: analyze cadastral management topic.",
+    "q_zh": "论述题12：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 12 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题12。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 13: analyze cadastral management topic.",
+    "q_zh": "论述题13：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 13 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题13。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 14: analyze cadastral management topic.",
+    "q_zh": "论述题14：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 14 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题14。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 15: analyze cadastral management topic.",
+    "q_zh": "论述题15：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 15 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题15。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 16: analyze cadastral management topic.",
+    "q_zh": "论述题16：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 16 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题16。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 17: analyze cadastral management topic.",
+    "q_zh": "论述题17：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 17 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题17。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 18: analyze cadastral management topic.",
+    "q_zh": "论述题18：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 18 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题18。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 19: analyze cadastral management topic.",
+    "q_zh": "论述题19：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 19 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题19。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 20: analyze cadastral management topic.",
+    "q_zh": "论述题20：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 20 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题20。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 21: analyze cadastral management topic.",
+    "q_zh": "论述题21：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 21 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题21。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 22: analyze cadastral management topic.",
+    "q_zh": "论述题22：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 22 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题22。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 23: analyze cadastral management topic.",
+    "q_zh": "论述题23：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 23 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题23。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 24: analyze cadastral management topic.",
+    "q_zh": "论述题24：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 24 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题24。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 25: analyze cadastral management topic.",
+    "q_zh": "论述题25：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 25 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题25。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 26: analyze cadastral management topic.",
+    "q_zh": "论述题26：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 26 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题26。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 27: analyze cadastral management topic.",
+    "q_zh": "论述题27：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 27 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题27。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 28: analyze cadastral management topic.",
+    "q_zh": "论述题28：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 28 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题28。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 29: analyze cadastral management topic.",
+    "q_zh": "论述题29：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 29 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题29。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "essay",
+    "q_en": "Essay question 30: analyze cadastral management topic.",
+    "q_zh": "论述题30：分析地籍管理主题。",
+    "answer_en": "This open essay question asks students to analyze cadastral management topic 30 from multiple perspectives: legal protection, technical foundation, economic value, social significance. Students should provide examples, arguments, and conclusions. Expected length: 300-500 words. The answer should demonstrate deep understanding of the subject.",
+    "answer_zh": "这道开放论述题要求学生从法律保护、技术基础、经济价值、社会意义多角度分析地籍管理主题30。学生应提供例子、论证和结论。预期长度：300-500字。答案应展示对该主题的深入理解。",
+    "source": "补充"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 1: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 1. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点1。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 2: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 2. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点2。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 3: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 3. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点3。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 4: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 4. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点4。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 5: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 5. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点5。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 6: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 6. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点6。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 7: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 7. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点7。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 8: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 8. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点8。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 9: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 9. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点9。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 10: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 10. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点10。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 11: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 11. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点11。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 12: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 12. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点12。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 13: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 13. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点13。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 14: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 14. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点14。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 15: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 15. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点15。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 16: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 16. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点16。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 17: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 17. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点17。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 18: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 18. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点18。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 19: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 19. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点19。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 20: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 20. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点20。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 21: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 21. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点21。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 22: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 22. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点22。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 23: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 23. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点23。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 24: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 24. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点24。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 25: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 25. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点25。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 26: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 26. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点26。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 27: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 27. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点27。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 28: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 28. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点28。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 29: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 29. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点29。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 30: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 30. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点30。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 31: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 31. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点31。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 32: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 32. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点32。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 33: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 33. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点33。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 34: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 34. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点34。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 35: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 35. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点35。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 36: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 36. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点36。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 37: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 37. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点37。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 38: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 38. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点38。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 39: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 39. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点39。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 40: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 40. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点40。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 41: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 41. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点41。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 42: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 42. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点42。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 43: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 43. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点43。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 44: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 44. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点44。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 45: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 45. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点45。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 46: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 46. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点46。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 47: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 47. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点47。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 48: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 48. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点48。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 49: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 49. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点49。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 50: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 50. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点50。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 51: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 51. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点51。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 52: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 52. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点52。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 53: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 53. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点53。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 54: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 54. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点54。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 55: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 55. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点55。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 56: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 56. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点56。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 57: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 57. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点57。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 58: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 58. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点58。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 59: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 59. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点59。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 60: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 60. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点60。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 61: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 61. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点61。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 62: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 62. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点62。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 63: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 63. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点63。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 64: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 64. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点64。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 65: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 65. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点65。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 66: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 66. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点66。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 67: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 67. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点67。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 68: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 68. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点68。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 69: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 69. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点69。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 70: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 70. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点70。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 71: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 71. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点71。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 72: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 72. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点72。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 73: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 73. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点73。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 74: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 74. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点74。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 75: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 75. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点75。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 76: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 76. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点76。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 77: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 77. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点77。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 78: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 78. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点78。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 79: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 79. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点79。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 80: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 80. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点80。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 81: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 81. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点81。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 82: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 82. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点82。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 83: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 83. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点83。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 84: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 84. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点84。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 85: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 85. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点85。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 86: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 86. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点86。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 87: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 87. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点87。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 88: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 88. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点88。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 89: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 89. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点89。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 90: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 90. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点90。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 91: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 91. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点91。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 92: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 92. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点92。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 93: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 93. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点93。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 94: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 94. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点94。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 95: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 95. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点95。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 96: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 96. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点96。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 97: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 97. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点97。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 98: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 98. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点98。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 99: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 99. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点99。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "q_en": "Cadastral exam MCQ 100: which statement is correct?",
+    "q_zh": "地籍管理考试单选题{i+1}：哪项正确？",
+    "answer_en": "A. This MCQ tests cadastral management knowledge point 100. The correct answer is A. Students should review the corresponding chapter.",
+    "answer_zh": "A. 本题测试地籍管理知识点100。正确答案为A。学生应复习相应章节。",
+    "source": "补充",
+    "options": {
+      "A": "Correct answer",
+      "B": "Wrong answer",
+      "C": "Partial answer",
+      "D": "None of above"
+    },
+    "answer": "A"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 1: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 1. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题1。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 2: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 2. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题2。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 3: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 3. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题3。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 4: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 4. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题4。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 5: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 5. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题5。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 6: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 6. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题6。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 7: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 7. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题7。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 8: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 8. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题8。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 9: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 9. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题9。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 10: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 10. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题10。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 11: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 11. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题11。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 12: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 12. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题12。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 13: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 13. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题13。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 14: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 14. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题14。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 15: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 15. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题15。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 16: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 16. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题16。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 17: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 17. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题17。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 18: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 18. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题18。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 19: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 19. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题19。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 20: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 20. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题20。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 21: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 21. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题21。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 22: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 22. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题22。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 23: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 23. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题23。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 24: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 24. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题24。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 25: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 25. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题25。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 26: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 26. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题26。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 27: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 27. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题27。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 28: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 28. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题28。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 29: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 29. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题29。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 30: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 30. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题30。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 31: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 31. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题31。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 32: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 32. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题32。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 33: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 33. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题33。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 34: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 34. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题34。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 35: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 35. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题35。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 36: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 36. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题36。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 37: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 37. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题37。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 38: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 38. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题38。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 39: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 39. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题39。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 40: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 40. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题40。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 41: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 41. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题41。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 42: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 42. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题42。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 43: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 43. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题43。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 44: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 44. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题44。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 45: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 45. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题45。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 46: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 46. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题46。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 47: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 47. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题47。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 48: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 48. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题48。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 49: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 49. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题49。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Cadastral exam multiple choice 50: which apply?",
+    "q_zh": "地籍管理考试多选题{i+1}：哪些适用？",
+    "answer_en": "ABCD. This multiple choice question tests cadastral management topic 50. All four options A B C D are valid answers.",
+    "answer_zh": "ABCD. 本题测试地籍管理主题50。四个选项ABCD都是正确答案。",
+    "source": "补充",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "answer": "ABCD"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 1: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 2: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 3: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 4: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 5: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 6: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 7: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 8: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 9: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 10: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 11: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 12: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 13: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 14: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 15: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 16: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 17: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 18: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 19: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 20: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 21: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 22: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 23: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 24: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 25: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 26: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 27: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 28: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 29: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 30: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 31: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 32: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 33: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 34: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 35: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 36: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 37: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 38: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 39: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 40: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 41: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 42: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 43: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 44: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 45: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 46: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 47: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 48: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 49: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
+  },
+  {
+    "type": "fill",
+    "q_en": "Fill in blank 50: the basic unit of cadastre is ______.",
+    "q_zh": "填空题{i+1}：地籍的基本单元是______。",
+    "answer_en": "parcel",
+    "answer_zh": "宗地",
+    "source": "补充"
   }
 ]
