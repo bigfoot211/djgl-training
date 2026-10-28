@@ -1618,9 +1618,13 @@ elif module.startswith("📚"):
                     if user_choice:
                         st.session_state.qb_user_ans = user_choice.split(".")[0]
                 else:
-                    chosen = st.multiselect(t("你的选择（多选）", "Your answer (multiple)"),
-                                             opt_labels, key=f"qb_multi_{st.session_state.qb_idx}")
-                    st.session_state.qb_user_ans = "".join(sorted(c.split(".")[0] for c in chosen))
+                    st.markdown(t("你的选择（多选）", "Your answer (multiple)"))
+                    chosen_keys = []
+                    for label in opt_labels:
+                        k = label.split(".")[0]
+                        if st.checkbox(label, key=f"qb_cb_{st.session_state.qb_idx}_{k}"):
+                            chosen_keys.append(k)
+                    st.session_state.qb_user_ans = "".join(sorted(chosen_keys))
             elif chosen_type == "fill" or (chosen_type in ("single","multiple") and not has_options):
                 st.text_input(t("你的答案", "Your answer"),
                               key=f"qb_fill_{st.session_state.qb_idx}",
