@@ -1777,5 +1777,138 @@
     "answer_en": "ABCE. Unified registration saves time, avoids conflicts, supports market, and prevents corruption. Higher cost is not an advantage.",
     "answer_zh": "ABCE。统一登记节省时间、避免冲突、支撑市场、防止腐败。更高成本不是优势。",
     "source": "第8章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Archives Management",
+    "q_zh": "地籍档案管理",
+    "answer_en": "The collection, preservation, organization, storage, and retrieval of historical and current cadastral records and maps. It includes digitization of old records and ensuring security and privacy. Proper archives management ensures long-term availability of cadastral data.",
+    "answer_zh": "对历史和当前地籍记录和图件的收集、保存、组织、存储和检索。包括旧档案的数字化和确保安全隐私。良好的档案管理确保地籍数据的长期可用性。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Information System",
+    "q_zh": "地籍信息系统",
+    "answer_en": "A computerized system for managing and maintaining cadastral data and information. It includes database design, software development, data integration, and system maintenance. Modern cadastre relies on information systems for efficient data management.",
+    "answer_zh": "管理和维护地籍数据和信息的计算机化系统。包括数据库设计、软件开发、数据集成和系统维护。现代地籍依赖信息系统实现高效数据管理。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Total Station Surveying",
+    "q_zh": "全站仪测量",
+    "answer_en": "Electronic surveying technology using total station instruments to measure distances and angles. Used in cadastral field survey for boundary point positioning. Electronic total station and robotic total station are common types.",
+    "answer_zh": "使用全站仪仪器测量距离和角度的电子测量技术。用于地籍外业调查的界址点定位。常见类型有电子全站仪和机器人全站仪。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "glossary",
+    "q_en": "RTK GPS (Real-Time Kinematic)",
+    "q_zh": "实时动态GPS（RTK）",
+    "answer_en": "A GPS surveying technology that provides centimeter-level real-time positioning. Widely used in cadastral boundary survey. It uses base station and rover receiver to achieve high accuracy in field work.",
+    "answer_zh": "提供厘米级实时定位的GPS测量技术。广泛应用于地籍界址测量。使用基站和移动站接收机实现外业高精度定位。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "single",
+    "q_en": "Which of the following is NOT a basic principle of cadastral management?",
+    "q_zh": "下列哪项不是地籍管理的基本原则？",
+    "options": {
+      "A": "Legality",
+      "B": "Accuracy",
+      "C": "Profitability",
+      "D": "Timeliness"
+    },
+    "answer": "C",
+    "answer_en": "C. Profitability. The five basic principles are legality, accuracy, timeliness, accessibility, and confidentiality. Profitability is not a principle of public cadastral management.",
+    "answer_zh": "C. 盈利性。五项基本原则是合法性、准确性、现势性、可及性和保密性。盈利性不是公共地籍管理的原则。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "single",
+    "q_en": "Which agency is responsible for cadastral survey and mapping in Hong Kong?",
+    "q_zh": "香港负责地籍测量和制图的机构是？",
+    "options": {
+      "A": "Land Registry",
+      "B": "Lands Department",
+      "C": "Planning Department",
+      "D": "Rating and Valuation Department"
+    },
+    "answer": "B",
+    "answer_en": "B. Lands Department. The Lands Department conducts cadastral surveys and produces cadastral maps. The Land Registry is responsible for maintaining the land register.",
+    "answer_zh": "B. 地政总署。地政总署负责地籍测量和绘制地籍图。土地注册处负责维护土地登记簿。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "single",
+    "q_en": "What is the main purpose of early cadastral management in history?",
+    "q_zh": "历史上早期地籍管理的主要目的是什么？",
+    "options": {
+      "A": "Property protection",
+      "B": "Tax collection",
+      "C": "Urban planning",
+      "D": "Market transaction"
+    },
+    "answer": "B",
+    "answer_en": "B. Tax collection. Early cadastral management was primarily established for land tax assessment, based on the size and quality of land.",
+    "answer_zh": "B. 税收。早期地籍管理主要是为了土地税收评估，基于土地面积和质量。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "multiple",
+    "q_en": "What are the main roles of cadastral registration?",
+    "q_zh": "地籍登记的主要作用是什么？",
+    "options": {
+      "A": "Legal protection for land rights",
+      "B": "Facilitating land transactions",
+      "C": "Supporting land use planning",
+      "D": "Ensuring accurate land records",
+      "E": "Increasing land prices"
+    },
+    "answer": "ABCD",
+    "answer_en": "ABCD. The four main roles are: providing legal protection for land rights, facilitating land transactions and management, supporting land use planning and development, and ensuring accurate and up-to-date land records.",
+    "answer_zh": "ABCD。四项主要作用是：为土地权利提供法律保护、促进土地交易和管理、支持土地利用规划和开发、确保准确现势的土地记录。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "multiple",
+    "q_en": "What are the basic principles of cadastral management?",
+    "q_zh": "地籍管理的基本原则有哪些？",
+    "options": {
+      "A": "Legality",
+      "B": "Accuracy",
+      "C": "Timeliness",
+      "D": "Confidentiality",
+      "E": "Profitability"
+    },
+    "answer": "ABCD",
+    "answer_en": "ABCD. The five basic principles are: legality, accuracy, timeliness, accessibility, and confidentiality. Profitability is not a principle.",
+    "answer_zh": "ABCD。五项基本原则是：合法性、准确性、现势性、可及性和保密性。盈利性不是原则。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "short",
+    "q_en": "Describe the four main roles of cadastral registration.",
+    "q_zh": "描述地籍登记的四项主要作用。",
+    "answer_en": "Four main roles: (1) Providing legal protection for land rights - confirming ownership legally; (2) Facilitating land transactions and management - supporting market; (3) Supporting land use planning and development - spatial planning; (4) Ensuring accurate and up-to-date land records - dynamic update. These roles make cadastral registration the foundation of land administration.",
+    "answer_zh": "四项主要作用：（1）为土地权利提供法律保护——法律确认所有权；（2）促进土地交易和管理——支撑市场；（3）支持土地利用规划和开发——空间规划；（4）确保准确现势的土地记录——动态更新。这些作用使地籍登记成为土地管理的基础。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "short",
+    "q_en": "Explain the five basic principles of cadastral management.",
+    "q_zh": "解释地籍管理的五项基本原则。",
+    "answer_en": "Five principles: (1) Legality - all activities comply with laws and regulations; (2) Accuracy - records are precise and reliable; (3) Timeliness - records are kept up-to-date; (4) Accessibility - stakeholders can easily access records; (5) Confidentiality - personal and sensitive information is protected. These principles ensure cadastral management is trustworthy and effective.",
+    "answer_zh": "五项原则：（1）合法性——所有活动遵守法律法规；（2）准确性——记录精确可靠；（3）现势性——记录保持更新；（4）可及性——利益相关者易于获取记录；（5）保密性——保护个人和敏感信息。这些原则确保地籍管理可信有效。",
+    "source": "第1章PPT"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the historical evolution of cadastral management and future trends.",
+    "q_zh": "论述地籍管理的历史演变和未来趋势。",
+    "answer_en": "Historical evolution: (1) Early period - cadastre was established for tax collection, focusing on area and value; (2) Modern period - legal registration became core, with standardized procedures; (3) Contemporary - digital technology transformed operations, 3S technology and information systems. Future trends: (1) Digitization and automation of land records; (2) Integration with urban planning, environmental management and tax systems; (3) Emphasis on sustainability and sustainable land use. The evolution shows cadastre evolved from tax tool to comprehensive land administration infrastructure.",
+    "answer_zh": "历史演变：（1）早期——地籍为税收建立，关注面积和价值；（2）近代——法律登记成为核心，程序标准化；（3）当代——数字技术改造操作，3S技术和信息系统。未来趋势：（1）土地记录数字化和自动化；（2）与城市规划、环境管理和税收系统集成；（3）强调可持续性和可持续土地利用。演变表明地籍从税收工具发展为综合土地管理基础设施。",
+    "source": "第1章PPT"
   }
 ]
