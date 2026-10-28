@@ -729,14 +729,6 @@
   },
   {
     "type": "glossary",
-    "q_en": "Registration authority",
-    "q_zh": "登记机关",
-    "answer_en": "The government agency responsible for land registration, currently the Natural Resources Bureau in China.",
-    "answer_zh": "负责土地登记的政府机关，中国目前为自然资源局。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
     "q_en": "Public notice",
     "q_zh": "公告",
     "answer_en": "The period during which registration application is open for public inspection, allowing objections from interested parties. Typically 15-30 days.",
@@ -849,14 +841,6 @@
   },
   {
     "type": "glossary",
-    "q_en": "Land statistical report",
-    "q_zh": "土地统计报表",
-    "answer_en": "Official forms reporting land area by type, ownership and region, submitted annually to higher authorities.",
-    "answer_zh": "按地类、权属和区域报告土地面积的官方表格，每年向上级提交。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
     "q_en": "Land balance sheet",
     "q_zh": "土地平衡表",
     "answer_en": "A statistical table showing land area changes between categories (e.g., farmland converted to construction land), reflecting dynamic land use balance.",
@@ -936,14 +920,6 @@
     "source": "补充"
   },
   {
-    "type": "glossary",
-    "q_en": "Cadastral archive",
-    "q_zh": "地籍档案",
-    "answer_en": "Historical documents of land survey, registration and maps that have archival value and must be permanently preserved.",
-    "answer_zh": "具有档案价值、须永久保存的土地调查、登记和图件历史文件。",
-    "source": "补充"
-  },
-  {
     "type": "fill",
     "q_en": "Cadastral archives include:",
     "q_zh": "地籍档案包括：",
@@ -973,22 +949,6 @@
     "q_zh": "市场比较法",
     "answer_en": "Valuation method that estimates property value by comparing with recent transactions of similar properties, adjusting for differences.",
     "answer_zh": "通过与近期类似物业交易比较，调整差异后估算物业价值的估价方法。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
-    "q_en": "Income capitalization approach",
-    "q_zh": "收益还原法",
-    "answer_en": "Valuation method that estimates property value by discounting future net income to present value.",
-    "answer_zh": "将未来净收益折现到现值来估算物业价值的估价方法。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
-    "q_en": "Cost approach",
-    "q_zh": "成本法",
-    "answer_en": "Valuation method that estimates property value as replacement cost minus depreciation.",
-    "answer_zh": "以重置成本减折旧来估算物业价值的估价方法。",
     "source": "补充"
   },
   {
@@ -1048,22 +1008,6 @@
     "source": "补充"
   },
   {
-    "type": "glossary",
-    "q_en": "Land ownership",
-    "q_zh": "土地所有权",
-    "answer_en": "The absolute right of ownership over land, including possession, use, income and disposal.",
-    "answer_zh": "对土地的绝对所有权，包括占有、使用、收益和处分。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
-    "q_en": "Land use right",
-    "q_zh": "土地使用权",
-    "answer_en": "The right to use state-owned or collectively-owned land according to law within a certain period.",
-    "answer_zh": "依法在一定期限内使用国有或集体所有土地的权利。",
-    "source": "补充"
-  },
-  {
     "type": "fill",
     "q_en": "Land rights in China include:",
     "q_zh": "中国的土地权利包括：",
@@ -1101,22 +1045,6 @@
     "q_zh": "宗地分割",
     "answer_en": "Division of one parcel into two or more parcels for sale or development, requiring new boundary survey and registration.",
     "answer_zh": "将一宗土地分割为两宗或多宗用于出售或开发，需新界址调查和登记。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
-    "q_en": "Land grant",
-    "q_zh": "土地出让",
-    "answer_en": "Government granting state land use right through bidding, auction or listing, collecting grant premium.",
-    "answer_zh": "政府通过招标、拍卖或挂牌出让国有土地使用权，收取出让金。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
-    "q_en": "Land allocation",
-    "q_zh": "土地划拨",
-    "answer_en": "Government allocating land use right without compensation, typically for public welfare projects.",
-    "answer_zh": "政府无偿分配土地使用权，通常用于公益项目。",
     "source": "补充"
   },
   {
@@ -1165,22 +1093,6 @@
     "q_zh": "土地管理法",
     "answer_en": "Fundamental law governing land ownership, use, protection and administration in China, enacted 1986.",
     "answer_zh": "规范中国土地所有、使用、保护和管理的基本法律，1986年颁布。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
-    "q_en": "Total station",
-    "q_zh": "全站仪",
-    "answer_en": "Electronic instrument combining theodolite and distance meter, measuring angles and distances for boundary survey.",
-    "answer_zh": "集成经纬仪和测距仪的电子仪器，测量角度和距离用于界址调查。",
-    "source": "补充"
-  },
-  {
-    "type": "glossary",
-    "q_en": "RTK GPS",
-    "q_zh": "实时动态GPS",
-    "answer_en": "Real-Time Kinematic GPS providing centimeter-level positioning for boundary measurement.",
-    "answer_zh": "实时动态GPS，提供厘米级定位用于边界测量。",
     "source": "补充"
   },
   {
