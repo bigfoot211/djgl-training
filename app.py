@@ -1681,22 +1681,21 @@ elif module.startswith("📱"):
     st.caption(t("老师展示题目，学生扫码作答，实时统计ABCD分布",
                  "Teacher displays question, students answer via QR code, real-time statistics"))
 
-    # 用全局字典存答题数据（跨session共享）
-    global_quiz_answers = {}
-    if "global_quiz_init" not in st.session_state:
-        st.session_state.global_quiz_init = True
-        # 初始化全局字典
-        import __main__
-        if not hasattr(__main__, 'QUIZ_DATA'):
-            __main__.QUIZ_DATA = {}
+    # 加载题库
+    qbank_path = os.path.join(BASE_DIR, "questions.json")
+    import json as _json
+    with open(qbank_path, "r", encoding="utf-8") as f:
+        QBANK = _json.load(f)
+
+    # 初始化全局答题数据
+    import __main__
+    if not hasattr(__main__, 'QUIZ_DATA'):
+        __main__.QUIZ_DATA = {}
+    quiz_data = __main__.QUIZ_DATA
 
     # 检测是否学生端（URL带 ?role=student）
     params = st.query_params
     is_student = params.get("role", [""]) == "student"
-
-    # 获取全局答题数据
-    import __main__
-    quiz_data = getattr(__main__, 'QUIZ_DATA', {})
 
     if is_student:
         # ===== 学生端 =====
@@ -1705,8 +1704,8 @@ elif module.startswith("📱"):
         if qid_input:
             try:
                 qidx = int(qid_input) - 1
-                if 0 <= qidx < len(QUESTIONS):
-                    q = QUESTIONS[qidx]
+                if 0 <= qidx < len(QBANK):
+                    q = QBANK[qidx]
                     st.markdown(f"**{q['q_zh']}**")
                     st.caption(q['q_en'])
                     if q.get('options'):
@@ -1730,8 +1729,8 @@ elif module.startswith("📱"):
 
         # 选择题号
         qid = st.number_input(t("选择题号", "Select question number"),
-                              min_value=1, max_value=len(QUESTIONS), value=1) - 1
-        q = QUESTIONS[qid]
+                              min_value=1, max_value=len(QBANK), value=1) - 1
+        q = QBANK[qid]
 
         # 显示题目
         st.markdown(f"### {q['q_zh']}")
