@@ -200,38 +200,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Modern cadastral originated in ______ for taxation purpose.",
-    "q_zh": "现代地籍起源于______，最初用于税收。",
-    "answer_en": "Europe",
-    "answer_zh": "欧洲",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "The legal record book of land rights is called ______.",
-    "q_zh": "记载土地权利的法定簿册称为______。",
-    "answer_en": "cadastral register",
-    "answer_zh": "地籍登记簿",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Cadastral map is the key output of ______.",
-    "q_zh": "地籍图是______的主要成果。",
-    "answer_en": "cadastral survey",
-    "answer_zh": "地籍调查",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "______ technology is core of modern cadastral database.",
-    "q_zh": "______技术是现代地籍数据库的核心。",
-    "answer_en": "GIS (Geographic Information System)",
-    "answer_zh": "GIS（地理信息系统）",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "What are the main contents of cadastral management?",
     "q_zh": "地籍管理的主要内容是什么？",
@@ -453,46 +421,6 @@
     "q_zh": "中国一级土地利用类型：",
     "answer_en": "ABC",
     "answer_zh": "中国三大类：农用地、建设用地、未利用地。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "LUCC full name is ______.",
-    "q_zh": "LUCC全称是______。",
-    "answer_en": "Land Use and Land Cover Change",
-    "answer_zh": "土地利用与土地覆被变化",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Field verification of RS is called ______.",
-    "q_zh": "遥感的野外验证称为______。",
-    "answer_en": "ground truthing",
-    "answer_zh": "地面验证",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Three primary land categories in China: agricultural, construction and ______.",
-    "q_zh": "中国三大地类：农用地、建设用地和______。",
-    "answer_en": "unused land",
-    "answer_zh": "未利用地",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "______ technology is core for large-scale land mapping.",
-    "q_zh": "______技术是大尺度土地制图的核心。",
-    "answer_en": "Remote sensing",
-    "answer_zh": "遥感",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Change detection compares images from different ______.",
-    "q_zh": "变化检测比较不同______的影像。",
-    "answer_en": "time periods",
-    "answer_zh": "时相",
     "source": "补充"
   },
   {
@@ -720,30 +648,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Initial survey establishes ______ records.",
-    "q_zh": "初始调查建立______记录。",
-    "answer_en": "baseline / fundamental",
-    "answer_zh": "基础/基本",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Parcel area is calculated from ______ coordinates.",
-    "q_zh": "宗地面积从______坐标计算。",
-    "answer_en": "boundary point",
-    "answer_zh": "界址点",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Daily survey focuses on ______ parcels.",
-    "q_zh": "日常调查只针对______宗地。",
-    "answer_en": "changed",
-    "answer_zh": "变化的",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "Difference between initial and daily cadastral survey.",
     "q_zh": "初始地籍调查和日常地籍调查的区别。",
@@ -841,38 +745,6 @@
   },
   {
     "type": "fill",
-    "q_en": "The first step of land registration is ______.",
-    "q_zh": "土地登记的第一步是______。",
-    "answer_en": "A",
-    "answer_zh": "登记从申请人提交材料开始。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Final product of land registration is ______.",
-    "q_zh": "土地登记的最终产物是______。",
-    "answer_en": "B",
-    "answer_zh": "审核通过后颁发土地证书。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Urban land in China is owned by ______.",
-    "q_zh": "中国城市土地属于______所有。",
-    "answer_en": "A",
-    "answer_zh": "宪法规定城市土地归国家所有。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Easement is a ______ right.",
-    "q_zh": "地役权是______权利。",
-    "answer_en": "C",
-    "answer_zh": "地役权是非占有性权利。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
     "q_en": "Unified real estate registration started in China in ______.",
     "q_zh": "中国不动产统一登记始于______。",
     "answer_en": "C",
@@ -889,26 +761,10 @@
   },
   {
     "type": "fill",
-    "q_en": "Public notice period is typically ______.",
-    "q_zh": "公告期通常为______。",
-    "answer_en": "B",
-    "answer_zh": "公告期一般15-30天。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
     "q_en": "Change registration is made when ______.",
     "q_zh": "变更登记在______时进行。",
     "answer_en": "D",
     "answer_zh": "转让、抵押、用途变化都要变更登记。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Mortgage registration requires ______.",
-    "q_zh": "抵押登记需要______。",
-    "answer_en": "A",
-    "answer_zh": "抵押登记设立抵押权。",
     "source": "补充"
   },
   {
@@ -957,46 +813,6 @@
     "q_zh": "登记需要的文件：",
     "answer_en": "ABC",
     "answer_zh": "身份证明、权属来源、登记申请书。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Three major land rights: state ownership, state use right and ______ rights.",
-    "q_zh": "三大土地权利：国家所有权、国有使用权和______权利。",
-    "answer_en": "collective",
-    "answer_zh": "集体",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "______ is typical non-possessory land right.",
-    "q_zh": "______是典型的非占有性土地权利。",
-    "answer_en": "Easement",
-    "answer_zh": "地役",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Unified real estate registration started in ______.",
-    "q_zh": "不动产统一登记始于______。",
-    "answer_en": "2015",
-    "answer_zh": "2015年",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Registration authority in China is ______.",
-    "q_zh": "中国登记机关是______。",
-    "answer_en": "Natural Resources Bureau",
-    "answer_zh": "自然资源局",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Public notice period is ______ days.",
-    "q_zh": "公告期为______天。",
-    "answer_en": "15-30",
-    "answer_zh": "15-30",
     "source": "补充"
   },
   {
@@ -1056,22 +872,6 @@
     "source": "补充"
   },
   {
-    "type": "fill",
-    "q_en": "Land statistics procedures:",
-    "q_zh": "土地统计工作程序：",
-    "answer_en": "ABCD",
-    "answer_zh": "收集、整理、分析、发布。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land statistics provides ______ basis for management.",
-    "q_zh": "土地统计为管理提供______依据。",
-    "answer_en": "quantitative",
-    "answer_zh": "量化",
-    "source": "补充"
-  },
-  {
     "type": "short",
     "q_en": "Significance of land statistics.",
     "q_zh": "土地统计的意义。",
@@ -1113,26 +913,10 @@
   },
   {
     "type": "fill",
-    "q_en": "Land grading mainly evaluates ______.",
-    "q_zh": "土地分等主要评价土地的______。",
-    "answer_en": "A",
-    "answer_zh": "分等按质量和价值分类土地。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
     "q_en": "Factors affecting urban land grading:",
     "q_zh": "影响城市土地分等的因素：",
     "answer_en": "ABCD",
     "answer_zh": "区位、基础设施、规划和市场都影响城市土地价值。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "In appraisal, ______ principle maximizes property value.",
-    "q_zh": "估价中，______原则使房地产价值最大化。",
-    "answer_en": "highest and best use",
-    "answer_zh": "最高最佳使用",
     "source": "补充"
   },
   {
@@ -1353,90 +1137,10 @@
   },
   {
     "type": "fill",
-    "q_en": "Commercial land use right term is ______ years.",
-    "q_zh": "商业用地使用权年限为______年。",
-    "answer_en": "A",
-    "answer_zh": "商业40年。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land grant is through ______.",
-    "q_zh": "土地出让通过______。",
-    "answer_en": "D",
-    "answer_zh": "招拍挂：招标、拍卖、挂牌。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land allocation is ______.",
-    "q_zh": "土地划拨是______。",
-    "answer_en": "A",
-    "answer_zh": "划拨无偿，用于公益。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Parcel split requires ______.",
-    "q_zh": "宗地分割需要______。",
-    "answer_en": "C",
-    "answer_zh": "分割需新界址调查和登记。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land expropriation converts ______.",
-    "q_zh": "土地征收将______。",
-    "answer_en": "B",
-    "answer_zh": "征收将集体转为国家所有。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land grant methods:",
-    "q_zh": "土地出让方式：",
-    "answer_en": "ABCD",
-    "answer_zh": "招标、拍卖、挂牌、协议。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
     "q_en": "Parcel operations include:",
     "q_zh": "宗地操作包括：",
     "answer_en": "ABCD",
     "answer_zh": "合并、分割、边界调整、用途变更。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land expropriation requires:",
-    "q_zh": "土地征收需要：",
-    "answer_en": "ABC",
-    "answer_zh": "公共利益、补偿、安置。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Residential land use right term is ______ years.",
-    "q_zh": "住宅用地年限为______年。",
-    "answer_en": "70",
-    "answer_zh": "70",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Commercial land use right term is ______ years.",
-    "q_zh": "商业用地年限为______年。",
-    "answer_en": "40",
-    "answer_zh": "40",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land grant is through bidding, auction and ______.",
-    "q_zh": "出让通过招拍______。",
-    "answer_en": "listing",
-    "answer_zh": "挂牌",
     "source": "补充"
   },
   {
@@ -1477,22 +1181,6 @@
     "q_zh": "实时动态GPS",
     "answer_en": "Real-Time Kinematic GPS providing centimeter-level positioning for boundary measurement.",
     "answer_zh": "实时动态GPS，提供厘米级定位用于边界测量。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land Administration Law enacted in ______.",
-    "q_zh": "土地管理法颁布于______。",
-    "answer_en": "B",
-    "answer_zh": "1986年。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "RTK GPS provides ______-level accuracy.",
-    "q_zh": "RTK GPS提供______级精度。",
-    "answer_en": "C",
-    "answer_zh": "厘米级。",
     "source": "补充"
   },
   {
@@ -2382,5 +2070,305 @@
     "answer_en": "D. Sustainable land use",
     "answer_zh": "D. 可持续土地利用",
     "source": "2025年A本试卷"
+  },
+  {
+    "type": "single",
+    "q_en": "1.选择题 (Multiple Choice)  1.What is the primary purpose of cadastral management?",
+    "q_zh": "1.选择题 (Multiple Choice)  1.What is the primary purpose of cadastral management?",
+    "options": {
+      "A": "To increase land values",
+      "B": "To enforce zoning regulations",
+      "C": "To ensure the legal protection of land rights and facilitate land transactions",
+      "D": "To monitor land use changes"
+    },
+    "answer": "C",
+    "answer_en": "C. Correct answer based on cadastral management principles.",
+    "answer_zh": "C. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "2.Which of the following is NOT a fundamental principle of cadastral management?",
+    "q_zh": "2.Which of the following is NOT a fundamental principle of cadastral management?",
+    "options": {
+      "A": "Legality",
+      "B": "Accuracy",
+      "C": "Speed",
+      "D": "Confidentiality"
+    },
+    "answer": "D",
+    "answer_en": "D. Correct answer based on cadastral management principles.",
+    "answer_zh": "D. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "3.Which of the following is NOT a potential challenge faced in applying land use classification data?",
+    "q_zh": "3.Which of the following is NOT a potential challenge faced in applying land use classification data?",
+    "options": {
+      "A": "Data inconsistencies",
+      "B": "Complete and accurate data",
+      "C": "Data interpretation issues",
+      "D": "Insufficient data coverage"
+    },
+    "answer": "B",
+    "answer_en": "B. Correct answer based on cadastral management principles.",
+    "answer_zh": "B. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "4.What is the primary importance of land classification signs?",
+    "q_zh": "4.What is the primary importance of land classification signs?",
+    "options": {
+      "A": "Ensuring high land prices",
+      "B": "Facilitating illegal land use",
+      "C": "Ensuring accurate, consistent, and easily understandable land records",
+      "D": "Increasing land ownership disputes"
+    },
+    "answer": "D",
+    "answer_en": "D. Correct answer based on cadastral management principles.",
+    "answer_zh": "D. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "5.What is the main role of land classification in cadastral management?",
+    "q_zh": "5.What is the main role of land classification in cadastral management?",
+    "options": {
+      "A": "Providing financial assistance to landowners",
+      "B": "Organizing and categorizing land records",
+      "C": "Regulating land taxes",
+      "D": "Setting land prices"
+    },
+    "answer": "B",
+    "answer_en": "B. Correct answer based on cadastral management principles.",
+    "answer_zh": "B. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "6.Which of the following steps is NOT typically involved in constructing a land classification system?",
+    "q_zh": "6.Which of the following steps is NOT typically involved in constructing a land classification system?",
+    "options": {
+      "A": "Dealing with complex land use patterns",
+      "B": "Ensuring consistency across different regions",
+      "C": "Accommodating changes in land use over time",
+      "D": "Implementing a single-use zoning policy"
+    },
+    "answer": "C",
+    "answer_en": "C. Correct answer based on cadastral management principles.",
+    "answer_zh": "C. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "7.What benefit does accurate and up-to-date land classification information provide?",
+    "q_zh": "7.What benefit does accurate and up-to-date land classification information provide?",
+    "options": {
+      "A": "Reducing land taxes",
+      "B": "Increasing land disputes",
+      "C": "Improving land use planning",
+      "D": "Decreasing property values"
+    },
+    "answer": "A",
+    "answer_en": "A. Correct answer based on cadastral management principles.",
+    "answer_zh": "A. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "8.Which of the following is NOT a basic unit of real estate registration?",
+    "q_zh": "8.Which of the following is NOT a basic unit of real estate registration?",
+    "options": {
+      "A": "Apartment",
+      "B": "Land parcel",
+      "C": "Car",
+      "D": "Commercial building"
+    },
+    "answer": "C",
+    "answer_en": "C. Correct answer based on cadastral management principles.",
+    "answer_zh": "C. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "9.The real estate registration book primarily serves as a basis for which of the following activities?",
+    "q_zh": "9.The real estate registration book primarily serves as a basis for which of the following activities?",
+    "options": {
+      "A": "Tax assessment",
+      "B": "Real estate transactions and mortgages",
+      "C": "Property insurance",
+      "D": "Interior design planning"
+    },
+    "answer": "B",
+    "answer_en": "B. Correct answer based on cadastral management principles.",
+    "answer_zh": "B. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "10.Which characteristic of real estate is NOT typically used to divide real estate units for registration purposes?",
+    "q_zh": "10.Which characteristic of real estate is NOT typically used to divide real estate units for registration purposes?",
+    "options": {
+      "A": "Physical characteristics",
+      "B": "Color of the building",
+      "C": "Use functions",
+      "D": "Location"
+    },
+    "answer": "D",
+    "answer_en": "D. Correct answer based on cadastral management principles.",
+    "answer_zh": "D. 根据地籍管理原理判断的正确答案。",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "11.The real estate registration book is designed to provide legal protection for whom?",
+    "q_zh": "11.The real estate registration book is designed to provide legal protection for whom?",
+    "options": {
+      "A": "Only the real estate owner",
+      "B": "Real estate owners and other parties involved",
+      "C": "Government officials",
+      "D": "Tenants"
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "12.Which of the following is NOT a key element in ensuring the quality of real estate registration information?",
+    "q_zh": "12.Which of the following is NOT a key element in ensuring the quality of real estate registration information?",
+    "options": {
+      "A": "Unity of information",
+      "B": "Accuracy of information",
+      "C": "Completeness of information",
+      "D": "Personal preferences of registrants"
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "13.Which of the following is NOT a main purpose of cadastral survey?",
+    "q_zh": "13.Which of the following is NOT a main purpose of cadastral survey?",
+    "options": {
+      "A": "To provide legal evidence of land ownership.",
+      "B": "To determine the height of buildings.",
+      "C": "To ensure accurate boundaries between land parcels.",
+      "D": "To support fiscal and administrative decision-making."
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "14.Cadastral surveying plays a crucial role in:",
+    "q_zh": "14.Cadastral surveying plays a crucial role in:",
+    "options": {
+      "A": "Managing financial portfolios.",
+      "B": "Facilitating international trade.",
+      "C": "Ensuring the efficient management of land resources.",
+      "D": "Predicting weather patterns."
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "15.What is the primary format requirement for a cadastral survey report?",
+    "q_zh": "15.What is the primary format requirement for a cadastral survey report?",
+    "options": {
+      "A": "It must be presented in a narrative style without headings.",
+      "B": "It should include clear and concise explanations with appropriate headings and tables.",
+      "C": "It must be written in verse form.",
+      "D": "It should only include maps and diagrams."
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "16.Which of the following is NOT a characteristic of the Land Change Survey?",
+    "q_zh": "16.Which of the following is NOT a characteristic of the Land Change Survey?",
+    "options": {
+      "A": "Comprehensiveness",
+      "B": "Accuracy",
+      "C": "Timeliness",
+      "D": "Simplicity"
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "17.The Land Change Survey primarily provides information for which two main purposes?",
+    "q_zh": "17.The Land Change Survey primarily provides information for which two main purposes?",
+    "options": {
+      "A": "Economic forecasting and climate change",
+      "B": "Land management and policy formulation",
+      "C": "Urban planning and agricultural research",
+      "D": "Environmental protection and wildlife conservation"
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "18.Which task is NOT typically part of the Land Change Survey?",
+    "q_zh": "18.Which task is NOT typically part of the Land Change Survey?",
+    "options": {
+      "A": "Identifying changes in land use",
+      "B": "Collecting data on meteorological conditions",
+      "C": "Updating cadastral data",
+      "D": "Analyzing changes in land cover"
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "19.Which of the following is NOT a principle of land classification and grading?",
+    "q_zh": "19.Which of the following is NOT a principle of land classification and grading?",
+    "options": {
+      "A": "Scientificity",
+      "B": "Subjectivity",
+      "C": "Objectivity",
+      "D": "Comprehensiveness"
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
+  },
+  {
+    "type": "single",
+    "q_en": "20.The land grading system is primarily based on which of the following factors?",
+    "q_zh": "20.The land grading system is primarily based on which of the following factors?",
+    "options": {
+      "A": "Land ownership",
+      "B": "Land location",
+      "C": "Potential use value",
+      "D": "Land history"
+    },
+    "answer": "",
+    "answer_en": "",
+    "answer_zh": "",
+    "source": "PPT练习题"
   }
 ]
