@@ -81,86 +81,6 @@
   },
   {
     "type": "fill",
-    "q_en": "The basic spatial unit of cadastral management is ______.",
-    "q_zh": "地籍管理的基本空间单元是______。",
-    "answer_en": "A",
-    "answer_zh": "宗地是承载权属、地类和面积信息的最小空间单元，是登记、调查和统计的基础。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "The primary legal purpose of cadastral management is ______.",
-    "q_zh": "地籍管理的首要法律目的是______。",
-    "answer_en": "A",
-    "answer_zh": "通过建立土地权属登记簿，保护土地所有者和使用者的合法权益，是地籍管理的根本目的。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Which ministry is responsible for cadastral management in China?",
-    "q_zh": "中国负责地籍管理的部门是？",
-    "answer_en": "A",
-    "answer_zh": "2018年国务院机构改革后，自然资源部统一行使土地和资源管理职能，包括地籍登记和调查。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Modern cadastral system originated from ______.",
-    "q_zh": "现代地籍制度起源于______。",
-    "answer_en": "B",
-    "answer_zh": "现代地籍于中世纪后在欧洲发展，最初为税收目的，后演变为法律登记制度。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Which of the following is NOT cadastral data?",
-    "q_zh": "下列哪项不是地籍数据？",
-    "answer_en": "D",
-    "answer_zh": "地籍数据围绕土地：边界、权属、面积、地类、价格。个人病历与土地无关。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Cadastral map is a product of ______.",
-    "q_zh": "地籍图是______的成果。",
-    "answer_en": "B",
-    "answer_zh": "地籍图是地籍调查的主要成果，通过测量宗地边界绘制而成。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "The legal effect of cadastral register is ______.",
-    "q_zh": "地籍登记簿的法律效力是______。",
-    "answer_en": "A",
-    "answer_zh": "登记簿是官方法律记录，是证明土地权利的法定依据，具有公信力。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Which technology is the core of modern cadastral database?",
-    "q_zh": "现代地籍数据库的核心技术是？",
-    "answer_en": "C",
-    "answer_zh": "GIS（地理信息系统）是管理空间数据的核心技术，地籍数据库是典型的空间数据库。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Cadastral management serves all EXCEPT ______.",
-    "q_zh": "地籍管理不服务于下列哪项？",
-    "answer_en": "D",
-    "answer_zh": "地籍管理服务于土地管理、税收、规划、产权保护。工业生产流程与地籍无关。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "The first cadastral system in ancient China was called ______.",
-    "q_zh": "中国古代最早的地籍制度称为______。",
-    "answer_en": "A",
-    "answer_zh": "中国古代最早的地籍制度是春秋战国时期的'井田制'，记载土地划分和赋役。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
     "q_en": "Main contents of cadastral management include:",
     "q_zh": "地籍管理的主要内容包括：",
     "answer_en": "ABCD",
@@ -301,86 +221,6 @@
     "q_zh": "外业调查",
     "answer_en": "On-site data collection by surveyors walking or driving through the area to verify land use, measure boundaries, and collect attribute information. Essential for ground truthing.",
     "answer_zh": "调查员步行或驾车在现场收集数据，验证土地利用、测量边界和收集属性信息。地面验证的关键环节。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "The core purpose of land use status survey is to ______.",
-    "q_zh": "土地利用现状调查的核心目的是______。",
-    "answer_en": "A",
-    "answer_zh": "调查目的是查清土地用途、数量和分布，形成土地管理的基础数据。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Which technology is most efficient for large-scale land use mapping?",
-    "q_zh": "哪种技术最适合大尺度土地利用制图？",
-    "answer_en": "A",
-    "answer_zh": "遥感可快速重复覆盖大面积区域，适合全国或区域制图。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "The first step of land use survey is ______.",
-    "q_zh": "土地调查的第一步是______。",
-    "answer_en": "B",
-    "answer_zh": "调查必须先准备：计划、队伍、仪器、底图，然后才是外业。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Ground truthing is done to ______.",
-    "q_zh": "地面验证的目的是______。",
-    "answer_en": "C",
-    "answer_zh": "野外检查确保影像分类与实际土地利用一致，纠正误判。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "LUCC stands for ______.",
-    "q_zh": "LUCC代表______。",
-    "answer_en": "B",
-    "answer_zh": "LUCC是Land Use and Land Cover Change的缩写。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Which is NOT a remote sensing satellite?",
-    "q_zh": "下列哪项不是遥感卫星？",
-    "answer_en": "D",
-    "answer_zh": "GPS是定位卫星，不是遥感卫星。Landsat、SPOT、高分系列都是遥感卫星。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land use classification in China has ______ primary categories.",
-    "q_zh": "中国土地利用分类有______个一级类。",
-    "answer_en": "C",
-    "answer_zh": "中国《土地利用现状分类》有12个一级类（农用地、建设用地、未利用地等）。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Change detection compares images from ______.",
-    "q_zh": "变化检测比较______的影像。",
-    "answer_en": "A",
-    "answer_zh": "变化检测通过比较不同时相的影像识别土地利用变化。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land use survey output does NOT include ______.",
-    "q_zh": "土地调查成果不包括______。",
-    "answer_en": "D",
-    "answer_zh": "调查成果包括图件、数据库、统计表和报告。个人收入表与土地调查无关。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Field survey verifies ______.",
-    "q_zh": "外业调查验证______。",
-    "answer_en": "B",
-    "answer_zh": "外业现场验证内业解译结果，确保精度。",
     "source": "补充"
   },
   {
@@ -529,86 +369,6 @@
   },
   {
     "type": "fill",
-    "q_en": "Initial cadastral survey is conducted ______.",
-    "q_zh": "初始地籍调查______。",
-    "answer_en": "A",
-    "answer_zh": "初始调查对全部宗地一次性开展，建立基础数据库。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Daily cadastral survey is triggered by ______.",
-    "q_zh": "日常地籍调查的触发原因是______。",
-    "answer_en": "D",
-    "answer_zh": "日常调查响应变化：转让、合并、分割、新用途等。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Boundary survey mainly measures ______.",
-    "q_zh": "界址调查主要测量______。",
-    "answer_en": "B",
-    "answer_zh": "界址调查定位和记录界址点坐标。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "The core of cadastral survey is ______.",
-    "q_zh": "地籍调查的核心是______。",
-    "answer_en": "C",
-    "answer_zh": "界址调查是地籍调查的核心，确定宗地边界和权属。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Boundary points are marked by ______.",
-    "q_zh": "界址点用______标定。",
-    "answer_en": "A",
-    "answer_zh": "界址点用永久标志（铁桩、混凝土桩、石桩）标定。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Parcel area is calculated from ______.",
-    "q_zh": "宗地面积从______计算。",
-    "answer_en": "B",
-    "answer_zh": "宗地面积从界址点坐标用坐标几何计算。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Ownership investigation requires ______.",
-    "q_zh": "权属调查需要______。",
-    "answer_en": "C",
-    "answer_zh": "权属调查需要相邻权利人现场确认边界。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Which instrument is NOT used in cadastral survey?",
-    "q_zh": "哪种仪器不用于地籍调查？",
-    "answer_en": "D",
-    "answer_zh": "全站仪、GPS、水准仪都用于地籍测量。显微镜用于实验室，不用于外业。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Cadastral survey provides data for ______.",
-    "q_zh": "地籍调查为______提供数据。",
-    "answer_en": "A",
-    "answer_zh": "地籍调查的成果是土地登记的依据。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Daily survey frequency is ______.",
-    "q_zh": "日常调查的频率是______。",
-    "answer_en": "B",
-    "answer_zh": "日常调查根据变化情况随时开展，不是固定周期。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
     "q_en": "Daily survey triggers include:",
     "q_zh": "日常调查的触发情形包括：",
     "answer_en": "ABCD",
@@ -737,38 +497,6 @@
   },
   {
     "type": "fill",
-    "q_en": "Unified real estate registration started in China in ______.",
-    "q_zh": "中国不动产统一登记始于______。",
-    "answer_en": "C",
-    "answer_zh": "中国于2015年启动不动产统一登记。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Registration authority in China is ______.",
-    "q_zh": "中国的登记机关是______。",
-    "answer_en": "A",
-    "answer_zh": "目前由自然资源局负责不动产登记。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Change registration is made when ______.",
-    "q_zh": "变更登记在______时进行。",
-    "answer_en": "D",
-    "answer_zh": "转让、抵押、用途变化都要变更登记。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land certificate is issued by ______.",
-    "q_zh": "土地证书由______颁发。",
-    "answer_en": "B",
-    "answer_zh": "登记机关（自然资源局）颁发证书。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
     "q_en": "Steps of land registration:",
     "q_zh": "土地登记的步骤：",
     "answer_en": "ABCD",
@@ -845,14 +573,6 @@
     "q_zh": "土地平衡表",
     "answer_en": "A statistical table showing land area changes between categories (e.g., farmland converted to construction land), reflecting dynamic land use balance.",
     "answer_zh": "展示各地类之间土地面积变化（如耕地转为建设用地）的统计表，反映土地利用动态平衡。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Land statistics includes area, use structure and ______.",
-    "q_zh": "土地统计包括面积、利用结构和______。",
-    "answer_en": "C",
-    "answer_zh": "统计不仅包括现状，还包括变化分析。",
     "source": "补充"
   },
   {
@@ -953,14 +673,6 @@
   },
   {
     "type": "fill",
-    "q_en": "Cost approach calculates value by ______.",
-    "q_zh": "成本法计算价值的方式是______。",
-    "answer_en": "A",
-    "answer_zh": "成本法以新建成本减折旧估算价值。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
     "q_en": "Common valuation methods:",
     "q_zh": "常见估价方法：",
     "answer_en": "ABCD",
@@ -981,22 +693,6 @@
     "q_zh": "3S技术",
     "answer_en": "Integration of GIS (Geographic Information System), GPS (Global Positioning System) and RS (Remote Sensing) applied in land survey and management.",
     "answer_zh": "地理信息系统、全球定位系统和遥感的集成，应用于土地调查和管理。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "GIS mainly used for ______.",
-    "q_zh": "GIS主要用于______。",
-    "answer_en": "A",
-    "answer_zh": "GIS处理空间数据：存储、分析、制图。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "GPS in field survey for ______.",
-    "q_zh": "外业调查中GPS用于______。",
-    "answer_en": "B",
-    "answer_zh": "GPS提供实时坐标用于外业定位。",
     "source": "补充"
   },
   {
@@ -1053,14 +749,6 @@
     "q_zh": "土地征收",
     "answer_en": "Government taking collective land for public interest with compensation, converting collective to state ownership.",
     "answer_zh": "政府为公共利益征收集体土地并给予补偿，将集体所有转为国家所有。",
-    "source": "补充"
-  },
-  {
-    "type": "fill",
-    "q_en": "Residential land use right term is ______ years.",
-    "q_zh": "住宅用地使用权年限为______年。",
-    "answer_en": "C",
-    "answer_zh": "住宅70年，商业40年，工业50年。",
     "source": "补充"
   },
   {
@@ -2113,5 +1801,133 @@
     "answer_en": "C. Linguistics. Land classification involves geography, geology, economics, but not linguistics.",
     "answer_zh": "C. 语言学。土地分等涉及地理学、地质学、经济学，但不涉及语言学。",
     "source": "第6章复习题"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Which of the following are basic principles of cadastral management?",
+    "q_zh": "下列哪些是地籍管理的基本原则？",
+    "options": {
+      "A": "Legality / 合法性",
+      "B": "Accuracy / 准确性",
+      "C": "Timeliness / 现势性",
+      "D": "Profit maximization / 利润最大化",
+      "E": "Confidentiality / 保密性"
+    },
+    "answer": "ABCE",
+    "answer_en": "ABCE. Legality, accuracy, timeliness, confidentiality are basic principles. Profit maximization is not.",
+    "answer_zh": "ABCE。合法性、准确性、现势性、保密性是基本原则。利润最大化不是。",
+    "source": "第1章"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Which of the following are main contents of cadastral management?",
+    "q_zh": "下列哪些是地籍管理的主要内容？",
+    "options": {
+      "A": "Cadastral survey / 地籍调查",
+      "B": "Land registration / 土地登记",
+      "C": "Land statistics / 土地统计",
+      "D": "Real estate development / 房地产开发",
+      "E": "Cadastral archives / 地籍档案"
+    },
+    "answer": "ABCE",
+    "answer_en": "ABCE. Survey, registration, statistics, archives are main contents. Real estate development is not.",
+    "answer_zh": "ABCE。调查、登记、统计、档案是主要内容。房地产开发不是。",
+    "source": "第1章"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Which of the following are types of land use in China?",
+    "q_zh": "下列哪些是中国土地利用类型？",
+    "options": {
+      "A": "Agricultural land / 农用地",
+      "B": "Construction land / 建设用地",
+      "C": "Unused land / 未利用地",
+      "D": "Industrial land / 工业用地",
+      "E": "Commercial land / 商业用地"
+    },
+    "answer": "ABC",
+    "answer_en": "ABC. China classification has three primary categories: agricultural, construction, unused. Industrial and commercial are subcategories.",
+    "answer_zh": "ABC。中国分类分三个一级类：农用地、建设用地、未利用地。工业和商业是二级类。",
+    "source": "第2章"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Which of the following are 3S technologies?",
+    "q_zh": "下列哪些是3S技术？",
+    "options": {
+      "A": "RS (Remote Sensing) / 遥感",
+      "B": "GPS (Global Positioning System) / 全球定位系统",
+      "C": "GIS (Geographic Information System) / 地理信息系统",
+      "D": "AI (Artificial Intelligence) / 人工智能",
+      "E": "VR (Virtual Reality) / 虚拟现实"
+    },
+    "answer": "ABC",
+    "answer_en": "ABC. 3S = RS + GPS + GIS. AI and VR are not part of 3S.",
+    "answer_zh": "ABC。3S = 遥感 + GPS + GIS。人工智能和虚拟现实不是3S的一部分。",
+    "source": "第3章"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Which of the following are real estate valuation methods?",
+    "q_zh": "下列哪些是不动产估价方法？",
+    "options": {
+      "A": "Market comparison approach / 市场比较法",
+      "B": "Income capitalization approach / 收益还原法",
+      "C": "Cost approach / 成本法",
+      "D": "Polling approach / 投票法",
+      "E": "Survey approach / 调查法"
+    },
+    "answer": "ABC",
+    "answer_en": "ABC. Three main methods: market comparison, income capitalization, cost approach.",
+    "answer_zh": "ABC。三种主要方法：市场比较法、收益还原法、成本法。",
+    "source": "第7章"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Which of the following are land ownership types in China?",
+    "q_zh": "下列哪些是中国的土地所有权类型？",
+    "options": {
+      "A": "State ownership / 国家所有",
+      "B": "Collective ownership / 集体所有",
+      "C": "Private ownership / 私人所有",
+      "D": "Foreign ownership / 外国所有",
+      "E": "Enterprise ownership / 企业所有"
+    },
+    "answer": "AB",
+    "answer_en": "AB. China has two types: state ownership (urban land) and collective ownership (rural land). Private ownership is prohibited.",
+    "answer_zh": "AB。中国有两种类型：国家所有（城市土地）和集体所有（农村土地）。禁止私人所有。",
+    "source": "第6章"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Which of the following are cadastral survey methods?",
+    "q_zh": "下列哪些是地籍测量方法？",
+    "options": {
+      "A": "Ground surveying / 地面测量",
+      "B": "Aerial surveying / 航空测量",
+      "C": "Remote sensing / 遥感",
+      "D": "Underground surveying / 地下测量",
+      "E": "Marine surveying / 海洋测量"
+    },
+    "answer": "ABC",
+    "answer_en": "ABC. Ground, aerial, and remote sensing are main survey methods.",
+    "answer_zh": "ABC。地面、航空和遥感是主要测量方法。",
+    "source": "第4章"
+  },
+  {
+    "type": "multiple",
+    "q_en": "Which of the following are advantages of unified real estate registration?",
+    "q_zh": "下列哪些是不动产统一登记的优势？",
+    "options": {
+      "A": "One window / 一个窗口",
+      "B": "Single register / 单一登记簿",
+      "C": "Transparent data / 数据透明",
+      "D": "Higher cost / 更高成本",
+      "E": "Anti-corruption / 反腐败"
+    },
+    "answer": "ABCE",
+    "answer_en": "ABCE. Unified registration saves time, avoids conflicts, supports market, and prevents corruption. Higher cost is not an advantage.",
+    "answer_zh": "ABCE。统一登记节省时间、避免冲突、支撑市场、防止腐败。更高成本不是优势。",
+    "source": "第8章"
   }
 ]
