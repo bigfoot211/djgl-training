@@ -2370,5 +2370,325 @@
     "answer_en": "",
     "answer_zh": "",
     "source": "PPT练习题"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Survey",
+    "q_zh": "地籍调查",
+    "answer_en": "The process of determining the boundaries, area, and location of land parcels. It includes ownership investigation and boundary measurement, serving as the technical foundation for land registration.",
+    "answer_zh": "确定宗地边界、面积和位置的过程。包括权属调查和界址测量，是土地登记的技术基础。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Measurement",
+    "q_zh": "地籍测量",
+    "answer_en": "The process of accurately measuring the dimensions and area of land parcels using specialized equipment and techniques such as total station, GPS, and remote sensing.",
+    "answer_zh": "使用全站仪、GPS和遥感等专业设备和技术精确测量宗地尺寸和面积的过程。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Registration",
+    "q_zh": "土地登记",
+    "answer_en": "The process of recording and maintaining information about land ownership, use, and other relevant details in official registers. It provides legal confirmation of property rights.",
+    "answer_zh": "在官方登记簿中记录和维护土地所有权、使用权及其他相关信息的过程。提供产权的法律确认。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Statistics",
+    "q_zh": "土地统计",
+    "answer_en": "The collection, analysis, and dissemination of data related to land use, ownership, and value. It supports land use planning and policy making.",
+    "answer_zh": "收集、分析和发布土地利用、权属和价值相关数据。支持土地利用规划和政策制定。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Cadastral Archives",
+    "q_zh": "地籍档案",
+    "answer_en": "Official records and documents containing cadastral data, survey results, registration certificates, and maps. They are maintained for legal reference and future use.",
+    "answer_zh": "包含地籍数据、调查成果、登记证书和图件的官方记录和文件。为法律参考和未来使用而保存。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Principle of Legality",
+    "q_zh": "合法性原则",
+    "answer_en": "One of the basic principles of cadastral management: all cadastral activities must comply with laws and regulations. Registration is only valid if it follows legal procedures.",
+    "answer_zh": "地籍管理基本原则之一：所有地籍活动必须遵守法律法规。只有按法律程序进行的登记才有效。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Principle of Accuracy",
+    "q_zh": "准确性原则",
+    "answer_en": "One of the basic principles of cadastral management: ensuring precise and reliable land records. Boundary coordinates, area calculations, and ownership data must be accurate.",
+    "answer_zh": "地籍管理基本原则之一：确保土地记录精确可靠。界址坐标、面积计算和权属数据必须准确。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Principle of Timeliness",
+    "q_zh": "现势性原则",
+    "answer_en": "One of the basic principles of cadastral management: keeping land records up-to-date. Regular updates ensure cadastral data reflects current land use and ownership.",
+    "answer_zh": "地籍管理基本原则之一：保持土地记录现势。定期更新确保地籍数据反映当前土地利用和权属。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the main roles of cadastral registration?",
+    "q_zh": "地籍登记的主要作用是什么？",
+    "answer_en": "Cadastral registration has four main roles: (1) Providing legal protection for land rights - confirming ownership; (2) Facilitating land transactions and management - supporting market; (3) Supporting land use planning and development - spatial planning; (4) Ensuring accurate and up-to-date land records - dynamic update.",
+    "answer_zh": "地籍登记有四项主要作用：（1）为土地权利提供法律保护——确认所有权；（2）促进土地交易和管理——支撑市场；（3）支持土地利用规划和开发——空间规划；（4）确保准确现势的土地记录——动态更新。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the basic principles of cadastral management?",
+    "q_zh": "地籍管理的基本原则是什么？",
+    "answer_en": "Five basic principles: (1) Legality - compliance with laws and regulations; (2) Accuracy - precise and reliable land records; (3) Timeliness - keeping records up-to-date; (4) Accessibility - easy access for stakeholders; (5) Confidentiality - protecting sensitive information.",
+    "answer_zh": "五项基本原则：（1）合法性——遵守法律法规；（2）准确性——精确可靠的土地记录；（3）现势性——保持记录更新；（4）可及性——利益相关者易于获取；（5）保密性——保护敏感信息。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "short",
+    "q_en": "Describe the process of cadastral survey and measurement.",
+    "q_zh": "描述地籍调查和测量的过程。",
+    "answer_en": "Four stages: (1) Cadastral survey - determining boundaries, area and location; (2) Cadastral measurement - accurately measuring dimensions using specialized equipment; (3) Surveying methods - ground surveying, aerial surveying, and remote sensing; (4) Data processing - using software to process data and generate cadastral maps.",
+    "answer_zh": "四个阶段：（1）地籍调查——确定边界、面积和位置；（2）地籍测量——用专业设备精确测量尺寸；（3）测量方法——地面测量、航空测量和遥感；（4）数据处理——用软件处理数据并生成地籍图。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "short",
+    "q_en": "What is the relationship between cadastral management and land administration?",
+    "q_zh": "地籍管理和土地管理的关系是什么？",
+    "answer_en": "Cadastral management is the technical and legal foundation of land administration. It provides accurate data on land ownership, boundaries, area and use. Land administration uses this data for planning, taxation, market regulation, and policy making. They are interdependent: cadastre supports administration, administration updates cadastre.",
+    "answer_zh": "地籍管理是土地管理的技术和法律基础。它提供土地权属、边界、面积和利用的准确数据。土地管理利用这些数据进行规划、税收、市场监管和政策制定。二者相互依赖：地籍支撑管理，管理更新地籍。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the importance of cadastral management in national development.",
+    "q_zh": "论述地籍管理在国家发展中的重要性。",
+    "answer_en": "Cadastral management is fundamental to national development: (1) Property rights protection - secure land rights attract investment; (2) Food security - basic farmland protection relies on accurate cadastre; (3) Urbanization - land transactions and planning need reliable data; (4) Taxation - property tax needs accurate valuation; (5) Social stability - clear boundaries prevent land disputes. Without reliable cadastre, economic development and social stability are undermined.",
+    "answer_zh": "地籍管理对国家发展至关重要：（1）产权保护——安全的土地权利吸引投资；（2）粮食安全——基本农田保护依赖准确地籍；（3）城市化——土地交易和规划需要可靠数据；（4）税收——财产税需要准确估价；（5）社会稳定——清晰的边界防止土地纠纷。没有可靠的地籍，经济发展和社会稳定都会受损。",
+    "source": "第1章Overview"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Use Status Survey",
+    "q_zh": "土地利用现状调查",
+    "answer_en": "A comprehensive survey to determine current land use types, area, distribution and ownership. It covers agricultural, urban, ecological and unused land. The output is land use maps and statistical tables.",
+    "answer_zh": "确定当前土地利用类型、面积、分布和权属的综合调查。覆盖农用地、城市用地、生态用地和未利用地。成果是土地利用图和统计表。",
+    "source": "第3章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Use Classification",
+    "q_zh": "土地利用分类",
+    "answer_en": "Categorization of land based on use type. China current system has 12 primary categories: farmland, garden land, forest, grassland, commercial, residential, industrial, etc. It supports planning and management.",
+    "answer_zh": "按利用类型对土地进行分类。中国现行体系分12个一级类：耕地、园地、林地、草地、商服用地、住宅用地、工业用地等。支撑规划和管理。",
+    "source": "第3章"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the main contents of land use status survey?",
+    "q_zh": "土地利用现状调查的主要内容是什么？",
+    "answer_en": "Three main contents: (1) Natural conditions - soil, vegetation, terrain, climate; (2) Social economic conditions - investment, output, revenue, transportation; (3) Current land use - type, area, distribution, ownership. Output includes land use maps, statistics and report.",
+    "answer_zh": "三项主要内容：（1）自然条件——土壤、植被、地形、气候；（2）社会经济条件——投入、产出、收益、交通；（3）土地利用现状——类型、面积、分布、权属。成果包括土地利用图、统计和报告。",
+    "source": "第3章"
+  },
+  {
+    "type": "short",
+    "q_en": "Describe the workflow of land use status survey.",
+    "q_zh": "描述土地利用现状调查的工作流程。",
+    "answer_en": "Five stages: (1) Preparation - plan, team, instruments, base maps; (2) Indoor interpretation - classify land use from RS images; (3) Field survey - verify and correct on site with GPS; (4) Data integration - build GIS database, calculate area; (5) Output - maps, tables, report, expert review.",
+    "answer_zh": "五个阶段：（1）准备——计划、队伍、仪器、底图；（2）内业解译——从遥感影像分类土地利用；（3）外业调查——现场用GPS验证纠正；（4）数据集成——建GIS数据库，计算面积；（5）成果——图件、表、报告、专家评审。",
+    "source": "第3章"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the role of 3S technology in land use survey.",
+    "q_zh": "论述3S技术在土地利用调查中的作用。",
+    "answer_en": "3S (RS+GPS+GIS) revolutionized land use survey: (1) RS provides multi-temporal satellite images for rapid interpretation; (2) GPS provides real-time centimeter positioning for field verification; (3) GIS integrates image, field data and attributes, automated area calculation. Together cut field time by 50%, improve accuracy to 90%+, enable dynamic monitoring.",
+    "answer_zh": "3S（遥感+GPS+GIS）彻底改变了土地利用调查：（1）遥感提供多时相卫星影像快速解译；（2）GPS提供实时厘米级定位用于外业验证；（3）GIS集成影像、外业和属性，自动面积量算。三者结合使外业时间减少50%，精度达90%以上，实现动态监测。",
+    "source": "第3章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Initial Cadastral Survey",
+    "q_zh": "初始地籍调查",
+    "answer_en": "A comprehensive survey conducted once for all parcels in a region, establishing the baseline cadastre. It covers ownership investigation, boundary survey, and area calculation. After initial survey, daily update maintains records.",
+    "answer_zh": "对区域内全部宗地一次性进行的综合调查，建立地籍基线。包括权属调查、界址测量和面积计算。初始调查后通过日常更新保持记录。",
+    "source": "第4章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Daily Cadastral Survey",
+    "q_zh": "日常地籍调查",
+    "answer_en": "Continuous survey when parcels change: transfer, subdivision, use change. It updates boundary, ownership and area records. Daily survey keeps cadastral data current and reliable.",
+    "answer_zh": "宗地发生变化时的持续调查：转让、分割、用途变更。更新边界、权属和面积记录。日常调查保持地籍数据现势和可靠。",
+    "source": "第5章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Boundary Point (Monument)",
+    "q_zh": "界址点（界标）",
+    "answer_en": "A physical marker at a parcel corner, such as iron stake, concrete monument, or GPS point. Its coordinates are precisely measured and recorded. Boundary points define the legal boundary of a parcel.",
+    "answer_zh": "宗地拐角处的物理标志，如铁桩、混凝土界标或GPS点。其坐标被精确测量和记录。界址点定义宗地的法律边界。",
+    "source": "第4章"
+  },
+  {
+    "type": "short",
+    "q_en": "What is the difference between initial and daily cadastral survey?",
+    "q_zh": "初始地籍调查和日常地籍调查的区别是什么？",
+    "answer_en": "Initial survey is comprehensive, done once for all parcels, establishing baseline. Daily survey is incremental, done when parcels change (transfer, subdivision, use change). Initial is large-scale; daily is continuous and small-scale.",
+    "answer_zh": "初始调查是全面的，对全部宗地一次性完成，建立基线。日常调查是增量的，在宗地变化时（转让、分割、用途变更）进行。初始是大规模的；日常是持续的、小规模的。",
+    "source": "第5章"
+  },
+  {
+    "type": "short",
+    "q_en": "Describe the procedure of daily cadastral change registration.",
+    "q_zh": "描述日常地籍变更登记的程序。",
+    "answer_en": "Five steps: (1) Application - owner submits change request; (2) Investigation - field survey confirms new boundary; (3) Verification - authority checks legality and may publicize; (4) Registration - update official register; (5) Certification - issue updated certificate. Takes 5-15 working days.",
+    "answer_zh": "五个步骤：（1）申请——权利人提交变更请求；（2）调查——外业确认新边界；（3）审核——机关审查合法性，可能公告；（4）登记——更新官方登记簿；（5）发证——颁发更新后的证书。需5-15个工作日。",
+    "source": "第5章"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss why dynamic update is essential for modern cadastre.",
+    "q_zh": "论述为什么动态更新对现代地籍至关重要。",
+    "answer_en": "Land rights and use change constantly: transfers, subdivisions, urban expansion. Static cadastre becomes outdated within years, losing credibility. Dynamic update ensures: (1) Data accuracy - supports market transactions; (2) Legal protection - reflects current ownership; (3) Planning support - accurate land use data; (4) Public trust - reliable records. Without update, cadastre becomes useless for decision-making.",
+    "answer_zh": "土地权利和利用不断变化：转让、分割、城市扩张。静态地籍几年内就会过时，失去公信力。动态更新确保：（1）数据准确——支持市场交易；（2）法律保护——反映当前权属；（3）规划支撑——准确的土地利用数据；（4）公众信任——可靠的记录。没有更新，地籍对决策就失去作用。",
+    "source": "第5章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Real Estate Valuation",
+    "q_zh": "不动产估价",
+    "answer_en": "The process of estimating market value of land and buildings. Three main methods: market comparison, income capitalization, and cost approach. Used for transfer, mortgage, taxation, and expropriation compensation.",
+    "answer_zh": "估算土地和建筑物市场价值的过程。三种主要方法：市场比较法、收益还原法、成本法。用于转让、抵押、税收和征收补偿。",
+    "source": "第7章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Market Comparison Approach",
+    "q_zh": "市场比较法",
+    "answer_en": "A valuation method that compares subject property with recent comparable sales. Adjustments are made for differences in size, location, condition, and time. Most common method in active markets.",
+    "answer_zh": "一种估价方法，将标的物业与近期可比交易进行比较。对面积、位置、状况和时间差异进行修正。在活跃市场中最常用。",
+    "source": "第7章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Income Capitalization Approach",
+    "q_zh": "收益还原法",
+    "answer_en": "A valuation method that converts future net income into present value using a capitalization rate. Based on the principle that property value equals present value of future income. Suitable for income-producing properties.",
+    "answer_zh": "一种估价方法，用还原率将未来净收益折算为现值。基于物业价值等于未来收益现值的原理。适用于收益性物业。",
+    "source": "第7章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Unified Real Estate Registration",
+    "q_zh": "不动产统一登记",
+    "answer_en": "Since 2015, China integrates land, building, forest and seawater registrations into one system. One certificate replaces separate land and house certificates. Improves efficiency and prevents conflicts.",
+    "answer_zh": "2015年起，中国将土地、房屋、林地、海域登记整合为一个系统。一本证书替代原土地和房屋证书。提高效率，防止冲突。",
+    "source": "第8章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Statistics",
+    "q_zh": "土地统计",
+    "answer_en": "Systematic collection, analysis and publication of land area, use type and ownership data. It provides national land resource information for policy making and planning.",
+    "answer_zh": "系统收集、分析和发布土地面积、利用类型和权属数据。为政策制定和规划提供国家土地资源信息。",
+    "source": "第9章"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the three main methods of real estate valuation?",
+    "q_zh": "不动产估价的三种主要方法是什么？",
+    "answer_en": "Three main methods: (1) Market comparison - compare with recent comparable sales; (2) Income capitalization - convert future income to present value; (3) Cost approach - calculate cost of reproduction minus depreciation. Choice depends on property type and market conditions.",
+    "answer_zh": "三种主要方法：（1）市场比较法——与近期可比交易比较；（2）收益还原法——将未来收益折算为现值；（3）成本法——计算重置成本减折旧。选择取决于物业类型和市场条件。",
+    "source": "第7章"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the advantages of unified real estate registration?",
+    "q_zh": "不动产统一登记的优势是什么？",
+    "answer_en": "Unified registration integrates land, house, forest and seawater. Advantages: (1) One window - saves time; (2) Single register - avoids conflicts; (3) Transparent data - supports market; (4) Anti-corruption - unified system; (5) Fair compensation - clear ownership for expropriation.",
+    "answer_zh": "统一登记整合土地、房屋、林地、海域。优势：（1）一个窗口——节省时间；（2）单一登记簿——避免冲突；（3）数据透明——支撑市场；（4）反腐败——统一系统；（5）公平补偿——征收时权属清晰。",
+    "source": "第8章"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the role of real estate valuation in land market.",
+    "q_zh": "论述不动产估价在土地市场中的作用。",
+    "answer_en": "Real estate valuation is essential for land market: (1) Transaction basis - buyers and sellers need fair value reference; (2) Mortgage - banks use valuation to determine loan amount; (3) Taxation - property tax based on assessed value; (4) Expropriation - fair compensation relies on valuation; (5) Planning - value data guides land use decisions. Without reliable valuation, market transactions become risky and unfair.",
+    "answer_zh": "不动产估价对土地市场至关重要：（1）交易基础——买卖双方需要公平价值参考；（2）抵押——银行用估价确定贷款额；（3）税收——财产税基于评估价值；（4）征收——公平补偿依赖估价；（5）规划——价值数据指导土地利用决策。没有可靠的估价，市场交易就会变得有风险和不公平。",
+    "source": "第7章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Agricultural Land",
+    "q_zh": "农用地",
+    "answer_en": "Land used for agricultural production, including farmland, garden land, forest, and grassland. Farmland is most protected under China basic farmland policy.",
+    "answer_zh": "用于农业生产的土地，包括耕地、园地、林地和草地。耕地在中国基本农田政策中最受保护。",
+    "source": "第2章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Construction Land",
+    "q_zh": "建设用地",
+    "answer_en": "Land used for building structures, including urban residential, commercial, industrial, and infrastructure land. Urban construction land is state-owned; rural construction land includes housing and township enterprises.",
+    "answer_zh": "用于建造建筑物的土地，包括城市住宅、商业、工业和基础设施用地。城市建设用地为国家所有；农村建设用地包括宅基地和乡镇企业用地。",
+    "source": "第2章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Unused Land",
+    "q_zh": "未利用地",
+    "answer_en": "Land not currently used for agriculture or construction, including desert, wetland, and bare rock. Some unused land can be reclaimed for agricultural or construction use.",
+    "answer_zh": "当前未用于农业或建设的土地，包括沙漠、湿地和裸岩。部分未利用地可复垦为农业或建设用地。",
+    "source": "第2章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Grant (Granted Use Right)",
+    "q_zh": "土地出让（出让使用权）",
+    "answer_en": "Paid transfer of urban land use right through bidding, auction or listing. User pays land premium, obtains use right for fixed term (40-70 years). Can be transferred, mortgaged, inherited.",
+    "answer_zh": "通过招标、拍卖或挂牌有偿转让城市土地使用权。使用者缴纳出让金，获得定期使用权（40-70年）。可转让、抵押、继承。",
+    "source": "第6章"
+  },
+  {
+    "type": "glossary",
+    "q_en": "Land Allocation (Allocated Use Right)",
+    "q_zh": "土地划拨（划拨使用权）",
+    "answer_en": "Free transfer of land use right for public welfare projects (government, schools, hospitals). No premium paid, term indefinite. Transfer restricted; requires approval and补交出让金 if transferred.",
+    "answer_zh": "为公益项目（政府、学校、医院）无偿转让土地使用权。不缴出让金，年限不定。转让受限；如转让需批准并补缴出让金。",
+    "source": "第6章"
+  },
+  {
+    "type": "short",
+    "q_en": "Explain the difference between land grant and land allocation.",
+    "q_zh": "解释土地出让和土地划拨的区别。",
+    "answer_en": "Land grant is paid: user pays premium, obtains use right through market (bid/auction/listing), term 40-70 years, transferable. Land allocation is free: for public welfare, no premium, term indefinite, transfer restricted. Grant is market-oriented; allocation is administrative.",
+    "answer_zh": "出让是有偿的：使用者缴出让金，通过市场（招拍挂）获得使用权，年限40-70年，可转让。划拨是无偿的：用于公益，不缴出让金，年限不定，转让受限。出让是市场化的；划拨是行政化的。",
+    "source": "第6章"
+  },
+  {
+    "type": "short",
+    "q_en": "What are the main land use categories in China?",
+    "q_zh": "中国主要的土地利用类型有哪些？",
+    "answer_en": "China current classification has 12 primary categories: (1) Agricultural land - farmland, garden, forest, grassland; (2) Construction land - residential, commercial, industrial, infrastructure; (3) Unused land - desert, wetland, bare rock. This classification supports planning and management.",
+    "answer_zh": "中国现行分类分12个一级类：（1）农用地——耕地、园地、林地、草地；（2）建设用地——住宅、商业、工业、基础设施；（3）未利用地——沙漠、湿地、裸岩。该分类支撑规划和管理。",
+    "source": "第2章"
+  },
+  {
+    "type": "essay",
+    "q_en": "Discuss the characteristics of China land ownership system.",
+    "q_zh": "论述中国土地所有权制度的特征。",
+    "answer_en": "China land ownership system has two characteristics: (1) Public ownership - urban land is state-owned, rural/suburban land is collective-owned; private ownership of land is prohibited. (2) Separation of ownership and use right - use right can be granted, transferred, mortgaged. This system balances public interest with market efficiency. Urban land use right is market-oriented (grant); rural collective land use is more restricted.",
+    "answer_zh": "中国土地所有权制度有两个特征：（1）公有制——城市土地国家所有，农村/城郊土地集体所有；禁止土地私有。（2）所有权与使用权分离——使用权可出让、转让、抵押。该制度平衡公共利益和市场效率。城市土地使用权是市场化的（出让）；农村集体土地使用更受限制。",
+    "source": "第6章"
   }
 ]
