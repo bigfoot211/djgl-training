@@ -80,7 +80,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "The basic spatial unit of cadastral management is ______.",
     "q_zh": "地籍管理的基本空间单元是______。",
     "answer_en": "A",
@@ -88,7 +88,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "The primary legal purpose of cadastral management is ______.",
     "q_zh": "地籍管理的首要法律目的是______。",
     "answer_en": "A",
@@ -96,7 +96,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Which ministry is responsible for cadastral management in China?",
     "q_zh": "中国负责地籍管理的部门是？",
     "answer_en": "A",
@@ -104,7 +104,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Modern cadastral system originated from ______.",
     "q_zh": "现代地籍制度起源于______。",
     "answer_en": "B",
@@ -112,7 +112,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Which of the following is NOT cadastral data?",
     "q_zh": "下列哪项不是地籍数据？",
     "answer_en": "D",
@@ -120,7 +120,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Cadastral map is a product of ______.",
     "q_zh": "地籍图是______的成果。",
     "answer_en": "B",
@@ -128,7 +128,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "The legal effect of cadastral register is ______.",
     "q_zh": "地籍登记簿的法律效力是______。",
     "answer_en": "A",
@@ -136,7 +136,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Which technology is the core of modern cadastral database?",
     "q_zh": "现代地籍数据库的核心技术是？",
     "answer_en": "C",
@@ -144,7 +144,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Cadastral management serves all EXCEPT ______.",
     "q_zh": "地籍管理不服务于下列哪项？",
     "answer_en": "D",
@@ -152,7 +152,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "The first cadastral system in ancient China was called ______.",
     "q_zh": "中国古代最早的地籍制度称为______。",
     "answer_en": "A",
@@ -160,7 +160,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Main contents of cadastral management include:",
     "q_zh": "地籍管理的主要内容包括：",
     "answer_en": "ABCD",
@@ -168,7 +168,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Purposes of cadastral data include:",
     "q_zh": "地籍数据的用途包括：",
     "answer_en": "ABCD",
@@ -176,7 +176,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Characteristics of modern cadastral system:",
     "q_zh": "现代地籍制度的特征：",
     "answer_en": "ABC",
@@ -184,7 +184,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Components of cadastral database:",
     "q_zh": "地籍数据库的组成：",
     "answer_en": "ABCD",
@@ -192,7 +192,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Government functions supported by cadastre:",
     "q_zh": "地籍支撑的政府职能：",
     "answer_en": "ABCD",
@@ -336,7 +336,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "The core purpose of land use status survey is to ______.",
     "q_zh": "土地利用现状调查的核心目的是______。",
     "answer_en": "A",
@@ -344,7 +344,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Which technology is most efficient for large-scale land use mapping?",
     "q_zh": "哪种技术最适合大尺度土地利用制图？",
     "answer_en": "A",
@@ -352,7 +352,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "The first step of land use survey is ______.",
     "q_zh": "土地调查的第一步是______。",
     "answer_en": "B",
@@ -360,7 +360,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Ground truthing is done to ______.",
     "q_zh": "地面验证的目的是______。",
     "answer_en": "C",
@@ -368,7 +368,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "LUCC stands for ______.",
     "q_zh": "LUCC代表______。",
     "answer_en": "B",
@@ -376,7 +376,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Which is NOT a remote sensing satellite?",
     "q_zh": "下列哪项不是遥感卫星？",
     "answer_en": "D",
@@ -384,7 +384,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land use classification in China has ______ primary categories.",
     "q_zh": "中国土地利用分类有______个一级类。",
     "answer_en": "C",
@@ -392,7 +392,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Change detection compares images from ______.",
     "q_zh": "变化检测比较______的影像。",
     "answer_en": "A",
@@ -400,7 +400,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land use survey output does NOT include ______.",
     "q_zh": "土地调查成果不包括______。",
     "answer_en": "D",
@@ -408,7 +408,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Field survey verifies ______.",
     "q_zh": "外业调查验证______。",
     "answer_en": "B",
@@ -416,7 +416,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Main outputs of land use survey include:",
     "q_zh": "土地调查的主要成果包括：",
     "answer_en": "ABCD",
@@ -424,7 +424,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Preparation work for land use survey includes:",
     "q_zh": "土地调查的准备工作包括：",
     "answer_en": "ABCD",
@@ -432,7 +432,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Steps of land use survey workflow:",
     "q_zh": "土地调查工作流程的步骤：",
     "answer_en": "ABCD",
@@ -440,7 +440,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Remote sensing applications in land survey:",
     "q_zh": "遥感在土地调查中的应用：",
     "answer_en": "ABCD",
@@ -448,7 +448,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Land use types in China's primary classification:",
     "q_zh": "中国一级土地利用类型：",
     "answer_en": "ABC",
@@ -600,7 +600,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Initial cadastral survey is conducted ______.",
     "q_zh": "初始地籍调查______。",
     "answer_en": "A",
@@ -608,7 +608,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Daily cadastral survey is triggered by ______.",
     "q_zh": "日常地籍调查的触发原因是______。",
     "answer_en": "D",
@@ -616,7 +616,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Boundary survey mainly measures ______.",
     "q_zh": "界址调查主要测量______。",
     "answer_en": "B",
@@ -624,7 +624,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "The core of cadastral survey is ______.",
     "q_zh": "地籍调查的核心是______。",
     "answer_en": "C",
@@ -632,7 +632,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Boundary points are marked by ______.",
     "q_zh": "界址点用______标定。",
     "answer_en": "A",
@@ -640,7 +640,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Parcel area is calculated from ______.",
     "q_zh": "宗地面积从______计算。",
     "answer_en": "B",
@@ -648,7 +648,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Ownership investigation requires ______.",
     "q_zh": "权属调查需要______。",
     "answer_en": "C",
@@ -656,7 +656,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Which instrument is NOT used in cadastral survey?",
     "q_zh": "哪种仪器不用于地籍调查？",
     "answer_en": "D",
@@ -664,7 +664,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Cadastral survey provides data for ______.",
     "q_zh": "地籍调查为______提供数据。",
     "answer_en": "A",
@@ -672,7 +672,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Daily survey frequency is ______.",
     "q_zh": "日常调查的频率是______。",
     "answer_en": "B",
@@ -680,7 +680,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Daily survey triggers include:",
     "q_zh": "日常调查的触发情形包括：",
     "answer_en": "ABCD",
@@ -688,7 +688,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Cadastral survey outputs include:",
     "q_zh": "地籍调查的成果包括：",
     "answer_en": "ABCD",
@@ -696,7 +696,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Instruments used in cadastral survey:",
     "q_zh": "地籍调查使用的仪器：",
     "answer_en": "ABC",
@@ -704,7 +704,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Boundary survey steps:",
     "q_zh": "界址调查的步骤：",
     "answer_en": "ABCD",
@@ -712,7 +712,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Ownership investigation includes:",
     "q_zh": "权属调查包括：",
     "answer_en": "ABC",
@@ -840,7 +840,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "The first step of land registration is ______.",
     "q_zh": "土地登记的第一步是______。",
     "answer_en": "A",
@@ -848,7 +848,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Final product of land registration is ______.",
     "q_zh": "土地登记的最终产物是______。",
     "answer_en": "B",
@@ -856,7 +856,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Urban land in China is owned by ______.",
     "q_zh": "中国城市土地属于______所有。",
     "answer_en": "A",
@@ -864,7 +864,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Easement is a ______ right.",
     "q_zh": "地役权是______权利。",
     "answer_en": "C",
@@ -872,7 +872,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Unified real estate registration started in China in ______.",
     "q_zh": "中国不动产统一登记始于______。",
     "answer_en": "C",
@@ -880,7 +880,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Registration authority in China is ______.",
     "q_zh": "中国的登记机关是______。",
     "answer_en": "A",
@@ -888,7 +888,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Public notice period is typically ______.",
     "q_zh": "公告期通常为______。",
     "answer_en": "B",
@@ -896,7 +896,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Change registration is made when ______.",
     "q_zh": "变更登记在______时进行。",
     "answer_en": "D",
@@ -904,7 +904,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Mortgage registration requires ______.",
     "q_zh": "抵押登记需要______。",
     "answer_en": "A",
@@ -912,7 +912,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land certificate is issued by ______.",
     "q_zh": "土地证书由______颁发。",
     "answer_en": "B",
@@ -920,7 +920,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Steps of land registration:",
     "q_zh": "土地登记的步骤：",
     "answer_en": "ABCD",
@@ -928,7 +928,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Functions of real estate registration:",
     "q_zh": "不动产登记的功能：",
     "answer_en": "ABC",
@@ -936,7 +936,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Land rights registered include:",
     "q_zh": "登记的土地权利包括：",
     "answer_en": "ABCD",
@@ -944,7 +944,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Change registration scenarios:",
     "q_zh": "变更登记的情形：",
     "answer_en": "ABCD",
@@ -952,7 +952,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Documents required for registration:",
     "q_zh": "登记需要的文件：",
     "answer_en": "ABC",
@@ -1048,7 +1048,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land statistics includes area, use structure and ______.",
     "q_zh": "土地统计包括面积、利用结构和______。",
     "answer_en": "C",
@@ -1056,7 +1056,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Land statistics procedures:",
     "q_zh": "土地统计工作程序：",
     "answer_en": "ABCD",
@@ -1112,7 +1112,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land grading mainly evaluates ______.",
     "q_zh": "土地分等主要评价土地的______。",
     "answer_en": "A",
@@ -1120,7 +1120,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Factors affecting urban land grading:",
     "q_zh": "影响城市土地分等的因素：",
     "answer_en": "ABCD",
@@ -1160,7 +1160,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Cadastral archives include:",
     "q_zh": "地籍档案包括：",
     "answer_en": "ABCD",
@@ -1208,7 +1208,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Cost approach calculates value by ______.",
     "q_zh": "成本法计算价值的方式是______。",
     "answer_en": "A",
@@ -1216,7 +1216,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Common valuation methods:",
     "q_zh": "常见估价方法：",
     "answer_en": "ABCD",
@@ -1240,7 +1240,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "GIS mainly used for ______.",
     "q_zh": "GIS主要用于______。",
     "answer_en": "A",
@@ -1248,7 +1248,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "GPS in field survey for ______.",
     "q_zh": "外业调查中GPS用于______。",
     "answer_en": "B",
@@ -1280,7 +1280,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Land rights in China include:",
     "q_zh": "中国的土地权利包括：",
     "answer_en": "ABCD",
@@ -1344,7 +1344,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Residential land use right term is ______ years.",
     "q_zh": "住宅用地使用权年限为______年。",
     "answer_en": "C",
@@ -1352,7 +1352,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Commercial land use right term is ______ years.",
     "q_zh": "商业用地使用权年限为______年。",
     "answer_en": "A",
@@ -1360,7 +1360,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land grant is through ______.",
     "q_zh": "土地出让通过______。",
     "answer_en": "D",
@@ -1368,7 +1368,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land allocation is ______.",
     "q_zh": "土地划拨是______。",
     "answer_en": "A",
@@ -1376,7 +1376,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Parcel split requires ______.",
     "q_zh": "宗地分割需要______。",
     "answer_en": "C",
@@ -1384,7 +1384,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land expropriation converts ______.",
     "q_zh": "土地征收将______。",
     "answer_en": "B",
@@ -1392,7 +1392,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Land grant methods:",
     "q_zh": "土地出让方式：",
     "answer_en": "ABCD",
@@ -1400,7 +1400,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Parcel operations include:",
     "q_zh": "宗地操作包括：",
     "answer_en": "ABCD",
@@ -1408,7 +1408,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Land expropriation requires:",
     "q_zh": "土地征收需要：",
     "answer_en": "ABC",
@@ -1480,7 +1480,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "Land Administration Law enacted in ______.",
     "q_zh": "土地管理法颁布于______。",
     "answer_en": "B",
@@ -1488,7 +1488,7 @@
     "source": "补充"
   },
   {
-    "type": "single",
+    "type": "fill",
     "q_en": "RTK GPS provides ______-level accuracy.",
     "q_zh": "RTK GPS提供______级精度。",
     "answer_en": "C",
@@ -1496,7 +1496,7 @@
     "source": "补充"
   },
   {
-    "type": "multiple",
+    "type": "fill",
     "q_en": "Modern surveying instruments:",
     "q_zh": "现代测量仪器：",
     "answer_en": "ABCD",
